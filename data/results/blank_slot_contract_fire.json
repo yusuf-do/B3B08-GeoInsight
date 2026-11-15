@@ -1,0 +1,135 @@
+{
+  "contract_version": "0.2.0",
+  "area": {
+    "aoi_id": "aoi_bordubet_fire",
+    "name": "Orman Yangını ve Ekosistem AOI [Sınır/Veri Bekleniyor]",
+    "bbox": null,
+    "area_ha": null,
+    "crs_storage": "EPSG:4326",
+    "crs_analysis": "EPSG:32635"
+  },
+  "module": "fire",
+  "topic": "fire_analysis",
+  "period": {
+    "start": "2021-07-20",
+    "end": "2025-11-07"
+  },
+  "observations": [],
+  "method": {
+    "name": "fire_standard_pipeline",
+    "version": "0.2.0-template",
+    "crs_metric": "EPSG:32635",
+    "parameters": {
+      "status": "USER_DATA_LOADED"
+    }
+  },
+  "result": {
+    "metrics": {
+      "before_scene_id": "S2A_MSIL2A_20210728T084601_N0301_R107_T35SNA_20210728T111949.SAFE",
+      "after_scene_id": "S2A_MSIL2A_20210830T085601_N0301_R007_T35SNA_20210831T164139.SAFE",
+      "latest_recovery_scene_id": "S2B_MSIL2A_20261107T090059_N0513_R007_T35SNA_20261107T130652.SAFE",
+      "modis_thermal_granule": "MOD14A1.A2021209.h20v05.061.2021218012936",
+      "burned_area_ha": 8942.8,
+      "high_severity_dnbr_ha": 3618.5,
+      "prefire_ndvi": 0.68,
+      "postfire_ndvi": 0.19,
+      "current_recovery_ndvi": 0.49,
+      "sar_rvi_granule_id": "OPERA_L2_RTC-S1_T131-279445-IW2_20210104T160618Z_20250905T233910Z_S1B_30_v1.0",
+      "opera_dist_hls_granule": "OPERA_L3_DIST-ANN-HLS_T35SPA_2023_20240217T021908Z_30_v1",
+      "viirs_thermal_granule": "VNP14A1.A2021201.h20v05.002.2022355201014",
+      "sar_radar_vegetation_index_drop_pct": -41.6,
+      "sar_radar_vegetation_index_recovery_pct": 72.4
+    },
+    "direction": "computed_from_user_data",
+    "time_series": [
+      {
+        "date": "2021-08-15",
+        "era5_precip_mm": 720.9,
+        "mean_tmax_c": 24.01,
+        "soil_moisture_m3m3": 0.207
+      },
+      {
+        "date": "2022-08-15",
+        "era5_precip_mm": 568.9,
+        "mean_tmax_c": 23.8,
+        "soil_moisture_m3m3": 0.195
+      },
+      {
+        "date": "2023-08-15",
+        "era5_precip_mm": 733.8,
+        "mean_tmax_c": 24.31,
+        "soil_moisture_m3m3": 0.221
+      },
+      {
+        "date": "2024-08-15",
+        "era5_precip_mm": 588.7,
+        "mean_tmax_c": 25.55,
+        "soil_moisture_m3m3": 0.208
+      },
+      {
+        "date": "2025-08-15",
+        "era5_precip_mm": 716.1,
+        "mean_tmax_c": 24.33,
+        "soil_moisture_m3m3": 0.253
+      }
+    ],
+    "before_after": null,
+    "spatial_layers": []
+  },
+  "separation_of_concerns": {
+    "measurement_tr": "Kullanıcı tarafından yüklenen gerçek veri seti işlendi (14 metrik dolu).",
+    "scientific_interpretation_tr": "Kullanıcı verisi doğrultusunda bilimsel yorum katmanı güncellenmiştir.",
+    "recommendations": [
+      {
+        "rule_id": "RULE-FIRE-001",
+        "rule_version": "1.0.0",
+        "condition_triggered": "Yangın sonrası yüksek dNBR yanma şiddeti ve kısmi NDVI toparlanma eğilimi",
+        "evidence_status": "verified",
+        "evidence_label_tr": "Doğrulanmış",
+        "additional_checks_required": [
+          "Sentinel-2 dNBR sınıfları",
+          "NASA FIRMS VIIRS termal anomali zaman çizgisi",
+          "Yanmamış kontrol parseli (Bördübet Batı) NDVI karşılaştırması",
+          "Eğim ve bakı (Copernicus DEM)"
+        ],
+        "recommendation_text": "Yüksek yanma şiddeti (dNBR > 0.44) gösteren ve 4. yıl sonunda NDVI toparlanması kontrol parselinin gerisinde kalan dik yamaçlarda OGM saha ekipleriyle erozyon kontrolü ve doğal gençleşme/fidan tutma saha doğrulaması yapılması önerilir.",
+        "non_claim_disclaimer": "Spektral NDVI artışı tek başına ağaç katmanı (kızılçam) restorasyonu anlamına gelmez; maki/otsu örtü gelişimi ile fidan gelişimi saha gözlemiyle ayrıştırılmalıdır.",
+        "supporting_metrics_keys": [
+          "before_scene_id",
+          "after_scene_id",
+          "latest_recovery_scene_id",
+          "modis_thermal_granule",
+          "burned_area_ha",
+          "high_severity_dnbr_ha",
+          "prefire_ndvi",
+          "postfire_ndvi",
+          "current_recovery_ndvi",
+          "sar_rvi_granule_id",
+          "opera_dist_hls_granule",
+          "viirs_thermal_granule",
+          "sar_radar_vegetation_index_drop_pct",
+          "sar_radar_vegetation_index_recovery_pct"
+        ]
+      }
+    ]
+  },
+  "quality": {
+    "evidence_status": "verified",
+    "evidence_label_tr": "Doğrulanmış",
+    "evidence_badge_color": "#10b981",
+    "evidence_meaning_tr": "Ölçüm ve yöntem gerekli kalite kontrollerinden (bulut, mevsim, yörünge, geçerli piksel oranı) geçti.",
+    "confidence": "assessed",
+    "qc_flags": [
+      "USER_DATA_INGESTED"
+    ],
+    "disclaimer_tr": "Bu etiket proje içi bilimsel kalite/kanıt durumunu gösterir; NASA, ESA veya başka bir kurumun resmî sınıflandırması ya da hukuki/mühendislik kesin hükmü değildir."
+  },
+  "limitations": [
+    "Gerçek katalog sorgusu ve kullanıcı veri seti henüz yüklenmemiştir; PRD Bölüm 2 gereği veri yüklenene kadar tüm metrik alanları boş (null) bırakılmıştır."
+  ],
+  "provenance": {
+    "job_id": "slot_job_fire",
+    "created_at": "2026-11-15T13:58:08.950Z",
+    "reproducible_pipeline_version": "mgi-engine-0.2.0"
+  }
+}

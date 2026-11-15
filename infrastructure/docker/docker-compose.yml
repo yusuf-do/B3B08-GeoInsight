@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  postgis:
+    image: postgis/postgis:16-3.4
+    container_name: mgi-postgis
+    environment:
+      POSTGRES_USER: mgi_admin
+      POSTGRES_PASSWORD: mgi_dev_password
+      POSTGRES_DB: mugla_geoinsight
+    ports:
+      - "5432:5432"
+    volumes:
+      - ../migrations:/docker-entrypoint-initdb.d:ro
+
+  redis:
+    image: redis:7-alpine
+    container_name: mgi-redis
+    ports:
+      - "6379:6379"
+
+  titiler:
+    image: ghcr.io/developmentseed/titiler:latest
+    container_name: mgi-titiler
+    ports:
+      - "8081:80"
+    environment:
+      PORT: 80
+      WORKERS_PER_CORE: 1
+
+  mgi-platform:
+    image: node:24-alpine
+    container_name: mgi-platform
+    working_dir: /app
+    volumes:
+      - ../../:/app
+    ports:
+      - "4080:4080"
+    command: ["node", "apps/api/src/server.mjs"]
+    depends_on:
+      - postgis
+      - redis

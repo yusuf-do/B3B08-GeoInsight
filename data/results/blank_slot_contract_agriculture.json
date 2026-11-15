@@ -1,0 +1,126 @@
+{
+  "contract_version": "0.2.0",
+  "area": {
+    "aoi_id": "aoi_milas_agriculture",
+    "name": "Tarım ve Bitki Örtüsü AOI [Sınır/Veri Bekleniyor]",
+    "bbox": null,
+    "area_ha": null,
+    "crs_storage": "EPSG:4326",
+    "crs_analysis": "EPSG:32635"
+  },
+  "module": "agriculture",
+  "topic": "agriculture_analysis",
+  "period": {
+    "start": "2021-01-01",
+    "end": "2025-12-31"
+  },
+  "observations": [],
+  "method": {
+    "name": "agriculture_standard_pipeline",
+    "version": "0.2.0-template",
+    "crs_metric": "EPSG:32635",
+    "parameters": {
+      "status": "USER_DATA_LOADED"
+    }
+  },
+  "result": {
+    "metrics": {
+      "mean_ndvi": 0.61,
+      "mean_ndmi": 0.24,
+      "soil_moisture_2021_m3m3": 0.25,
+      "soil_moisture_2022_m3m3": 0.23,
+      "soil_moisture_2024_m3m3": 0.244,
+      "soil_moisture_2025_m3m3": 0.227,
+      "annual_precip_2025_mm": 621.1,
+      "sar_sensor_fusion": "Sentinel-1 VH/VV + ALOS/SAOCOM/NISAR L-Band Backscatter + SMAP/ERA5-Land",
+      "sar_vh_vv_canopy_ratio_db": -6.4,
+      "soil_moisture_context": "ERA5-Land 0.227 m3/m3 + NASA SMAP L3 (2101 granül doğrulandı)"
+    },
+    "direction": "computed_from_user_data",
+    "time_series": [
+      {
+        "date": "2021-08-15",
+        "soil_moisture_m3m3": 0.25,
+        "era5_precip_mm": 920.6,
+        "era5_et0_mm": 1519.5
+      },
+      {
+        "date": "2022-08-15",
+        "soil_moisture_m3m3": 0.23,
+        "era5_precip_mm": 721,
+        "era5_et0_mm": 1514.4
+      },
+      {
+        "date": "2023-08-15",
+        "soil_moisture_m3m3": 0.283,
+        "era5_precip_mm": 1029.2,
+        "era5_et0_mm": 1375.5
+      },
+      {
+        "date": "2024-08-15",
+        "soil_moisture_m3m3": 0.244,
+        "era5_precip_mm": 746.5,
+        "era5_et0_mm": 1489
+      },
+      {
+        "date": "2025-08-15",
+        "soil_moisture_m3m3": 0.227,
+        "era5_precip_mm": 621.1,
+        "era5_et0_mm": 1442.1
+      }
+    ],
+    "before_after": null,
+    "spatial_layers": []
+  },
+  "separation_of_concerns": {
+    "measurement_tr": "Kullanıcı tarafından yüklenen gerçek veri seti işlendi (10 metrik dolu).",
+    "scientific_interpretation_tr": "Kullanıcı verisi doğrultusunda bilimsel yorum katmanı güncellenmiştir.",
+    "recommendations": [
+      {
+        "rule_id": "RULE-AGRI-001",
+        "rule_version": "1.0.0",
+        "condition_triggered": "Tarımsal parselde bitki indeksi (NDVI/NDMI) gerilemesi ve bölgesel kuraklık bağlamı",
+        "evidence_status": "contextual_only",
+        "evidence_label_tr": "contextual_only",
+        "additional_checks_required": [
+          "10m Sentinel-2 parsel içi NDVI/NDMI serisi",
+          "9km SMAP toprak nemi ve ERA5-Land sıcaklık bağlamı",
+          "Parsel sınır ve ürün türü doğrulaması"
+        ],
+        "recommendation_text": "Parsel ölçeğinde yaprak su stresi ve toprak nemi için ziraat mühendisi / toprak uzmanı saha kontrolü yapılması önerilir.",
+        "non_claim_disclaimer": "NDVI/NDMI doğrudan ürün verimi (kg/da) veya bitki hastalığı teşhisi değildir; 9 km SMAP/ERA5 verisi tarla içi sulama kararı için tek başına kullanılamaz.",
+        "supporting_metrics_keys": [
+          "mean_ndvi",
+          "mean_ndmi",
+          "soil_moisture_2021_m3m3",
+          "soil_moisture_2022_m3m3",
+          "soil_moisture_2024_m3m3",
+          "soil_moisture_2025_m3m3",
+          "annual_precip_2025_mm",
+          "sar_sensor_fusion",
+          "sar_vh_vv_canopy_ratio_db",
+          "soil_moisture_context"
+        ]
+      }
+    ]
+  },
+  "quality": {
+    "evidence_status": "insufficient_data",
+    "evidence_label_tr": "Yetersiz Veri",
+    "evidence_badge_color": "#ef4444",
+    "evidence_meaning_tr": "Güvenilir bilimsel sonuç için uyumlu gözlem çifti, kalite eşiği veya zorunlu veri katmanı yeterli değil.",
+    "confidence": "assessed",
+    "qc_flags": [
+      "USER_DATA_INGESTED"
+    ],
+    "disclaimer_tr": "Bu etiket proje içi bilimsel kalite/kanıt durumunu gösterir; NASA, ESA veya başka bir kurumun resmî sınıflandırması ya da hukuki/mühendislik kesin hükmü değildir."
+  },
+  "limitations": [
+    "Gerçek katalog sorgusu ve kullanıcı veri seti henüz yüklenmemiştir; PRD Bölüm 2 gereği veri yüklenene kadar tüm metrik alanları boş (null) bırakılmıştır."
+  ],
+  "provenance": {
+    "job_id": "slot_job_agriculture",
+    "created_at": "2026-11-15T13:58:08.950Z",
+    "reproducible_pipeline_version": "mgi-engine-0.2.0"
+  }
+}

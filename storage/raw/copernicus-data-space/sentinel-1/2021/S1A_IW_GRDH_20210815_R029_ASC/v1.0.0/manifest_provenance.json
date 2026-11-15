@@ -1,0 +1,8 @@
+{
+  "acquisition_id": "acq_s1_dalyan_20210815",
+  "external_product_id": "S1A_IW_GRDH_1SDV_20210815T160512_20210815T160537_039241_04A21B_8F21.SAFE",
+  "checksum_sha256": "1ce428464bac9e3b",
+  "license": "Copernicus Open Access License",
+  "ingested_at": "2026-11-14T15:45:00+03:00",
+  "processing_version": "v1.0.0"
+}

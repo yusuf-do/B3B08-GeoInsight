@@ -1,0 +1,213 @@
+{
+  "type": "FeatureCollection",
+  "name": "pilot_bordubet_fire_aoi_v1",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "metadata": {
+    "aoi_package_id": "MGI-AOI-FIRE-001",
+    "version": "1.0.0",
+    "created_at": "2026-11-14T15:00:00+03:00",
+    "storage_crs": "EPSG:4326",
+    "metric_crs": "EPSG:32635",
+    "module": "fire",
+    "qc_requirements": {
+      "max_cloud_cover_pct": 20,
+      "require_phenological_window_match": true,
+      "max_seasonal_day_offset": 30,
+      "firms_note": "FIRMS thermal anomalies are point/pixel detections, not burn perimeters"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "aoi_bordubet_fire",
+      "bbox": [
+        28.035,
+        36.755,
+        28.255,
+        36.885
+      ],
+      "properties": {
+        "aoi_id": "aoi_bordubet_fire",
+        "name": "Marmaris–Bördübet–Hisarönü Yangın ve Ekosistem İzleme Alanı (Ana Pilot AOI)",
+        "subzone_type": "primary_pilot_aoi",
+        "module": "fire",
+        "priority": "MVP-1",
+        "sentinel2_tile": "35SLA",
+        "sentinel1_relative_orbits": [
+          29,
+          131
+        ],
+        "landsat_path_row": "180/034",
+        "reference_fire_events": [
+          "2021-07-29 Marmaris Yangını",
+          "2022-06-21 Bördübet Yangını"
+        ],
+        "description": "Bördübet, Değirmenyanı, Hisarönü ve Küfre Koyu çevresindeki kızılçam orman ekosisteminde yanma şiddeti (dNBR) ve çok yıllı NDVI toparlanma izleme alanı.",
+        "centroid": [
+          28.145,
+          36.82
+        ],
+        "area_km2": 282.85,
+        "area_ha": 28285.1,
+        "crs_storage": "EPSG:4326",
+        "crs_metric": "EPSG:32635",
+        "visibility": "public"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.035,
+              36.755
+            ],
+            [
+              28.255,
+              36.755
+            ],
+            [
+              28.255,
+              36.885
+            ],
+            [
+              28.035,
+              36.885
+            ],
+            [
+              28.035,
+              36.755
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aoi_bordubet_2022_core",
+      "bbox": [
+        28.065,
+        36.782,
+        28.185,
+        36.848
+      ],
+      "properties": {
+        "aoi_id": "aoi_bordubet_2022_core",
+        "name": "Bördübet–Yedi Adalar Haziran 2022 Yangın Çekirdek Bölgesi",
+        "subzone_type": "burn_severity_core",
+        "module": "fire",
+        "priority": "MVP-1",
+        "sentinel2_tile": "35SLA",
+        "sentinel1_relative_orbits": [
+          29,
+          131
+        ],
+        "landsat_path_row": "180/034",
+        "reference_fire_events": [
+          "2022-06-21 Bördübet Yangını"
+        ],
+        "description": "21-25 Haziran 2022 yangınında yüksek dNBR değişimi gösteren çekirdek orman bölgesi.",
+        "centroid": [
+          28.125,
+          36.815
+        ],
+        "area_km2": 78.33,
+        "area_ha": 7833.3,
+        "crs_storage": "EPSG:4326",
+        "crs_metric": "EPSG:32635",
+        "visibility": "public"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.065,
+              36.782
+            ],
+            [
+              28.185,
+              36.782
+            ],
+            [
+              28.185,
+              36.848
+            ],
+            [
+              28.065,
+              36.848
+            ],
+            [
+              28.065,
+              36.782
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aoi_bordubet_unburned_control",
+      "bbox": [
+        28.005,
+        36.775,
+        28.034,
+        36.815
+      ],
+      "properties": {
+        "aoi_id": "aoi_bordubet_unburned_control",
+        "name": "Bördübet Batı Yanmamış Kontrol Orman Parseli",
+        "subzone_type": "unburned_phenology_control",
+        "module": "fire",
+        "priority": "MVP-1",
+        "sentinel2_tile": "35SLA",
+        "sentinel1_relative_orbits": [
+          29,
+          131
+        ],
+        "landsat_path_row": "180/034",
+        "description": "Mevsimsel kuraklık ve fenolojik salınımı yangın etkisinden ayrıştırmak için kullanılan referans kontrol alanı.",
+        "centroid": [
+          28.0195,
+          36.795
+        ],
+        "area_km2": 11.48,
+        "area_ha": 1147.6,
+        "crs_storage": "EPSG:4326",
+        "crs_metric": "EPSG:32635",
+        "visibility": "public"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.005,
+              36.775
+            ],
+            [
+              28.034,
+              36.775
+            ],
+            [
+              28.034,
+              36.815
+            ],
+            [
+              28.005,
+              36.815
+            ],
+            [
+              28.005,
+              36.775
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "acquisition_id": "acq_s2_bordubet_20260724_recovery",
+  "external_product_id": "S2C_MSIL2A_20260724T090601_N0512_R050_T35SLA_20260724T131044.SAFE",
+  "checksum_sha256": "09643bfd7e7e5626",
+  "license": "Copernicus Open Access License",
+  "ingested_at": "2026-11-14T15:45:00+03:00",
+  "processing_version": "v1.0.0"
+}

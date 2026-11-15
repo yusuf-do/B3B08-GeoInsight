@@ -1,0 +1,19 @@
+# Muğla GeoInsight Production & University Cluster Deployment Specification
+# Implements TDD Section 5 (Storage buckets) & Section 17 (Deployment model)
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mugla-geoinsight-config
+data:
+  STORAGE_CRS: "EPSG:4326"
+  ANALYSIS_METRIC_CRS: "EPSG:32635"
+  DISPLAY_CRS: "EPSG:3857"
+  S3_BUCKET_RAW: "s3://mugla-geoinsight-storage/raw/"
+  S3_BUCKET_INTERMEDIATE: "s3://mugla-geoinsight-storage/intermediate/"
+  S3_BUCKET_DERIVED_COG: "s3://mugla-geoinsight-storage/derived/"
+  S3_BUCKET_REPORTS: "s3://mugla-geoinsight-storage/reports/"
+  S3_BUCKET_STAC_CATALOG: "s3://mugla-geoinsight-storage/catalog/"
+  MAX_OPTICAL_CLOUD_COVER_PCT: "20.0"
+  MIN_VALID_PIXEL_RATIO: "0.90"
+  REQUIRE_S1_SAME_RELATIVE_ORBIT: "true"

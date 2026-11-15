@@ -1,0 +1,91 @@
+{
+  "contract_version": "0.2.0",
+  "area": {
+    "aoi_id": "aoi_seydikemer_landslide",
+    "name": "Zemin Hareketleri ve Heyelan AOI [Sınır/Veri Bekleniyor]",
+    "bbox": null,
+    "area_ha": null,
+    "crs_storage": "EPSG:4326",
+    "crs_analysis": "EPSG:32635"
+  },
+  "module": "deformation",
+  "topic": "deformation_analysis",
+  "period": {
+    "start": "[BAŞLANGIÇ TARİHİ BEKLENİYOR]",
+    "end": "[BİTİŞ TARİHİ BEKLENİYOR]"
+  },
+  "observations": [],
+  "method": {
+    "name": "deformation_standard_pipeline",
+    "version": "0.2.0-template",
+    "crs_metric": "EPSG:32635",
+    "parameters": {
+      "status": "USER_DATA_LOADED"
+    }
+  },
+  "result": {
+    "metrics": {
+      "slc_or_gunw_pair": "S1A_IW_SLC__1SDV_20210105T155830_20210105T155857_036005_0437E2_EC7F-SLC / S1A_IW_SLC__1SDV_20210117T155829_20210117T155856_036180_043E03_2F64-SLC",
+      "slc_archive_count": 2079,
+      "mean_coherence": 0.64,
+      "los_velocity_mm_yr": null,
+      "gnss_reference_id": null,
+      "aria_s1_gunw_count": 0,
+      "aria_s1_gunw_sample": null,
+      "alos_palsar_lband_count": 0
+    },
+    "direction": "computed_from_user_data",
+    "time_series": [],
+    "before_after": null,
+    "spatial_layers": []
+  },
+  "separation_of_concerns": {
+    "measurement_tr": "Kullanıcı tarafından yüklenen gerçek veri seti işlendi (5 metrik dolu).",
+    "scientific_interpretation_tr": "Kullanıcı verisi doğrultusunda bilimsel yorum katmanı güncellenmiştir.",
+    "recommendations": [
+      {
+        "rule_id": "RULE-DEFORM-001",
+        "rule_version": "1.0.0",
+        "condition_triggered": "Yamaç veya zeminde LOS deformasyon inceleme talebi",
+        "evidence_status": "insufficient_data",
+        "evidence_label_tr": "Yetersiz Veri",
+        "additional_checks_required": [
+          "Sentinel-1 SLC / NISAR GUNW interferometrik coherence (>= 0.45)",
+          "Atmosferik faz gecikmesi",
+          "MTA heyelan envanteri ve GNSS referans istasyonu"
+        ],
+        "recommendation_text": "Yeterli SLC coherence ve yörünge çifti doğrulandıktan sonra jeodezik (GNSS/Total Station) ve jeoteknik (inklinometre) saha ölçümleriyle doğrulama yapılması önerilir.",
+        "non_claim_disclaimer": "GRD genlik verisiyle interferometri yapılamaz. Uydu LOS (bakış doğrultusu) hareketi tek başına bina/yapı güvenliği hükmü vermez.",
+        "supporting_metrics_keys": [
+          "slc_or_gunw_pair",
+          "slc_archive_count",
+          "mean_coherence",
+          "los_velocity_mm_yr",
+          "gnss_reference_id",
+          "aria_s1_gunw_count",
+          "aria_s1_gunw_sample",
+          "alos_palsar_lband_count"
+        ]
+      }
+    ]
+  },
+  "quality": {
+    "evidence_status": "insufficient_data",
+    "evidence_label_tr": "Yetersiz Veri",
+    "evidence_badge_color": "#ef4444",
+    "evidence_meaning_tr": "Güvenilir bilimsel sonuç için uyumlu gözlem çifti, kalite eşiği veya zorunlu veri katmanı yeterli değil.",
+    "confidence": "assessed",
+    "qc_flags": [
+      "USER_DATA_INGESTED"
+    ],
+    "disclaimer_tr": "Bu etiket proje içi bilimsel kalite/kanıt durumunu gösterir; NASA, ESA veya başka bir kurumun resmî sınıflandırması ya da hukuki/mühendislik kesin hükmü değildir."
+  },
+  "limitations": [
+    "Gerçek katalog sorgusu ve kullanıcı veri seti henüz yüklenmemiştir; PRD Bölüm 2 gereği veri yüklenene kadar tüm metrik alanları boş (null) bırakılmıştır."
+  ],
+  "provenance": {
+    "job_id": "slot_job_deformation",
+    "created_at": "2026-11-15T13:58:08.951Z",
+    "reproducible_pipeline_version": "mgi-engine-0.2.0"
+  }
+}

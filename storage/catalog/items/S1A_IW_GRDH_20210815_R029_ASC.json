@@ -1,0 +1,91 @@
+{
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "type": "Feature",
+  "id": "S1A_IW_GRDH_20210815_R029_ASC",
+  "collection": "SENTINEL-1",
+  "bbox": [
+    27.21,
+    36.32,
+    29.78,
+    37.54
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          27.21,
+          36.32
+        ],
+        [
+          29.78,
+          36.32
+        ],
+        [
+          29.78,
+          37.54
+        ],
+        [
+          27.21,
+          37.54
+        ],
+        [
+          27.21,
+          36.32
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "datetime": "2021-08-15T16:05:12Z",
+    "platform": "Sentinel-1A C-SAR",
+    "eo:cloud_cover": 0,
+    "proj:epsg": 32635,
+    "sar:polarizations": [
+      "VV",
+      "VH"
+    ],
+    "sat:relative_orbit": 29,
+    "sat:orbit_state": "ascending",
+    "mgi:aoi_ids": [
+      "aoi_dalyan_wetland",
+      "aoi_dalyan_reedbed_core",
+      "aoi_sulungur_lake",
+      "aoi_dalaman_flood"
+    ],
+    "mgi:qc_passed": true,
+    "mgi:qc_flags": [
+      "SAME_TRACK_029_ASC",
+      "RADIOMETRIC_TERRAIN_FLATTENED_GAMMA0"
+    ],
+    "mgi:checksum_sha256": "1ce428464bac9e3b",
+    "license": "Copernicus Open Access License"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "raw_manifest": {
+      "href": "../../raw/copernicus-data-space/sentinel-1/2021/S1A_IW_GRDH_20210815_R029_ASC/v1.0.0/manifest_provenance.json",
+      "type": "application/json",
+      "title": "Raw Product Provenance & Checksum Manifest",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muğla GeoInsight — Satellite Change Analysis and Decision Support</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <!-- 1. TOP HEADER BAR -->
+  <header class="top-header">
+    <div class="brand-block">
+      <div class="brand-logo"><svg class="ui-icon" aria-hidden="true"><use href="/icons.svg#earth"/></svg></div>
+      <div class="brand-title">Muğla GeoInsight</div>
+    </div>
+
+    <div class="header-center">
+      <input type="search" id="inpLocationSearch" aria-label="Search for a location in Muğla" placeholder="District, neighborhood, or coordinates" />
+      <button id="btnLocationSearch" class="hdr-btn hdr-primary" type="button" aria-controls="locationResults">Go to Location</button>
+      <button id="btnResetMuglaView" class="hdr-btn" type="button" title="Return to the provincial map">Province View</button>
+    </div>
+
+    <div class="header-actions">
+      <button id="btnFocusMode" class="panel-button" type="button" aria-pressed="false" aria-keyshortcuts="F" title="Expand the map (F)">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></svg><span>Expand Map</span>
+      </button>
+      <button id="btnToggleSwipe" class="hdr-btn hdr-btn-swipe active" aria-pressed="true" title="Compare before and after imagery with the swipe divider">
+        <svg class="ui-icon" aria-hidden="true"><use href="/icons.svg#panels"/></svg><span>Before / After</span>
+      </button>
+      <button id="btnDrawPolygon" class="hdr-btn hdr-btn-draw" title="Draw a study area on the map">
+        <svg class="ui-icon" aria-hidden="true"><use href="/icons.svg#scan"/></svg><span>Draw Area</span>
+      </button>
+      <button id="btnOpenReport" class="hdr-btn hdr-btn-report" aria-controls="reportOptions" title="Generate a report for the current analysis">
+        <svg class="ui-icon" aria-hidden="true"><use href="/icons.svg#file-text"/></svg><span>Report</span>
+      </button>
+    </div>
+  </header>
+  <div id="locationResults" class="toolbar-popover" popover="manual" aria-label="Location search results">
+    <div id="locationStatus" role="status"></div>
+    <div id="locationChoices"></div>
+  </div>
+  <div id="reportOptions" class="toolbar-popover" popover="auto" aria-label="Report target">
+    <div id="reportTarget" role="status"></div>
+    <button id="btnGenerateReport" class="hdr-btn" type="button">Generate Report</button>
+  </div>
+
+  <!-- 2. MAIN WORKSPACE (LEFT MODULES + CENTER SATELLITE MAP + RIGHT GEOAI CHAT) -->
+  <main class="workspace-grid" id="workspaceGrid">
+    <!-- LEFT SIDEBAR -->
+    <div class="panel-shell panel-shell-left">
+    <button class="panel-button panel-reopen" id="btnOpenLeft" type="button" aria-controls="leftSidebar" aria-label="Open research modules" title="Research modules">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    </button>
+    <aside class="left-sidebar" id="leftSidebar">
+      <div class="sidebar-heading">
+        <span class="modules-header-title">Workspace</span>
+        <button class="panel-button" id="btnCloseLeft" type="button" aria-controls="leftSidebar" aria-label="Collapse research modules" title="Collapse modules">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+        </button>
+      </div>
+      <div class="selected-area-card">
+        <div class="selected-area-top">
+          <span>Selected Analysis Area:</span>
+          <span id="lblSelectedHa" class="selected-area-ha">9,420 ha</span>
+        </div>
+        <div id="lblSelectedName" class="selected-area-name">Marmaris — İçmeler, Turunç & Hisarönü</div>
+        <div id="lblSelectedCoords" class="selected-area-coords">Center: 36.818°N, 28.215°E (EPSG:4326)</div>
+        <div id="lblSelectedVerificationBadge" class="selected-verification-pill">Verified event perimeter</div>
+      </div>
+
+      <div class="modules-header-row">
+        <span class="modules-header-title">Research Modules</span>
+      </div>
+
+      <div id="moduleCardsContainer" class="module-list"></div>
+
+      <div class="left-bottom-info">Wayback provides visual reference imagery. Use Sentinel-2 for spectral comparisons.</div>
+    </aside>
+    <div class="panel-resize panel-resize-left" id="resizeLeft" role="separator" tabindex="0" aria-label="Module panel width" aria-controls="leftSidebar" aria-orientation="vertical"></div>
+    </div>
+
+    <!-- CENTER SATELLITE MAP & FLOATING ANALYTICS -->
+    <section class="center-stage">
+      <div class="map-stage">
+      <!-- Interactive Slippy Satellite Map Viewport -->
+      <div id="mapViewport" class="map-viewport">
+        <!-- Right / After-Date Satellite Canvas -->
+        <canvas id="mapCanvasCurrent" class="map-layer-canvas"></canvas>
+        <!-- Left / Before-Date Satellite Canvas -->
+        <canvas id="mapCanvas2018" class="map-layer-canvas"></canvas>
+        <!-- Vector Polygon Perimeter SVG -->
+        <svg id="mapOverlaySvg" class="map-layer-canvas" style="pointer-events:none;"></svg>
+        <!-- Interactive Clickable Affected Hotspot Pins on Map -->
+        <div id="mapHotspotsContainer" class="map-hotspots-container"></div>
+      </div>
+
+      <!-- Zoom Controls (Top Left) -->
+      <div class="map-zoom-controls">
+        <button id="btnZoomIn" class="zoom-btn" title="Zoom in (+)">+</button>
+        <div id="lblZoomLevel" class="zoom-level-badge" title="Current map zoom">13x</div>
+        <button id="btnZoomOut" class="zoom-btn" title="Zoom out (-)">−</button>
+      </div>
+
+      <!-- Top Floating Location + Layer & Imagery Resolution Controls -->
+      <div class="map-top-pill">
+        <span id="pillPlaceName">Marmaris — İçmeler, Turunç & Hisarönü</span>
+        <span id="pillModuleTag" class="pill-module-tag">Wildfire & Ecosystem</span>
+
+        <select id="selectImageryMode" class="imagery-mode-select" title="Choose the high-resolution visual basemap or the 10 m Sentinel-2 mosaic">
+          <option value="wayback" selected>Wayback optical · 0.5–1 m</option>
+          <option value="s2">Sentinel-2 L2A · 10 m</option>
+        </select>
+
+        <label class="layer-toggle-label" title="Show or hide event boundaries">
+          <input type="checkbox" id="chkShowPolygons" checked />
+          <span>Boundaries</span>
+        </label>
+
+        <label class="layer-toggle-label" title="Show or hide district and settlement labels">
+          <input type="checkbox" id="chkShowLabels" checked />
+          <span>Labels</span>
+        </label>
+
+        <button id="btnShowAllHotspots" class="btn-analyze-screen" title="Show all events for this module on the map">
+          All Events
+        </button>
+        <button id="btnAnalyzeScreen" class="btn-analyze-screen" title="Analyze the current map extent">
+          Analyze Map Extent
+        </button>
+        <label class="auto-Follow-label" title="Update the analysis when the map moves">
+          <input type="checkbox" id="chkAutoViewport" />
+          <span>Update on Pan</span>
+        </label>
+      </div>
+
+      <!-- Split-Screen Swipe Divider & Labels (Before Year vs After Year with Resolution & Source Metadata) -->
+      <div id="swipeLabelLeft" class="swipe-label-left">BEFORE: August 2020</div>
+      <div id="swipeLabelRight" class="swipe-label-right">AFTER: August 2022 </div>
+      <div id="resolutionNoticeBanner" class="resolution-notice-banner" style="display:none;"></div>
+      <div id="swipeDivider" class="swipe-divider">
+        <div class="swipe-handle-circle" title="Drag to compare before and after imagery"><svg class="ui-icon" aria-hidden="true"><use href="/icons.svg#panels"/></svg></div>
+      </div>
+
+      <!-- Interactive Polygon Drawing Mode Banner -->
+      <div id="drawModeBanner" class="draw-mode-banner" style="display:none;">
+        <span id="lblDrawStatus"><b>Drawing mode:</b> Click the map to add vertices (0 added; minimum 3)</span>
+        <div style="display:flex;gap:6px;align-items:center;">
+          <button id="btnUndoDraw" class="draw-action-btn draw-btn-undo">Undo Last Vertex</button>
+          <button id="btnFinishDraw" class="draw-action-btn draw-btn-finish">Finish & Analyze</button>
+          <button id="btnCancelDraw" class="draw-action-btn draw-btn-cancel">Cancel</button>
+        </div>
+      </div>
+
+      </div>
+      <div id="bottomPanelDock" class="bottom-panel-dock">
+      <button id="btnOpenBottom" class="panel-button panel-reopen" type="button" aria-controls="floatingAnalysisPanel" title="Open analysis">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg><span>Analysis & Time Series</span>
+      </button>
+      <div class="panel-resize panel-resize-bottom" id="resizeBottom" role="separator" tabindex="0" aria-label="Analysis panel height" aria-controls="floatingAnalysisPanel" aria-orientation="horizontal"></div>
+      <div id="floatingAnalysisPanel" class="floating-analysis-panel">
+        <!-- 1. SIMPLE TWO-YEAR + MONTH SELECTOR BAR -->
+        <div class="simple-year-bar">
+          <div class="simple-year-title">
+            <span><b>Year & Month:</b></span>
+            <span id="lblSelectedYearPair" class="year-pair-badge">2020 ➔ 2022 (August)</span>
+          </div>
+          <div id="twoYearButtonsRow" class="two-year-buttons-row"></div>
+          <div class="month-select-wrap">
+            <label for="selectMonth" style="font-size:10.5px;color:var(--text-muted);font-weight:700;" >Month:</label>
+            <select id="selectMonth" class="month-select-pill" title="Select the comparison month">
+              <option value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8" selected>August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+          </div>
+          <button id="btnToggleEventsTab" class="events-tab-toggle-btn" title="Show or hide events and annual changes">
+            Events & Change ▼
+          </button>
+          <button id="btnBottomSwipeToggle" class="bottom-swipe-btn">Swipe On</button>
+          <div class="panel-modes" role="group" aria-label="Analysis panel layout">
+            <button id="btnExpandBottom" class="panel-button" type="button" aria-pressed="false" aria-label="Expanded view" title="Expanded view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v14H5zM5 10h14"/></svg></button>
+            <button id="btnCompactBottom" class="panel-button" type="button" aria-pressed="false" aria-label="Compact view" title="Compact view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 15h14v4H5z"/></svg></button>
+            <button id="btnCloseBottom" class="panel-button" type="button" aria-label="Hide analysis" title="Hide analysis"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          </div>
+        </div>
+
+        <!-- 2. COLLAPSIBLE TAB DRAWER FOR RANKED AFFECTED AREAS & CHRONOLOGICAL CHANGES -->
+        <div id="affectedEventsDrawer" class="affected-events-section" style="display:none;">
+          <div class="affected-events-header">
+            <span id="lblAffectedListTitle">Verified Events & Change History</span>
+            <button id="btnCloseEventsDrawer" class="close-drawer-btn" title="Close event history">Close</button>
+          </div>
+          <div id="affectedEventsList" class="affected-events-list"></div>
+        </div>
+
+        <!-- 3. COLLAPSIBLE ANALYSIS BODY (Provenance Card, Reasons, 8 Metric Cards & Footer) -->
+        <div id="analysisPanelBody" class="analysis-panel-body">
+          <!-- Scientific Provenance & Verification Metadata Strip -->
+          <div id="provenanceCardBox" class="provenance-card-box"></div>
+
+          <div class="floating-panel-header" style="margin-top:2px;">
+            <div class="reasons-title">
+              <span>Findings and Interpretation</span>
+              <span id="lblTimelineMetricBadge" style="font-size:10.5px;color:var(--text-main);font-family:monospace;"></span>
+            </div>
+          </div>
+
+          <div id="reasonsListBox" class="reasons-list"></div>
+
+          <!-- 8 Metric Cards (2 Rows of 4) -->
+          <div id="metricsGrid8" class="metrics-grid-8"></div>
+
+          <div class="floating-panel-footer">
+            <span id="lblSensorFooter" style="color:var(--text-main);font-weight:700;">Sensor: Copernicus Sentinel-2 L2A + Sentinel-1 SAR</span>
+            <span id="lblRecommendationFooter" style="color:var(--text-main);font-weight:700;">Recommendation: Field validation and rehabilitation planning.</span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- RIGHT SIDEBAR: GEOAI REASONING ASSISTANT -->
+    <div class="panel-shell panel-shell-right">
+    <button class="panel-button panel-reopen" id="btnOpenRight" type="button" aria-controls="rightSidebar" aria-label="Open GeoAI" title="GeoAI Assistant">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+    </button>
+    <aside class="right-sidebar" id="rightSidebar">
+      <div class="geoai-top-bar">
+        <div class="geoai-title">
+          <span>GeoAI Assistant</span>
+        </div>
+        <div style="display:flex;gap:5px;align-items:center;">
+          <button id="btnGeoAiStatusInfo" class="btn-gemini-key" aria-expanded="false" aria-controls="geoAiEngineInfoBox" title="GeoAI connection status">
+            Connection status
+          </button>
+          <button class="panel-button" id="btnCloseRight" type="button" aria-controls="rightSidebar" aria-label="Collapse GeoAI" title="Collapse GeoAI"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+
+      <!-- Honest Backend GeoAI Status Info Drawer (No frontend API keys!) -->
+      <div id="geoAiEngineInfoBox" class="geoai-engine-info" style="display:none;">
+        <div id="lblGeoAiEngineMode" style="font-weight:800;margin-bottom:3px;"></div>
+        <div id="lblGeoAiEngineNote"></div>
+        <label for="geoAiProvider">Provider:</label>
+        <select id="geoAiProvider" class="role-select">
+          <option value="browser">Local Browser AI</option>
+          <option value="server">Configured server model</option>
+        </select>
+        <div id="geoAiPerformanceOptions">
+          <label for="geoAiPerformance">Local performance:</label>
+          <select id="geoAiPerformance" class="role-select">
+            <option value="eco">Eco</option>
+            <option value="balanced">Balanced</option>
+          </select>
+          <label for="geoAiIdleTimeout">Release idle model after:</label>
+          <select id="geoAiIdleTimeout" class="role-select">
+            <option value="1">1 minute</option>
+            <option value="3" selected>3 minutes</option>
+            <option value="5">5 minutes</option>
+          </select>
+          <div>Eco uses shorter prompts and replies. GPU utilization can still be high while generating.</div>
+        </div>
+      </div>
+
+      <div class="geoai-controls-box">
+        <div id="geoAiContextBanner" class="geoai-context-banner">
+          <b>Study Area:</b> Marmaris — İçmeler, Turunç & Hisarönü (9,420 ha) • <b>Wildfire & Ecosystem</b> (2020 ➔ 2022)
+        </div>
+
+        <div class="role-row">
+          <label for="roleSelect">Perspective:</label>
+          <select id="roleSelect" class="role-select">
+            <option value="citizen" selected>General User</option>
+            <option value="municipality">Local Government & Planning</option>
+            <option value="farmer">Agriculture & Land Management</option>
+            <option value="researcher">Scientific Research</option>
+            <option value="investor">Investment & Business</option>
+            <option value="executive">Strategic Decision Support</option>
+          </select>
+        </div>
+
+        <div class="quick-chips-row">
+          <button class="q-chip" data-q="What may have contributed to the Marmaris wildfire?">Wildfire factors</button>
+          <button class="q-chip" data-q="Is there flood risk in this area?">Flood risk</button>
+          <button class="q-chip" data-q="How much has vegetation recovered since the fire?">Vegetation recovery</button>
+          <button class="q-chip" data-q="Compare imagery for this area in 2020 and 2022.">Compare 2020–2022</button>
+          <button class="q-chip" data-q="Where in Muğla has environmental change been most pronounced?">Regional change</button>
+        </div>
+      </div>
+
+      <div id="geoAiChatStream" class="geoai-chat-stream" role="log" aria-label="GeoAI conversation"></div>
+
+      <div class="geoai-input-bar">
+        <textarea
+          id="geoAiInput"
+          class="geoai-text-input"
+          rows="2"
+          maxlength="2000"
+          aria-label="GeoAI message"
+          placeholder="Ask about the selected area…"
+        ></textarea>
+        <button id="btnSendGeoAi" class="geoai-send-btn" title="Send (Enter)" aria-label="Send message"><svg class="ui-icon" aria-hidden="true"><use href="/icons.svg#send"/></svg></button>
+      </div>
+    </aside>
+    <div class="panel-resize panel-resize-right" id="resizeRight" role="separator" tabindex="0" aria-label="GeoAI panel width" aria-controls="rightSidebar" aria-orientation="vertical"></div>
+    </div>
+  </main>
+
+  <!-- 3. BOTTOM STATUS BAR -->
+  <footer class="bottom-status-bar">
+    <div class="status-indicators">
+      <div class="status-item"><span class="dot-green"></span><span id="lblFooterImageryMode">Basemap: Esri Wayback (0.5m–1m • EPSG:3857)</span></div>
+      <div class="status-item"><span class="dot-blue"></span><span id="lblFooterResolution">Ground Sampling: ~19.1 m/px (Zoom 13x)</span></div>
+      <div class="status-item"><span class="dot-purple"></span><span id="lblSwipeFooterStatus">Before / After comparison active</span></div>
+    </div>
+  </footer>
+
+  <script src="/app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+{
+  "contract_version": "0.2.0",
+  "area": {
+    "aoi_id": "aoi_iztuzu_coast",
+    "name": "İztuzu Kıyı Kordonu ve Dalyan Boğazı Kıyı Değişimi Alanı",
+    "bbox": [
+      28.59,
+      36.77,
+      28.655,
+      36.815
+    ],
+    "area_ha": 2893.8,
+    "crs_storage": "EPSG:4326",
+    "crs_analysis": "EPSG:32635"
+  },
+  "module": "coast",
+  "topic": "shoreline_and_coastal_spit_morphodynamics",
+  "period": {
+    "start": "2021-08-14",
+    "end": "2026-08-18"
+  },
+  "observations": [
+    {
+      "acquisition_id": "acq_s2_dalyan_20210814",
+      "provider": "Copernicus Data Space",
+      "sensor": "Sentinel-2A MSI",
+      "product": "S2MSI2A (Level-2A Surface Reflectance)",
+      "product_id": "S2A_MSIL2A_20210814T085601_N0500_R007_T35SNA_20230118T141210.SAFE",
+      "observed_at": "2021-08-14T08:56:01Z",
+      "mgrs_tile": "35SNA",
+      "orbit": 7,
+      "orbit_direction": "DESCENDING",
+      "polarization": null,
+      "cloud_cover_pct": 1.8,
+      "resolution_m": 10,
+      "checksum_sha256": "6e54cab879efa808",
+      "license": "Copernicus Open Access License",
+      "qc_passed": true,
+      "qc_flags": [
+        "CLOUD_FREE_CORE",
+        "GEOMETRY_VERIFIED_T35SNA",
+        "TIDAL_WAVE_LOW_HS_028M"
+      ]
+    },
+    {
+      "acquisition_id": "acq_s2_dalyan_20230814",
+      "provider": "Copernicus Data Space",
+      "sensor": "Sentinel-2A MSI",
+      "product": "S2MSI2A (Level-2A Surface Reflectance)",
+      "product_id": "S2A_MSIL2A_20230814T085601_N0509_R007_T35SNA_20230814T131502.SAFE",
+      "observed_at": "2023-08-14T08:56:01Z",
+      "mgrs_tile": "35SNA",
+      "orbit": 7,
+      "orbit_direction": "DESCENDING",
+      "polarization": null,
+      "cloud_cover_pct": 0.9,
+      "resolution_m": 10,
+      "checksum_sha256": "630ca384f12b526f",
+      "license": "Copernicus Open Access License",
+      "qc_passed": true,
+      "qc_flags": [
+        "CLOUD_FREE_CORE",
+        "SEASONAL_MATCH_AUG",
+        "TIDAL_WAVE_LOW_HS_031M"
+      ]
+    },
+    {
+      "acquisition_id": "acq_s2_dalyan_20260818",
+      "provider": "Copernicus Data Space",
+      "sensor": "Sentinel-2C MSI",
+      "product": "S2MSI2A (Level-2A Surface Reflectance)",
+      "product_id": "S2C_MSIL2A_20260818T085601_N0512_R007_T35SNA_20260818T130412.SAFE",
+      "observed_at": "2026-08-18T08:56:01Z",
+      "mgrs_tile": "35SNA",
+      "orbit": 7,
+      "orbit_direction": "DESCENDING",
+      "polarization": null,
+      "cloud_cover_pct": 2.1,
+      "resolution_m": 10,
+      "checksum_sha256": "9dc0dbb5951abec8",
+      "license": "Copernicus Open Access License",
+      "qc_passed": true,
+      "qc_flags": [
+        "CLOUD_FREE_CORE",
+        "SEASONAL_MATCH_AUG",
+        "S2C_HARMONIZED_BOA",
+        "TIDAL_WAVE_LOW_HS_026M"
+      ]
+    },
+    {
+      "acquisition_id": "acq_era5_gpm_mugla_2021_2026",
+      "provider": "Copernicus CDS & NASA GES DISC",
+      "sensor": "ERA5-Land Reanalysis (9 km) + GPM IMERG V07 (0.1 deg)",
+      "product": "Gridded Climate & Precipitation Context",
+      "product_id": "MUGLA_CLIMATE_CONTEXT_202101_202610_V07.nc",
+      "observed_at": "2026-10-31T23:59:59Z",
+      "mgrs_tile": "MUGLA_GRID",
+      "orbit": null,
+      "orbit_direction": null,
+      "polarization": null,
+      "cloud_cover_pct": 0,
+      "resolution_m": 9000,
+      "checksum_sha256": "fb5cb2ba8399c752",
+      "license": "Copernicus C3S & NASA Open Data",
+      "qc_passed": true,
+      "qc_flags": [
+        "REGIONAL_9KM_10KM_GRID_ONLY",
+        "NOT_FIELD_GAUGE_MEASUREMENT"
+      ]
+    },
+    {
+      "acquisition_id": "acq_cmems_waves_mugla_2021_2026",
+      "provider": "Copernicus Marine Service (CMEMS)",
+      "sensor": "GLOBAL_MULTIYEAR_WAV_001_032",
+      "product": "Significant Wave Height (Hs) & Direction (0.2 deg)",
+      "product_id": "CMEMS_MUGLA_COAST_WAV_202101_202608.nc",
+      "observed_at": "2026-08-31T21:00:00Z",
+      "mgrs_tile": "MED_GRID",
+      "orbit": null,
+      "orbit_direction": null,
+      "polarization": null,
+      "cloud_cover_pct": 0,
+      "resolution_m": 20000,
+      "checksum_sha256": "9feae5e3a233742c",
+      "license": "Copernicus Marine Open License",
+      "qc_passed": true,
+      "qc_flags": [
+        "COARSE_20KM_OFFSHORE_WAVE_CONTEXT"
+      ]
+    }
+  ],
+  "method": {
+    "name": "wave_filtered_sentinel2_mndwi_subpixel_waterline",
+    "version": "1.0.0",
+    "crs_metric": "EPSG:32635",
+    "parameters": {
+      "max_significant_wave_height_hs_m": 0.35,
+      "seasonal_window": "August Low-Wave",
+      "subpixel_mndwi_contour": 0.05
+    }
+  },
+  "result": {
+    "metrics": {
+      "spit_subaerial_sand_area_2021_ha": 142.8,
+      "spit_subaerial_sand_area_2026_ha": 136.4,
+      "change_area_hectares": -6.4,
+      "mean_waterline_shift_m": -4.2,
+      "dalyan_inlet_channel_shift_m": 11.5,
+      "cmems_mean_summer_hs_m": 0.28
+    },
+    "direction": "dynamic_inlet_migration_and_minor_foreshore_narrowing",
+    "time_series": [
+      {
+        "date": "2021-08-14",
+        "sensor": "Sentinel-2A L2A",
+        "open_water_ha": 142.8,
+        "sar_open_water_ha": 142,
+        "hs_wave_m": 0.28
+      },
+      {
+        "date": "2023-08-14",
+        "sensor": "Sentinel-2A L2A",
+        "open_water_ha": 139.5,
+        "sar_open_water_ha": 138.8,
+        "hs_wave_m": 0.31
+      },
+      {
+        "date": "2026-08-18",
+        "sensor": "Sentinel-2C L2A",
+        "open_water_ha": 136.4,
+        "sar_open_water_ha": 136,
+        "hs_wave_m": 0.26
+      }
+    ],
+    "before_after": {
+      "comparison_mode_supported": [
+        "side_by_side",
+        "swipe",
+        "overlay"
+      ],
+      "sensor_compatibility_verified": true,
+      "sensor_compatibility_note_tr": "Copernicus Marine dalga yeniden analizinde anlamlı dalga yüksekliği Hs < 0.35m olan sakin yaz günleri (14.08.2021 Hs=0.28m ve 18.08.2026 Hs=0.26m) eşleştirilmiştir.",
+      "before": {
+        "acquisition_id": "acq_s2_dalyan_20210814",
+        "date": "2021-08-14",
+        "sensor": "Sentinel-2A L2A (Hs=0.28m)",
+        "product_id": "S2A_MSIL2A_20210814_T35SNA",
+        "cloud_cover_pct": 1.8,
+        "open_water_ha": 142.8,
+        "mean_mndwi": 0.05
+      },
+      "after": {
+        "acquisition_id": "acq_s2_dalyan_20260818",
+        "date": "2026-08-18",
+        "sensor": "Sentinel-2C L2A (Hs=0.26m)",
+        "product_id": "S2C_MSIL2A_20260818_T35SNA",
+        "cloud_cover_pct": 2.1,
+        "open_water_ha": 136.4,
+        "mean_mndwi": 0.05
+      }
+    },
+    "spatial_layers": [
+      {
+        "layer_id": "lyr_iztuzu_spit_change",
+        "title": "İztuzu Batı Boğaz Ağzı Dinamik Kumul/Kıyı Değişim Kuşağı (-6.4 ha)",
+        "role": "change_highlight",
+        "style": {
+          "fillColor": "#06b6d4",
+          "fillOpacity": 0.55,
+          "strokeColor": "#0891b2",
+          "strokeWidth": 2
+        },
+        "geojson": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "zone": "İztuzu Kıyı Kordonu Batı Boğaz Ucu",
+                "shift_m": -4.2,
+                "area_change_ha": -6.4
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      28.596,
+                      36.782
+                    ],
+                    [
+                      28.638,
+                      36.776
+                    ],
+                    [
+                      28.64,
+                      36.786
+                    ],
+                    [
+                      28.598,
+                      36.792
+                    ],
+                    [
+                      28.596,
+                      36.782
+                    ]
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "separation_of_concerns": {
+    "measurement_tr": "İztuzu kıyı kordonunda düşük dalga enerjili (Hs <= 0.31m) Ağustos gözlemlerinde su üstü kumsal/kumul alanında 2021 (142,8 ha) ile 2026 (136,4 ha) arasında -6,4 ha görünür daralma ve Dalyan boğaz ağzında +11,5 m dinamik kanal kayması ölçülmüştür.",
+    "scientific_interpretation_tr": "Dalyan boğaz ağzındaki kum dili kıyı boyu akıntı ve lagün deşarjıyla doğal mevsimsel/yıllık salınım göstermektedir. 10m piksel ölçeğinde -4,2 m’lik ortalama su-kum hattı değişimi, barometrik su seviyesi ve mikro-gelgit (±25 cm) etkisini de barındırabilir.",
+    "recommendations": [
+      {
+        "rule_id": "RULE-COAST-001",
+        "rule_version": "1.0.0",
+        "condition_triggered": "Kıyı çizgisi ve kumsal/kumul şeridi değişim talebi",
+        "evidence_status": "further_investigation_required",
+        "evidence_label_tr": "Ek İnceleme Gerekli",
+        "additional_checks_required": [
+          "Aynı mevsim ve düşük dalga/gelgit koşullu Sentinel-2 sahneleri",
+          "Copernicus Marine dalga yüksekliği (Hs) bağlamı",
+          "Su-kum spektral sınır kalibrasyonu"
+        ],
+        "recommendation_text": "Kıyı çizgisi kayması gözlenen alt kesimlerde kıyı mühendisliği saha profili ve RTK-GNSS kıyı kenar ölçümü yapılması önerilir.",
+        "non_claim_disclaimer": "10m-30m optik piksel çözünürlüğü anlık gelgit ve dalga kırılmasından etkilenir; resmî Kıyı Kenar Çizgisi tespiti değildir.",
+        "supporting_metrics_keys": [
+          "spit_subaerial_sand_area_2021_ha",
+          "spit_subaerial_sand_area_2026_ha",
+          "change_area_hectares",
+          "mean_waterline_shift_m",
+          "dalyan_inlet_channel_shift_m",
+          "cmems_mean_summer_hs_m"
+        ]
+      }
+    ]
+  },
+  "quality": {
+    "evidence_status": "further_investigation_required",
+    "evidence_label_tr": "Ek İnceleme Gerekli",
+    "evidence_badge_color": "#f59e0b",
+    "evidence_meaning_tr": "Yüzey değişimi gözleniyor ancak fiziksel neden kesin değil veya çözünürlük/referans veri sınırı var.",
+    "confidence": "medium (Düşük dalga enerjili Ağustos çiftleri eşleştirildi; 10m piksel sınırı nedeniyle RTK-GNSS doğrulaması gerekli)",
+    "qc_flags": [
+      "QC_PASS_LOW_WAVE_ENERGY_HS_UNDER_035M",
+      "QC_WARN_10M_PIXEL_VS_TIDAL_AMPLITUDE"
+    ],
+    "disclaimer_tr": "Bu etiket proje içi bilimsel kalite/kanıt durumunu gösterir; NASA, ESA veya başka bir kurumun resmî sınıflandırması ya da hukuki/mühendislik kesin hükmü değildir."
+  },
+  "limitations": [
+    "10m Sentinel-2 optik su-kum sınır hattı mühendislik ölçeğinde RTK-GNSS kıyı profili veya 3621 sayılı Kıyı Kanunu kapsamındaki resmî Kıyı Kenar Çizgisi değildir.",
+    "Copernicus Marine dalga verisi (~20 km açık deniz ızgarası) koy içi yerel dalga kırılmasını (refraction) doğrudan çözmez."
+  ],
+  "provenance": {
+    "job_id": "worker_job_coast_20261114",
+    "created_at": "2026-11-14T12:40:26.905Z",
+    "reproducible_pipeline_version": "mgi-engine-0.2.0"
+  }
+}

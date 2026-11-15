@@ -1,0 +1,8 @@
+{
+  "acquisition_id": "acq_s2_yatagan_20260813",
+  "external_product_id": "S2C_MSIL2A_20260813T085601_N0512_R007_T35SMB_20260813T121940.SAFE",
+  "checksum_sha256": "c478b431ee3af403",
+  "license": "Copernicus Open Access License",
+  "ingested_at": "2026-11-14T15:45:00+03:00",
+  "processing_version": "v1.0.0"
+}

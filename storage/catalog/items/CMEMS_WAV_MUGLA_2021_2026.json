@@ -1,0 +1,82 @@
+{
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "type": "Feature",
+  "id": "CMEMS_WAV_MUGLA_2021_2026",
+  "collection": "CMEMS_MED_WAV_REANALYSIS",
+  "bbox": [
+    27.21,
+    36.32,
+    29.78,
+    37.54
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          27.21,
+          36.32
+        ],
+        [
+          29.78,
+          36.32
+        ],
+        [
+          29.78,
+          37.54
+        ],
+        [
+          27.21,
+          37.54
+        ],
+        [
+          27.21,
+          36.32
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "datetime": "2026-08-31T21:00:00Z",
+    "platform": "GLOBAL_MULTIYEAR_WAV_001_032",
+    "eo:cloud_cover": 0,
+    "proj:epsg": 4326,
+    "mgi:aoi_ids": [
+      "aoi_iztuzu_coast",
+      "aoi_dalyan_wetland"
+    ],
+    "mgi:qc_passed": true,
+    "mgi:qc_flags": [
+      "COARSE_20KM_OFFSHORE_WAVE_CONTEXT"
+    ],
+    "mgi:checksum_sha256": "9feae5e3a233742c",
+    "license": "Copernicus Marine Open License"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "raw_manifest": {
+      "href": "../../raw/copernicus-marine-service-cmems/cmems-med-wav-reanalysis/2026/CMEMS_WAV_MUGLA_2021_2026/v1.0.0/manifest_provenance.json",
+      "type": "application/json",
+      "title": "Raw Product Provenance & Checksum Manifest",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

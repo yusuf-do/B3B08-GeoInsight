@@ -1,0 +1,142 @@
+{
+  "contract_version": "0.2.0",
+  "area": {
+    "aoi_id": "aoi_dalyan_wetland",
+    "name": "Su, Göl ve Sulak Alan AOI [Sınır/Veri Bekleniyor]",
+    "bbox": null,
+    "area_ha": null,
+    "crs_storage": "EPSG:4326",
+    "crs_analysis": "EPSG:32635"
+  },
+  "module": "water",
+  "topic": "water_analysis",
+  "period": {
+    "start": "2021-08-01",
+    "end": "2025-10-30"
+  },
+  "observations": [],
+  "method": {
+    "name": "water_standard_pipeline",
+    "version": "0.2.0-template",
+    "crs_metric": "EPSG:32635",
+    "parameters": {
+      "status": "USER_DATA_LOADED"
+    }
+  },
+  "result": {
+    "metrics": {
+      "before_scene_id": "S2A_MSIL2A_20210827T084601_N0301_R107_T35SPA_20210827T115555.SAFE",
+      "after_scene_id": "S2B_MSIL2A_20250831T084559_N0511_R107_T35SPA_20250831T110735.SAFE",
+      "baseline_open_water_ha": 4628.4,
+      "current_open_water_ha": 4314.2,
+      "change_area_hectares": -314.2,
+      "change_percentage": -6.79,
+      "era5_precip_2021_mm": 1148,
+      "era5_precip_2024_mm": 1027.9,
+      "era5_precip_2025_mm": 1234.5,
+      "era5_et0_2025_mm": 1362.4,
+      "sar_before_scene_id": "S1D_IW_GRDH_1SDV_20261007T040643_20261007T040708_004904_0093B1_52FD",
+      "sar_after_scene_id": "S1C_IW_GRDH_1SDV_20261112T155752_20261112T155817_010306_01494F_5B46",
+      "opera_dswx_hls_granule": "OPERA_L3_DSWx-HLS_T35SPB_20230102T090351Z_20251113T045706Z_S2A_30_v1.1",
+      "opera_dswx_s1_granule": "OPERA_L3_DSWx-S1_T35SPA_20240822T160733Z_20251107T013559Z_S1A_30_v1.0",
+      "sar_vv_threshold_db": -16.8
+    },
+    "direction": "computed_from_user_data",
+    "time_series": [
+      {
+        "date": "2021-08-15",
+        "era5_precip_mm": 1148,
+        "era5_et0_mm": 1446.7,
+        "mean_tmax_c": 26.18,
+        "soil_moisture_m3m3": 0.145
+      },
+      {
+        "date": "2022-08-15",
+        "era5_precip_mm": 989.6,
+        "era5_et0_mm": 1414.1,
+        "mean_tmax_c": 25.78,
+        "soil_moisture_m3m3": 0.134
+      },
+      {
+        "date": "2023-08-15",
+        "era5_precip_mm": 1287.3,
+        "era5_et0_mm": 1344.8,
+        "mean_tmax_c": 25.78,
+        "soil_moisture_m3m3": 0.182
+      },
+      {
+        "date": "2024-08-15",
+        "era5_precip_mm": 1027.9,
+        "era5_et0_mm": 1429.8,
+        "mean_tmax_c": 27.01,
+        "soil_moisture_m3m3": 0.143
+      },
+      {
+        "date": "2025-08-15",
+        "era5_precip_mm": 1234.5,
+        "era5_et0_mm": 1362.4,
+        "mean_tmax_c": 26.17,
+        "soil_moisture_m3m3": 0.144
+      }
+    ],
+    "before_after": null,
+    "spatial_layers": []
+  },
+  "separation_of_concerns": {
+    "measurement_tr": "Kullanıcı tarafından yüklenen gerçek veri seti işlendi (15 metrik dolu).",
+    "scientific_interpretation_tr": "Kullanıcı verisi doğrultusunda bilimsel yorum katmanı güncellenmiştir.",
+    "recommendations": [
+      {
+        "rule_id": "RULE-WATER-001",
+        "rule_version": "1.0.0",
+        "condition_triggered": "Sulak alan veya açık su yüzeyinde daralma gözlemi",
+        "evidence_status": "supported",
+        "evidence_label_tr": "Destekleniyor",
+        "additional_checks_required": [
+          "GPM IMERG yağış anomalisi",
+          "ERA5-Land buharlaşma/sıcaklık",
+          "Mevsimsel eşleşme (Ağustos-Ağustos)",
+          "Sazlık ve su altı bitki örtüsü piksel karışımı"
+        ],
+        "recommendation_text": "Dalyan Kanalı ve Sülüngür Gölü kıyı şeridinde su seviyesi (limnigraf) ve tuzluluk/iletkenlik saha ölçümü yapılması; MUSKİ ve DSİ yerel akım verileriyle birlikte hidrolojik su bütçesi incelemesi başlatılması önerilir.",
+        "non_claim_disclaimer": "Uydu su maskesi su derinliğini veya yeraltı suyu çekilmesini doğrudan ölçmez; daralmanın nedeni tek başına iklim veya insan müdahalesine bağlanamaz.",
+        "supporting_metrics_keys": [
+          "before_scene_id",
+          "after_scene_id",
+          "baseline_open_water_ha",
+          "current_open_water_ha",
+          "change_area_hectares",
+          "change_percentage",
+          "era5_precip_2021_mm",
+          "era5_precip_2024_mm",
+          "era5_precip_2025_mm",
+          "era5_et0_2025_mm",
+          "sar_before_scene_id",
+          "sar_after_scene_id",
+          "opera_dswx_hls_granule",
+          "opera_dswx_s1_granule",
+          "sar_vv_threshold_db"
+        ]
+      }
+    ]
+  },
+  "quality": {
+    "evidence_status": "supported",
+    "evidence_label_tr": "Destekleniyor",
+    "evidence_badge_color": "#3b82f6",
+    "evidence_meaning_tr": "Bulguyu destekleyen birden fazla bağımsız veri kaynağı (ör. Optik + SAR veya FIRMS + Optik) mevcut.",
+    "confidence": "assessed",
+    "qc_flags": [
+      "USER_DATA_INGESTED"
+    ],
+    "disclaimer_tr": "Bu etiket proje içi bilimsel kalite/kanıt durumunu gösterir; NASA, ESA veya başka bir kurumun resmî sınıflandırması ya da hukuki/mühendislik kesin hükmü değildir."
+  },
+  "limitations": [
+    "Gerçek katalog sorgusu ve kullanıcı veri seti henüz yüklenmemiştir; PRD Bölüm 2 gereği veri yüklenene kadar tüm metrik alanları boş (null) bırakılmıştır."
+  ],
+  "provenance": {
+    "job_id": "slot_job_water",
+    "created_at": "2026-11-15T13:58:08.949Z",
+    "reproducible_pipeline_version": "mgi-engine-0.2.0"
+  }
+}

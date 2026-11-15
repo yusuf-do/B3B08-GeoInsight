@@ -1,0 +1,206 @@
+{
+  "type": "FeatureCollection",
+  "name": "pilot_dalyan_wetland_aoi_v1",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "metadata": {
+    "aoi_package_id": "MGI-AOI-WATER-001",
+    "version": "1.0.0",
+    "created_at": "2026-11-14T15:00:00+03:00",
+    "storage_crs": "EPSG:4326",
+    "metric_crs": "EPSG:32635",
+    "module": "water",
+    "qc_requirements": {
+      "max_cloud_cover_pct": 15,
+      "max_seasonal_day_offset": 25,
+      "require_matching_orbit_for_s1": true,
+      "minimum_valid_pixel_ratio": 0.9
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "aoi_dalyan_wetland",
+      "bbox": [
+        28.575,
+        36.775,
+        28.738,
+        36.948
+      ],
+      "properties": {
+        "aoi_id": "aoi_dalyan_wetland",
+        "name": "Köyceğiz–Dalyan Sulak Alan ve Lagün Sistemi (Ana Pilot AOI)",
+        "subzone_type": "primary_pilot_aoi",
+        "module": "water",
+        "priority": "MVP-1",
+        "sentinel2_tile": "35SNA",
+        "sentinel1_relative_orbits": [
+          29,
+          131
+        ],
+        "landsat_path_row": "179/034",
+        "description": "Köyceğiz Gölü güney çıkışı, Dalyan Kanalı, Sülüngür Gölü ve İztuzu kıyı lagününü kapsayan birincil su/sulak alan izleme poligonu.",
+        "centroid": [
+          28.6565,
+          36.8615
+        ],
+        "area_km2": 259.51,
+        "area_ha": 25951.3,
+        "crs_storage": "EPSG:4326",
+        "crs_metric": "EPSG:32635",
+        "visibility": "public"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.575,
+              36.775
+            ],
+            [
+              28.725,
+              36.775
+            ],
+            [
+              28.738,
+              36.945
+            ],
+            [
+              28.582,
+              36.948
+            ],
+            [
+              28.575,
+              36.775
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aoi_dalyan_reedbed_core",
+      "bbox": [
+        28.598,
+        36.792,
+        28.678,
+        36.854
+      ],
+      "properties": {
+        "aoi_id": "aoi_dalyan_reedbed_core",
+        "name": "Dalyan Deltası Sazlık & Labirent Çekirdek Zon",
+        "subzone_type": "core_wetland_zone",
+        "module": "water",
+        "priority": "MVP-1",
+        "sentinel2_tile": "35SNA",
+        "sentinel1_relative_orbits": [
+          29,
+          131
+        ],
+        "landsat_path_row": "179/034",
+        "description": "Mevsimsel su seviyesi, sazlık-su piksel karışımı (NDWI/MNDWI ve Sentinel-1 VV/VH) kalite kontrol alt bölgesi.",
+        "centroid": [
+          28.638,
+          36.823
+        ],
+        "area_km2": 49.05,
+        "area_ha": 4905.2,
+        "crs_storage": "EPSG:4326",
+        "crs_metric": "EPSG:32635",
+        "visibility": "public"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.598,
+              36.792
+            ],
+            [
+              28.678,
+              36.792
+            ],
+            [
+              28.678,
+              36.854
+            ],
+            [
+              28.598,
+              36.854
+            ],
+            [
+              28.598,
+              36.792
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aoi_sulungur_lake",
+      "bbox": [
+        28.638,
+        36.796,
+        28.675,
+        36.826
+      ],
+      "properties": {
+        "aoi_id": "aoi_sulungur_lake",
+        "name": "Sülüngür Lagün Gölü Alt-Bölgesi",
+        "subzone_type": "lagoon_reference_waterbody",
+        "module": "water",
+        "priority": "MVP-1",
+        "sentinel2_tile": "35SNA",
+        "sentinel1_relative_orbits": [
+          29,
+          131
+        ],
+        "landsat_path_row": "179/034",
+        "description": "Açık su yüzeyi kalibrasyon ve mevsimsel çekilme referans gölü.",
+        "centroid": [
+          28.6565,
+          36.811
+        ],
+        "area_km2": 10.98,
+        "area_ha": 1097.9,
+        "crs_storage": "EPSG:4326",
+        "crs_metric": "EPSG:32635",
+        "visibility": "public"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.638,
+              36.796
+            ],
+            [
+              28.675,
+              36.796
+            ],
+            [
+              28.675,
+              36.826
+            ],
+            [
+              28.638,
+              36.826
+            ],
+            [
+              28.638,
+              36.796
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "type": "FeatureCollection",
+  "name": "derived_industry_aoi_yatagan_mining",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "zone": "Yatağan Batı Açık Ocak Genişleme Sektörü",
+        "change_type": "bare_surface_increase",
+        "area_ha": 312.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.045,
+              37.305
+            ],
+            [
+              28.125,
+              37.305
+            ],
+            [
+              28.125,
+              37.365
+            ],
+            [
+              28.045,
+              37.365
+            ],
+            [
+              28.045,
+              37.305
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone": "Eskihisar Kuzey Rehabilitasyon / Ağaçlandırma Sektörü",
+        "change_type": "vegetated_reclamation",
+        "area_ha": 118.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.135,
+              37.335
+            ],
+            [
+              28.185,
+              37.335
+            ],
+            [
+              28.185,
+              37.382
+            ],
+            [
+              28.135,
+              37.382
+            ],
+            [
+              28.135,
+              37.335
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

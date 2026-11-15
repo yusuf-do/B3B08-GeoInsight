@@ -1,0 +1,8 @@
+{
+  "acquisition_id": "acq_s2_dalyan_20260818",
+  "external_product_id": "S2C_MSIL2A_20260818T085601_N0512_R007_T35SNA_20260818T130412.SAFE",
+  "checksum_sha256": "9dc0dbb5951abec8",
+  "license": "Copernicus Open Access License",
+  "ingested_at": "2026-11-14T15:45:00+03:00",
+  "processing_version": "v1.0.0"
+}

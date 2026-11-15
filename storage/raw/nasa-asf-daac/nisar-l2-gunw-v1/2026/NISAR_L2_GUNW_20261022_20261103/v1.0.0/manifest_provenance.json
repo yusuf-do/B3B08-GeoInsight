@@ -1,0 +1,8 @@
+{
+  "acquisition_id": "acq_nisar_gunw_seydikemer_202611",
+  "external_product_id": "NISAR_L2_PR_GUNW_004_118_A_20261022_20261103_P01101_001.h5",
+  "checksum_sha256": "46816ee52d9197c7",
+  "license": "NASA Earthdata Open Data Policy",
+  "ingested_at": "2026-11-14T15:45:00+03:00",
+  "processing_version": "v1.0.0"
+}

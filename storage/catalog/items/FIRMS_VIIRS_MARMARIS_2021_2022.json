@@ -1,0 +1,83 @@
+{
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "type": "Feature",
+  "id": "FIRMS_VIIRS_MARMARIS_2021_2022",
+  "collection": "FIRMS_VIIRS_SNPP_SP",
+  "bbox": [
+    27.21,
+    36.32,
+    29.78,
+    37.54
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          27.21,
+          36.32
+        ],
+        [
+          29.78,
+          36.32
+        ],
+        [
+          29.78,
+          37.54
+        ],
+        [
+          27.21,
+          37.54
+        ],
+        [
+          27.21,
+          36.32
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "datetime": "2022-06-22T11:18:00Z",
+    "platform": "VIIRS S-NPP & NOAA-20 375m + MODIS C6.1",
+    "eo:cloud_cover": 0,
+    "proj:epsg": 4326,
+    "mgi:aoi_ids": [
+      "aoi_bordubet_fire",
+      "aoi_bordubet_2022_core"
+    ],
+    "mgi:qc_passed": true,
+    "mgi:qc_flags": [
+      "POINT_THERMAL_ANOMALY_ONLY_NOT_PERIMETER",
+      "HIGH_CONFIDENCE_FRP_FILTERED"
+    ],
+    "mgi:checksum_sha256": "5a1c83e243f89fab",
+    "license": "NASA Earthdata Open Data"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "raw_manifest": {
+      "href": "../../raw/nasa-firms-lance/firms-viirs-snpp-sp/2022/FIRMS_VIIRS_MARMARIS_2021_2022/v1.0.0/manifest_provenance.json",
+      "type": "application/json",
+      "title": "Raw Product Provenance & Checksum Manifest",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

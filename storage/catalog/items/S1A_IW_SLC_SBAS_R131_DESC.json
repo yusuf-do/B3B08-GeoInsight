@@ -1,0 +1,88 @@
+{
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "type": "Feature",
+  "id": "S1A_IW_SLC_SBAS_R131_DESC",
+  "collection": "SENTINEL-1-SLC",
+  "bbox": [
+    27.21,
+    36.32,
+    29.78,
+    37.54
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          27.21,
+          36.32
+        ],
+        [
+          29.78,
+          36.32
+        ],
+        [
+          29.78,
+          37.54
+        ],
+        [
+          27.21,
+          37.54
+        ],
+        [
+          27.21,
+          36.32
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "datetime": "2026-09-21T04:14:48Z",
+    "platform": "Sentinel-1A C-SAR SLC",
+    "eo:cloud_cover": 0,
+    "proj:epsg": 32635,
+    "sar:polarizations": [
+      "VV"
+    ],
+    "sat:relative_orbit": 131,
+    "sat:orbit_state": "descending",
+    "mgi:aoi_ids": [
+      "aoi_seydikemer_landslide"
+    ],
+    "mgi:qc_passed": true,
+    "mgi:qc_flags": [
+      "SLC_COMPLEX_PHASE_VERIFIED",
+      "COHERENCE_MASK_045_APPLIED",
+      "UNREFERENCED_WITHOUT_LOCAL_GNSS"
+    ],
+    "mgi:checksum_sha256": "26a36219b87cd0ca",
+    "license": "Copernicus Open Access License"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "raw_manifest": {
+      "href": "../../raw/copernicus-data-space/sentinel-1-slc/2026/S1A_IW_SLC_SBAS_R131_DESC/v1.0.0/manifest_provenance.json",
+      "type": "application/json",
+      "title": "Raw Product Provenance & Checksum Manifest",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

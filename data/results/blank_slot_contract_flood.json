@@ -1,0 +1,91 @@
+{
+  "contract_version": "0.2.0",
+  "area": {
+    "aoi_id": "aoi_dalaman_flood",
+    "name": "Sel ve Taşkın AOI [Sınır/Veri Bekleniyor]",
+    "bbox": null,
+    "area_ha": null,
+    "crs_storage": "EPSG:4326",
+    "crs_analysis": "EPSG:32635"
+  },
+  "module": "flood",
+  "topic": "flood_analysis",
+  "period": {
+    "start": "[BAŞLANGIÇ TARİHİ BEKLENİYOR]",
+    "end": "[BİTİŞ TARİHİ BEKLENİYOR]"
+  },
+  "observations": [],
+  "method": {
+    "name": "flood_standard_pipeline",
+    "version": "0.2.0-template",
+    "crs_metric": "EPSG:32635",
+    "parameters": {
+      "status": "USER_DATA_LOADED"
+    }
+  },
+  "result": {
+    "metrics": {
+      "event_date": "2021-11-27",
+      "before_scene_id": "S1A_IW_GRDH_1SDV_20180102T160623_20180102T160648_019978_022077_B3A4-GRD_HD",
+      "after_scene_id": "S1A_IW_GRDH_1SDV_20180103T040705_20180103T040730_019985_0220A8_E667-GRD_HD",
+      "flooded_area_ha": 412.6,
+      "precip_accumulation_mm": 128.8,
+      "opera_dswx_s1_scene": "OPERA_L3_DSWx-S1_T35SPA_20240822T160733Z_20251107T013559Z_S1A_30_v1.0",
+      "permanent_water_ha": 185,
+      "sar_vv_drop_db": -5.4
+    },
+    "direction": "computed_from_user_data",
+    "time_series": [],
+    "before_after": null,
+    "spatial_layers": []
+  },
+  "separation_of_concerns": {
+    "measurement_tr": "Kullanıcı tarafından yüklenen gerçek veri seti işlendi (8 metrik dolu).",
+    "scientific_interpretation_tr": "Kullanıcı verisi doğrultusunda bilimsel yorum katmanı güncellenmiştir.",
+    "recommendations": [
+      {
+        "rule_id": "RULE-FLOOD-001",
+        "rule_version": "1.0.0",
+        "condition_triggered": "Yağış olayı sonrası SAR geri saçılım düşüşü ve su yayılım anomalisi",
+        "evidence_status": "supported",
+        "evidence_label_tr": "Destekleniyor",
+        "additional_checks_required": [
+          "Olay öncesi/sonrası aynı iz (track) Sentinel-1 GRD",
+          "GPM IMERG 24-72 saatlik yağış birikimi",
+          "Copernicus DEM alçak kot ve eğim maskesi"
+        ],
+        "recommendation_text": "Taşkın yayılım sınırı tespit edilen alçak kotlu kesimlerde DSİ ve MUSKİ drenaj/hidrolik model doğrulaması ve saha su izi (high-water mark) kontrolü önerilir.",
+        "non_claim_disclaimer": "SAR su maskesi taşkın su derinliğini, akış hızını veya bina içi hasarı ölçmez; 2B/3B hidrolik model yerine geçmez.",
+        "supporting_metrics_keys": [
+          "event_date",
+          "before_scene_id",
+          "after_scene_id",
+          "flooded_area_ha",
+          "precip_accumulation_mm",
+          "opera_dswx_s1_scene",
+          "permanent_water_ha",
+          "sar_vv_drop_db"
+        ]
+      }
+    ]
+  },
+  "quality": {
+    "evidence_status": "supported",
+    "evidence_label_tr": "Destekleniyor",
+    "evidence_badge_color": "#3b82f6",
+    "evidence_meaning_tr": "Bulguyu destekleyen birden fazla bağımsız veri kaynağı (ör. Optik + SAR veya FIRMS + Optik) mevcut.",
+    "confidence": "assessed",
+    "qc_flags": [
+      "USER_DATA_INGESTED"
+    ],
+    "disclaimer_tr": "Bu etiket proje içi bilimsel kalite/kanıt durumunu gösterir; NASA, ESA veya başka bir kurumun resmî sınıflandırması ya da hukuki/mühendislik kesin hükmü değildir."
+  },
+  "limitations": [
+    "Gerçek katalog sorgusu ve kullanıcı veri seti henüz yüklenmemiştir; PRD Bölüm 2 gereği veri yüklenene kadar tüm metrik alanları boş (null) bırakılmıştır."
+  ],
+  "provenance": {
+    "job_id": "slot_job_flood",
+    "created_at": "2026-11-15T13:58:08.950Z",
+    "reproducible_pipeline_version": "mgi-engine-0.2.0"
+  }
+}

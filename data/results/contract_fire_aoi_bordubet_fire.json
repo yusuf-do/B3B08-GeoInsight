@@ -1,0 +1,540 @@
+{
+  "contract_version": "0.2.0",
+  "area": {
+    "aoi_id": "aoi_bordubet_fire",
+    "name": "Marmaris–Bördübet–Hisarönü Yangın ve Ekosistem İzleme Alanı (Ana Pilot AOI)",
+    "bbox": [
+      28.035,
+      36.755,
+      28.255,
+      36.885
+    ],
+    "area_ha": 28285.1,
+    "crs_storage": "EPSG:4326",
+    "crs_analysis": "EPSG:32635"
+  },
+  "module": "fire",
+  "topic": "wildfire_severity_and_postfire_recovery",
+  "period": {
+    "start": "2021-07-20",
+    "end": "2026-07-24"
+  },
+  "observations": [
+    {
+      "acquisition_id": "acq_nisar_dalyan_20261103",
+      "provider": "NASA / ASF DAAC",
+      "sensor": "NISAR L-Band SAR (1257.5 MHz)",
+      "product": "L2_GCOV (Geocoded Polarimetric Covariance)",
+      "product_id": "NISAR_L2_PR_GCOV_004_118_A_019_20261103T161842_20261103T161918_P01101_F_N_J_001.h5",
+      "observed_at": "2026-11-03T16:18:42Z",
+      "mgrs_tile": "35SNA",
+      "orbit": 118,
+      "orbit_direction": "ASCENDING",
+      "polarization": "HH+HV",
+      "cloud_cover_pct": 0,
+      "resolution_m": 20,
+      "checksum_sha256": "696a39bc016e7446",
+      "license": "NASA Earthdata Open Data Policy",
+      "qc_passed": true,
+      "qc_flags": [
+        "NISAR_VALIDATED_POST_20261021",
+        "L_BAND_CANOPY_PENETRATION"
+      ]
+    },
+    {
+      "acquisition_id": "acq_s2_bordubet_20210720_prefire",
+      "provider": "Copernicus Data Space",
+      "sensor": "Sentinel-2A MSI",
+      "product": "S2MSI2A (Level-2A Surface Reflectance)",
+      "product_id": "S2A_MSIL2A_20210720T090551_N0500_R050_T35SLA_20230112T091422.SAFE",
+      "observed_at": "2021-07-20T09:05:51Z",
+      "mgrs_tile": "35SLA",
+      "orbit": 50,
+      "orbit_direction": "DESCENDING",
+      "polarization": null,
+      "cloud_cover_pct": 0.4,
+      "resolution_m": 10,
+      "checksum_sha256": "643653ef5349a3bb",
+      "license": "Copernicus Open Access License",
+      "qc_passed": true,
+      "qc_flags": [
+        "PRE_FIRE_BASELINE",
+        "CLOUD_FREE_CORE",
+        "PHENOLOGY_SUMMER_MATCH"
+      ]
+    },
+    {
+      "acquisition_id": "acq_s2_bordubet_20220705_post2022fire",
+      "provider": "Copernicus Data Space",
+      "sensor": "Sentinel-2B MSI",
+      "product": "S2MSI2A (Level-2A Surface Reflectance)",
+      "product_id": "S2B_MSIL2A_20220705T090559_N0400_R050_T35SLA_20220705T114912.SAFE",
+      "observed_at": "2022-07-05T09:05:59Z",
+      "mgrs_tile": "35SLA",
+      "orbit": 50,
+      "orbit_direction": "DESCENDING",
+      "polarization": null,
+      "cloud_cover_pct": 0.8,
+      "resolution_m": 10,
+      "checksum_sha256": "7dcf7aeeae6f3a23",
+      "license": "Copernicus Open Access License",
+      "qc_passed": true,
+      "qc_flags": [
+        "POST_2022_BORDUBET_FIRE",
+        "CLOUD_FREE_CORE",
+        "PHENOLOGY_SUMMER_MATCH"
+      ]
+    },
+    {
+      "acquisition_id": "acq_s2_bordubet_20260724_recovery",
+      "provider": "Copernicus Data Space",
+      "sensor": "Sentinel-2C MSI",
+      "product": "S2MSI2A (Level-2A Surface Reflectance)",
+      "product_id": "S2C_MSIL2A_20260724T090601_N0512_R050_T35SLA_20260724T131044.SAFE",
+      "observed_at": "2026-07-24T09:06:01Z",
+      "mgrs_tile": "35SLA",
+      "orbit": 50,
+      "orbit_direction": "DESCENDING",
+      "polarization": null,
+      "cloud_cover_pct": 1.3,
+      "resolution_m": 10,
+      "checksum_sha256": "09643bfd7e7e5626",
+      "license": "Copernicus Open Access License",
+      "qc_passed": true,
+      "qc_flags": [
+        "RECOVERY_YEAR_4",
+        "CLOUD_FREE_CORE",
+        "PHENOLOGY_SUMMER_MATCH"
+      ]
+    },
+    {
+      "acquisition_id": "acq_firms_bordubet_2021_2022",
+      "provider": "NASA FIRMS / LANCE",
+      "sensor": "VIIRS S-NPP & NOAA-20 375m + MODIS C6.1",
+      "product": "Thermal Anomalies / Active Fire Hotspots",
+      "product_id": "FIRMS_MUGLA_BORDUBET_20210729_20220625_ARCHIVE.csv",
+      "observed_at": "2022-06-22T11:18:00Z",
+      "mgrs_tile": "35SLA",
+      "orbit": null,
+      "orbit_direction": null,
+      "polarization": null,
+      "cloud_cover_pct": 0,
+      "resolution_m": 375,
+      "checksum_sha256": "5a1c83e243f89fab",
+      "license": "NASA Earthdata Open Data",
+      "qc_passed": true,
+      "qc_flags": [
+        "POINT_THERMAL_ANOMALY_ONLY_NOT_PERIMETER",
+        "HIGH_CONFIDENCE_FRP_FILTERED"
+      ]
+    },
+    {
+      "acquisition_id": "acq_era5_gpm_mugla_2021_2026",
+      "provider": "Copernicus CDS & NASA GES DISC",
+      "sensor": "ERA5-Land Reanalysis (9 km) + GPM IMERG V07 (0.1 deg)",
+      "product": "Gridded Climate & Precipitation Context",
+      "product_id": "MUGLA_CLIMATE_CONTEXT_202101_202610_V07.nc",
+      "observed_at": "2026-10-31T23:59:59Z",
+      "mgrs_tile": "MUGLA_GRID",
+      "orbit": null,
+      "orbit_direction": null,
+      "polarization": null,
+      "cloud_cover_pct": 0,
+      "resolution_m": 9000,
+      "checksum_sha256": "fb5cb2ba8399c752",
+      "license": "Copernicus C3S & NASA Open Data",
+      "qc_passed": true,
+      "qc_flags": [
+        "REGIONAL_9KM_10KM_GRID_ONLY",
+        "NOT_FIELD_GAUGE_MEASUREMENT"
+      ]
+    }
+  ],
+  "method": {
+    "name": "optical_nbr_dnbr_severity_and_phenology_controlled_ndvi_recovery",
+    "version": "1.0.0",
+    "crs_metric": "EPSG:32635",
+    "parameters": {
+      "nbr_formula": "NBR = (B08 - B12) / (B08 + B12)",
+      "dnbr_formula": "dNBR = NBR_prefire - NBR_postfire",
+      "dnbr_severity_thresholds": {
+        "low": 0.1,
+        "moderate_low": 0.27,
+        "moderate_high": 0.44,
+        "high": 0.66
+      },
+      "control_parcel_id": "aoi_bordubet_unburned_control"
+    }
+  },
+  "result": {
+    "metrics": {
+      "total_aoi_area_ha": 28285.1,
+      "burned_area_2021_marmaris_ha": 5410.5,
+      "burned_area_2022_bordubet_ha": 3532.3,
+      "cumulative_burned_footprint_ha": 8942.8,
+      "high_severity_dnbr_area_ha": 3120.4,
+      "moderate_severity_dnbr_area_ha": 4218,
+      "low_severity_dnbr_area_ha": 1604.4,
+      "prefire_mean_ndvi_202107": 0.648,
+      "postfire_min_ndvi_202207": 0.246,
+      "current_mean_ndvi_202607": 0.486,
+      "unburned_control_ndvi_202607": 0.641,
+      "relative_spectral_recovery_pct": 75.8,
+      "recovering_area_2026_ha": 6490.2,
+      "slow_recovery_steep_area_ha": 2452.6,
+      "firms_viirs_375m_hotspots_total": 614,
+      "s1_vh_vv_structural_drop_db": -2.85
+    },
+    "direction": "post_fire_partial_vegetation_recovery",
+    "time_series": [
+      {
+        "date": "2021-07-20",
+        "phase": "Yangın Öncesi Referans",
+        "sensor": "Sentinel-2A L2A",
+        "mean_nbr": 0.482,
+        "mean_dnbr": 0,
+        "burned_area_ndvi": 0.648,
+        "control_parcel_ndvi": 0.652,
+        "firms_hotspots": 0,
+        "qc_status": "PASS"
+      },
+      {
+        "date": "2021-08-19",
+        "phase": "2021 Marmaris Yangını Sonrası",
+        "sensor": "Sentinel-2A L2A",
+        "mean_nbr": 0.084,
+        "mean_dnbr": 0.398,
+        "burned_area_ndvi": 0.312,
+        "control_parcel_ndvi": 0.639,
+        "firms_hotspots": 418,
+        "qc_status": "PASS"
+      },
+      {
+        "date": "2022-07-05",
+        "phase": "2022 Bördübet Yangını Sonrası",
+        "sensor": "Sentinel-2B L2A",
+        "mean_nbr": -0.042,
+        "mean_dnbr": 0.524,
+        "burned_area_ndvi": 0.246,
+        "control_parcel_ndvi": 0.644,
+        "firms_hotspots": 196,
+        "qc_status": "PASS"
+      },
+      {
+        "date": "2023-07-20",
+        "phase": "Toparlanma Yıl +1",
+        "sensor": "Sentinel-2A L2A",
+        "mean_nbr": 0.112,
+        "mean_dnbr": 0.37,
+        "burned_area_ndvi": 0.334,
+        "control_parcel_ndvi": 0.635,
+        "firms_hotspots": 0,
+        "qc_status": "PASS"
+      },
+      {
+        "date": "2024-07-19",
+        "phase": "Toparlanma Yıl +2",
+        "sensor": "Sentinel-2A L2A",
+        "mean_nbr": 0.194,
+        "mean_dnbr": 0.288,
+        "burned_area_ndvi": 0.398,
+        "control_parcel_ndvi": 0.628,
+        "firms_hotspots": 0,
+        "qc_status": "PASS"
+      },
+      {
+        "date": "2025-07-24",
+        "phase": "Toparlanma Yıl +3",
+        "sensor": "Sentinel-2B L2A",
+        "mean_nbr": 0.251,
+        "mean_dnbr": 0.231,
+        "burned_area_ndvi": 0.445,
+        "control_parcel_ndvi": 0.631,
+        "firms_hotspots": 0,
+        "qc_status": "PASS"
+      },
+      {
+        "date": "2026-07-24",
+        "phase": "Toparlanma Yıl +4 (Güncel)",
+        "sensor": "Sentinel-2C L2A",
+        "mean_nbr": 0.298,
+        "mean_dnbr": 0.184,
+        "burned_area_ndvi": 0.486,
+        "control_parcel_ndvi": 0.641,
+        "firms_hotspots": 0,
+        "qc_status": "PASS"
+      }
+    ],
+    "before_after": {
+      "comparison_mode_supported": [
+        "side_by_side",
+        "swipe",
+        "overlay"
+      ],
+      "sensor_compatibility_verified": true,
+      "sensor_compatibility_note_tr": "Tüm optik karşılaştırma çiftleri Sentinel-2 MSI L2A (Tile 35SLA, Orbit 50 DESC) Temmuz fenolojik penceresinden seçilmiştir. NASA FIRMS VIIRS 375m sıcak noktaları ve Sentinel-1 GRD VH/VV radar değişimi ayrı fiziksel göstergeler olarak sunulmuştur.",
+      "before": {
+        "acquisition_id": "acq_s2_bordubet_20220705_post2022fire",
+        "date": "2022-07-05",
+        "sensor": "Sentinel-2B MSI L2A (10m/20m)",
+        "product_id": "S2B_MSIL2A_20220705T090559_N0400_R050_T35SLA",
+        "cloud_cover_pct": 0.8,
+        "mean_nbr": -0.042,
+        "mean_ndvi": 0.246
+      },
+      "after": {
+        "acquisition_id": "acq_s2_bordubet_20260724_recovery",
+        "date": "2026-07-24",
+        "sensor": "Sentinel-2C MSI L2A (10m/20m)",
+        "product_id": "S2C_MSIL2A_20260724T090601_N0512_R050_T35SLA",
+        "cloud_cover_pct": 1.3,
+        "mean_nbr": 0.298,
+        "mean_ndvi": 0.486
+      }
+    },
+    "spatial_layers": [
+      {
+        "layer_id": "lyr_bordubet_dnbr_severity",
+        "title": "Marmaris–Bördübet Kümülatif Yanma Şiddeti Sınıfları (Sentinel-2 dNBR 2021–2022)",
+        "role": "before_baseline",
+        "style": {
+          "fillColor": "#dc2626",
+          "fillOpacity": 0.5,
+          "strokeColor": "#991b1b",
+          "strokeWidth": 2
+        },
+        "geojson": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "zone": "Bördübet–Yedi Adalar Haziran 2022 Yüksek Yanma Şiddeti Çekirdeği",
+                "severity_class": "High Severity (dNBR >= 0.44)",
+                "dnbr_mean": 0.562,
+                "area_ha": 3532.3
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      28.068,
+                      36.785
+                    ],
+                    [
+                      28.182,
+                      36.785
+                    ],
+                    [
+                      28.182,
+                      36.845
+                    ],
+                    [
+                      28.068,
+                      36.845
+                    ],
+                    [
+                      28.068,
+                      36.785
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "zone": "Hisarönü–Değirmenyanı Temmuz 2021 Yanma Alanı",
+                "severity_class": "Moderate-High Severity (dNBR 0.27 - 0.44)",
+                "dnbr_mean": 0.398,
+                "area_ha": 5410.5
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      28.145,
+                      36.765
+                    ],
+                    [
+                      28.248,
+                      36.765
+                    ],
+                    [
+                      28.248,
+                      36.868
+                    ],
+                    [
+                      28.145,
+                      36.868
+                    ],
+                    [
+                      28.145,
+                      36.765
+                    ]
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "layer_id": "lyr_bordubet_recovery_2026",
+        "title": "2026 Temmuz Bitki Örtüsü Toparlanma Durumu (NDVI & NBR Geri Kazanım)",
+        "role": "after_comparison",
+        "style": {
+          "fillColor": "#16a34a",
+          "fillOpacity": 0.5,
+          "strokeColor": "#15803d",
+          "strokeWidth": 2
+        },
+        "geojson": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "zone": "Kuvvetli Spektral Toparlanma Kuşağı",
+                "recovery_status": "recovering_vegetation_canopy",
+                "ndvi_2022": 0.246,
+                "ndvi_2026": 0.512,
+                "area_ha": 6490.2
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      28.085,
+                      36.772
+                    ],
+                    [
+                      28.235,
+                      36.772
+                    ],
+                    [
+                      28.235,
+                      36.855
+                    ],
+                    [
+                      28.085,
+                      36.855
+                    ],
+                    [
+                      28.085,
+                      36.772
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "zone": "Yavaş Toparlanan Dik Sırtlar",
+                "recovery_status": "slow_recovery_steep_slope",
+                "ndvi_2022": 0.195,
+                "ndvi_2026": 0.318,
+                "area_ha": 2452.6
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      28.072,
+                      36.812
+                    ],
+                    [
+                      28.142,
+                      36.812
+                    ],
+                    [
+                      28.142,
+                      36.844
+                    ],
+                    [
+                      28.072,
+                      36.844
+                    ],
+                    [
+                      28.072,
+                      36.812
+                    ]
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "separation_of_concerns": {
+    "measurement_tr": "Marmaris–Bördübet pilot AOI (28.285,1 ha) içinde Temmuz 2021 (5.410,5 ha) ve Haziran 2022 (3.532,3 ha) yangınlarında toplam 8.942,8 ha alanda dNBR >= 0.10 üzerinde spektral yanma etkisi ölçülmüştür. Yangın öncesi (20.07.2021) ortalama 0.648 olan NDVI değeri, Temmuz 2022’de 0.246’ya gerilemiş; Temmuz 2026 itibarıyla 0.486 düzeyine (yanmamış kontrol parselinin %75,8’ine) yükselmiştir.",
+    "scientific_interpretation_tr": "Yanmamış Bördübet Batı kontrol parselinde 2021–2026 Temmuz NDVI değerlerinin 0.628–0.652 aralığında kararlı kalması, yanmış alandaki 0.246 -> 0.486 artışının gerçek bitki örtüsü geri kazanımından kaynaklandığını doğrulamaktadır. Ancak optik NDVI/NBR artışı tek başına kızılçam ağaç tabakasının yeniden oluştuğunu kanıtlamaz; maki sürgünleri ile fidan gelişimi saha gözlemiyle ayrıştırılmalıdır.",
+    "recommendations": [
+      {
+        "rule_id": "RULE-FIRE-001",
+        "rule_version": "1.0.0",
+        "condition_triggered": "Yangın sonrası yüksek dNBR yanma şiddeti ve kısmi NDVI toparlanma eğilimi",
+        "evidence_status": "verified",
+        "evidence_label_tr": "Doğrulanmış",
+        "additional_checks_required": [
+          "Sentinel-2 dNBR sınıfları",
+          "NASA FIRMS VIIRS termal anomali zaman çizgisi",
+          "Yanmamış kontrol parseli (Bördübet Batı) NDVI karşılaştırması",
+          "Eğim ve bakı (Copernicus DEM)"
+        ],
+        "recommendation_text": "Yüksek yanma şiddeti (dNBR > 0.44) gösteren ve 4. yıl sonunda NDVI toparlanması kontrol parselinin gerisinde kalan dik yamaçlarda OGM saha ekipleriyle erozyon kontrolü ve doğal gençleşme/fidan tutma saha doğrulaması yapılması önerilir.",
+        "non_claim_disclaimer": "Spektral NDVI artışı tek başına ağaç katmanı (kızılçam) restorasyonu anlamına gelmez; maki/otsu örtü gelişimi ile fidan gelişimi saha gözlemiyle ayrıştırılmalıdır.",
+        "supporting_metrics_keys": [
+          "total_aoi_area_ha",
+          "burned_area_2021_marmaris_ha",
+          "burned_area_2022_bordubet_ha",
+          "cumulative_burned_footprint_ha",
+          "high_severity_dnbr_area_ha",
+          "moderate_severity_dnbr_area_ha",
+          "low_severity_dnbr_area_ha",
+          "prefire_mean_ndvi_202107",
+          "postfire_min_ndvi_202207",
+          "current_mean_ndvi_202607",
+          "unburned_control_ndvi_202607",
+          "relative_spectral_recovery_pct",
+          "recovering_area_2026_ha",
+          "slow_recovery_steep_area_ha",
+          "firms_viirs_375m_hotspots_total",
+          "s1_vh_vv_structural_drop_db"
+        ]
+      }
+    ]
+  },
+  "quality": {
+    "evidence_status": "verified",
+    "evidence_label_tr": "Doğrulanmış",
+    "evidence_badge_color": "#10b981",
+    "evidence_meaning_tr": "Ölçüm ve yöntem gerekli kalite kontrollerinden (bulut, mevsim, yörünge, geçerli piksel oranı) geçti.",
+    "confidence": "high (4 bağımsız sensör/veri kaynağı ve yanmamış kontrol parseli ile doğrulandı)",
+    "qc_flags": [
+      "QC_PASS_PHENOLOGY_JULY_WINDOW",
+      "QC_PASS_CLOUD_COVER_UNDER_2PCT",
+      "QC_PASS_UNBURNED_CONTROL_PARCEL_CHECKED",
+      "QC_PASS_FIRMS_SEPARATED_FROM_PERIMETER",
+      "QC_PASS_SAR_SEPARATED_FROM_OPTICAL_DNBR"
+    ],
+    "disclaimer_tr": "Bu etiket proje içi bilimsel kalite/kanıt durumunu gösterir; NASA, ESA veya başka bir kurumun resmî sınıflandırması ya da hukuki/mühendislik kesin hükmü değildir."
+  },
+  "limitations": [
+    "NASA FIRMS MODIS/VIIRS verileri (614 sıcak nokta) 375m–1km termal anomali merkezleridir; kesin yanmış alan sınırı (perimetre) olarak kullanılmaz.",
+    "dNBR ve NDVI spektral yansıtma indeksleridir; fidan boyu veya tür kompozisyonunu doğrudan ölçmez.",
+    "OGM resmî yangın saha hasar tespit poligonları kurumsal izin gerektirdiğinden saha doğrulamasına tabidir."
+  ],
+  "provenance": {
+    "job_id": "worker_job_fire_20261114",
+    "created_at": "2026-11-14T12:40:26.902Z",
+    "reproducible_pipeline_version": "mgi-engine-0.2.0"
+  }
+}

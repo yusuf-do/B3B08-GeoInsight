@@ -1,0 +1,8 @@
+{
+  "acquisition_id": "acq_s2_bordubet_20220705_post2022fire",
+  "external_product_id": "S2B_MSIL2A_20220705T090559_N0400_R050_T35SLA_20220705T114912.SAFE",
+  "checksum_sha256": "7dcf7aeeae6f3a23",
+  "license": "Copernicus Open Access License",
+  "ingested_at": "2026-11-14T15:45:00+03:00",
+  "processing_version": "v1.0.0"
+}

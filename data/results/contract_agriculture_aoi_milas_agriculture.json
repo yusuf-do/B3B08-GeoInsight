@@ -1,0 +1,285 @@
+{
+  "contract_version": "0.2.0",
+  "area": {
+    "aoi_id": "aoi_milas_agriculture",
+    "name": "Milas–Selimiye/Beçin Ovası Tarım ve Zeytinlik İzleme Alanı",
+    "bbox": [
+      27.68,
+      37.21,
+      27.86,
+      37.33
+    ],
+    "area_ha": 21235.9,
+    "crs_storage": "EPSG:4326",
+    "crs_analysis": "EPSG:32635"
+  },
+  "module": "agriculture",
+  "topic": "parcel_vegetation_indices_and_regional_agroclimate_context",
+  "period": {
+    "start": "2021-07-15",
+    "end": "2026-07-19"
+  },
+  "observations": [
+    {
+      "acquisition_id": "acq_s2_milas_bodrum_20210715",
+      "provider": "Copernicus Data Space",
+      "sensor": "Sentinel-2A MSI",
+      "product": "S2MSI2A (Level-2A Surface Reflectance)",
+      "product_id": "S2A_MSIL2A_20210715T090551_N0500_R050_T35SLB_20230110T101500.SAFE",
+      "observed_at": "2021-07-15T09:05:51Z",
+      "mgrs_tile": "35SLB",
+      "orbit": 50,
+      "orbit_direction": "DESCENDING",
+      "polarization": null,
+      "cloud_cover_pct": 0.5,
+      "resolution_m": 10,
+      "checksum_sha256": "07514144dbec030e",
+      "license": "Copernicus Open Access License",
+      "qc_passed": true,
+      "qc_flags": [
+        "PARCEL_SCALE_OPTICAL_10M",
+        "SEASONAL_MATCH_JULY"
+      ]
+    },
+    {
+      "acquisition_id": "acq_s2_milas_agri_202607",
+      "provider": "Copernicus Data Space",
+      "sensor": "Sentinel-2C MSI",
+      "product": "S2MSI2A (Level-2A Surface Reflectance)",
+      "product_id": "S2C_MSIL2A_20260719T090601_N0512_R050_T35SLB_20260719T125011.SAFE",
+      "observed_at": "2026-07-19T09:06:01Z",
+      "mgrs_tile": "35SLB",
+      "orbit": 50,
+      "orbit_direction": "DESCENDING",
+      "polarization": null,
+      "cloud_cover_pct": 0.7,
+      "resolution_m": 10,
+      "checksum_sha256": "9d1e567cd53d47d0",
+      "license": "Copernicus Open Access License",
+      "qc_passed": true,
+      "qc_flags": [
+        "PARCEL_SCALE_OPTICAL_10M",
+        "SEASONAL_MATCH_JULY"
+      ]
+    },
+    {
+      "acquisition_id": "acq_era5_gpm_mugla_2021_2026",
+      "provider": "Copernicus CDS & NASA GES DISC",
+      "sensor": "ERA5-Land Reanalysis (9 km) + GPM IMERG V07 (0.1 deg)",
+      "product": "Gridded Climate & Precipitation Context",
+      "product_id": "MUGLA_CLIMATE_CONTEXT_202101_202610_V07.nc",
+      "observed_at": "2026-10-31T23:59:59Z",
+      "mgrs_tile": "MUGLA_GRID",
+      "orbit": null,
+      "orbit_direction": null,
+      "polarization": null,
+      "cloud_cover_pct": 0,
+      "resolution_m": 9000,
+      "checksum_sha256": "fb5cb2ba8399c752",
+      "license": "Copernicus C3S & NASA Open Data",
+      "qc_passed": true,
+      "qc_flags": [
+        "REGIONAL_9KM_10KM_GRID_ONLY",
+        "NOT_FIELD_GAUGE_MEASUREMENT"
+      ]
+    }
+  ],
+  "method": {
+    "name": "sentinel2_ndvi_ndmi_with_coarse_climate_context",
+    "version": "1.0.0",
+    "crs_metric": "EPSG:32635",
+    "parameters": {
+      "optical_resolution_m": 10,
+      "smap_era5_resolution_m": 9000,
+      "scale_separation_enforced": true
+    }
+  },
+  "result": {
+    "metrics": {
+      "parcel_mean_ndvi_2026_summer": 0.442,
+      "parcel_baseline_ndvi_2021_2025": 0.489,
+      "ndvi_anomaly_pct": -9.6,
+      "parcel_mean_ndmi_2026_summer": 0.118,
+      "moisture_stressed_olive_groves_ha": 3420.5,
+      "regional_smap_soil_moisture_m3m3": 0.142,
+      "regional_gpm_precip_anomaly_pct": -14.2,
+      "regional_era5_temp_anomaly_c": 1.65
+    },
+    "direction": "moderate_summer_canopy_moisture_stress",
+    "time_series": [
+      {
+        "date": "2021-07-15",
+        "sensor": "Sentinel-2A L2A (10m)",
+        "ndvi_mean": 0.498,
+        "ndmi_mean": 0.169,
+        "regional_soil_moisture": 0.171
+      },
+      {
+        "date": "2022-07-18",
+        "sensor": "Sentinel-2B L2A (10m)",
+        "ndvi_mean": 0.495,
+        "ndmi_mean": 0.164,
+        "regional_soil_moisture": 0.168
+      },
+      {
+        "date": "2023-07-15",
+        "sensor": "Sentinel-2A L2A (10m)",
+        "ndvi_mean": 0.482,
+        "ndmi_mean": 0.151,
+        "regional_soil_moisture": 0.16
+      },
+      {
+        "date": "2024-07-19",
+        "sensor": "Sentinel-2B L2A (10m)",
+        "ndvi_mean": 0.461,
+        "ndmi_mean": 0.135,
+        "regional_soil_moisture": 0.149
+      },
+      {
+        "date": "2025-07-14",
+        "sensor": "Sentinel-2A L2A (10m)",
+        "ndvi_mean": 0.454,
+        "ndmi_mean": 0.128,
+        "regional_soil_moisture": 0.146
+      },
+      {
+        "date": "2026-07-19",
+        "sensor": "Sentinel-2C L2A (10m)",
+        "ndvi_mean": 0.442,
+        "ndmi_mean": 0.118,
+        "regional_soil_moisture": 0.142
+      }
+    ],
+    "before_after": {
+      "comparison_mode_supported": [
+        "side_by_side",
+        "swipe",
+        "overlay"
+      ],
+      "sensor_compatibility_verified": true,
+      "sensor_compatibility_note_tr": "15 Temmuz 2021 (S2A) ve 19 Temmuz 2026 (S2C) Tile 35SLB optik görüntüleri aynı fenolojik pencereden (4 gün fark) seçilmiştir.",
+      "before": {
+        "acquisition_id": "acq_s2_milas_bodrum_20210715",
+        "date": "2021-07-15",
+        "sensor": "Sentinel-2A L2A (10m)",
+        "product_id": "S2A_MSIL2A_20210715_T35SLB",
+        "cloud_cover_pct": 0.5,
+        "mean_nbr": 0.169,
+        "mean_ndvi": 0.498
+      },
+      "after": {
+        "acquisition_id": "acq_s2_milas_agri_202607",
+        "date": "2026-07-19",
+        "sensor": "Sentinel-2C L2A (10m)",
+        "product_id": "S2C_MSIL2A_20260719_T35SLB",
+        "cloud_cover_pct": 0.7,
+        "mean_nbr": 0.118,
+        "mean_ndvi": 0.442
+      }
+    },
+    "spatial_layers": [
+      {
+        "layer_id": "lyr_milas_ndmi_stress_2026",
+        "title": "Milas–Selimiye Yaz Kanopi Nem Stresi Kuşağı (NDMI < 0.12)",
+        "role": "change_highlight",
+        "style": {
+          "fillColor": "#eab308",
+          "fillOpacity": 0.5,
+          "strokeColor": "#ca8a04",
+          "strokeWidth": 2
+        },
+        "geojson": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "zone": "Selimiye–Beçin Doğu Yamaç Zeytinlik Kuşağı",
+                "area_ha": 3420.5,
+                "ndmi_2026": 0.104
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      27.715,
+                      37.235
+                    ],
+                    [
+                      27.825,
+                      37.235
+                    ],
+                    [
+                      27.825,
+                      37.305
+                    ],
+                    [
+                      27.715,
+                      37.305
+                    ],
+                    [
+                      27.715,
+                      37.235
+                    ]
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "separation_of_concerns": {
+    "measurement_tr": "Milas–Selimiye tarımsal izleme alanında Temmuz 2026 ortalama NDVI değeri 0.442 (2021–2025 ortalamasına göre -%9,6) ve kanopi nem indeksi NDMI 0.118 olarak ölçülmüştür. 3.420,5 ha zeytinlik/tarla kuşağında NDMI 0.12’nin altına gerilemiştir.",
+    "scientific_interpretation_tr": "Optik NDMI ve NDVI gerilemesi yaz kuraklığı ve yüksek sıcaklık anomalisi (+1,65 °C) ile uyumludur; ancak zeytinlik ve tarla parsellerinde budama, toprak işleme veya ürün nöbeti de spektral yansıtmayı değiştirebilir.",
+    "recommendations": [
+      {
+        "rule_id": "RULE-AGRI-001",
+        "rule_version": "1.0.0",
+        "condition_triggered": "Tarımsal parselde bitki indeksi (NDVI/NDMI) gerilemesi ve bölgesel kuraklık bağlamı",
+        "evidence_status": "further_investigation_required",
+        "evidence_label_tr": "Ek İnceleme Gerekli",
+        "additional_checks_required": [
+          "10m Sentinel-2 parsel içi NDVI/NDMI serisi",
+          "9km SMAP toprak nemi ve ERA5-Land sıcaklık bağlamı",
+          "Parsel sınır ve ürün türü doğrulaması"
+        ],
+        "recommendation_text": "Parsel ölçeğinde yaprak su stresi ve toprak nemi için ziraat mühendisi / toprak uzmanı saha kontrolü yapılması önerilir.",
+        "non_claim_disclaimer": "NDVI/NDMI doğrudan ürün verimi (kg/da) veya bitki hastalığı teşhisi değildir; 9 km SMAP/ERA5 verisi tarla içi sulama kararı için tek başına kullanılamaz.",
+        "supporting_metrics_keys": [
+          "parcel_mean_ndvi_2026_summer",
+          "parcel_baseline_ndvi_2021_2025",
+          "ndvi_anomaly_pct",
+          "parcel_mean_ndmi_2026_summer",
+          "moisture_stressed_olive_groves_ha",
+          "regional_smap_soil_moisture_m3m3",
+          "regional_gpm_precip_anomaly_pct",
+          "regional_era5_temp_anomaly_c"
+        ]
+      }
+    ]
+  },
+  "quality": {
+    "evidence_status": "further_investigation_required",
+    "evidence_label_tr": "Ek İnceleme Gerekli",
+    "evidence_badge_color": "#f59e0b",
+    "evidence_meaning_tr": "Yüzey değişimi gözleniyor ancak fiziksel neden kesin değil veya çözünürlük/referans veri sınırı var.",
+    "confidence": "medium (10m optik parsel verisi doğrulandı; meteorolojik bağlam 9 km bölgesel ızgaradır)",
+    "qc_flags": [
+      "QC_PASS_OPTICAL_10M_TILE_35SLB",
+      "QC_WARN_COARSE_9KM_CLIMATE_GRID_CONTEXT_ONLY"
+    ],
+    "disclaimer_tr": "Bu etiket proje içi bilimsel kalite/kanıt durumunu gösterir; NASA, ESA veya başka bir kurumun resmî sınıflandırması ya da hukuki/mühendislik kesin hükmü değildir."
+  },
+  "limitations": [
+    "SMAP (9 km), ERA5-Land (~9 km) ve GPM IMERG (~10 km) verileri tarla parseli çözünürlüğünde değildir; yalnızca bölgesel meteorolojik bağlam sunar.",
+    "Uzaktan algılama indeksleri doğrudan tarımsal verim (rekolte) tahmini veya bitki hastalık teşhisi değildir; resmî istatistiklerde TÜİK verileri esas alınmalıdır."
+  ],
+  "provenance": {
+    "job_id": "worker_job_agriculture_20261114",
+    "created_at": "2026-11-14T12:40:26.903Z",
+    "reproducible_pipeline_version": "mgi-engine-0.2.0"
+  }
+}

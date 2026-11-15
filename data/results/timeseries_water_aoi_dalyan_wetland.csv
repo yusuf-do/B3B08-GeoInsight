@@ -1,0 +1,8 @@
+date,sensor,open_water_ha,wet_reedbed_ha,ndwi_mean,mndwi_mean,sar_open_water_ha,precip_anomaly_pct,qc_status
+2021-08-14,Sentinel-2A L2A,2948.4,1185.2,0.412,0.468,2912,-4.1,PASS
+2022-08-19,Sentinel-2B L2A,2876,1142.8,0.398,0.451,2845.5,-8.6,PASS
+2023-08-14,Sentinel-2A L2A,2791.5,1094,0.379,0.432,2760.2,-11.4,PASS
+2024-08-18,Sentinel-2B L2A,2714.2,1048.6,0.361,0.415,2689,-15.8,PASS
+2025-08-13,Sentinel-2A L2A,2668.9,1019.4,0.352,0.404,2642.1,-13.9,PASS
+2026-01-15,Sentinel-2A L2A,,,,,3180.4,6.2,OPTICAL_CLOUD_REJECTED_68PCT_SAR_USED
+2026-08-18,Sentinel-2C L2A,2634.2,992.5,0.344,0.395,2610.8,-14.2,PASS

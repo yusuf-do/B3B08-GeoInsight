@@ -1,0 +1,8 @@
+{
+  "acquisition_id": "acq_s1_slc_seydikemer_2023_2026_stack",
+  "external_product_id": "S1A_IW_SLC__1SDV_20230912_20260921_R131_DESC_SBAS_STACK_36PAIRS.SAFE",
+  "checksum_sha256": "26a36219b87cd0ca",
+  "license": "Copernicus Open Access License",
+  "ingested_at": "2026-11-14T15:45:00+03:00",
+  "processing_version": "v1.0.0"
+}

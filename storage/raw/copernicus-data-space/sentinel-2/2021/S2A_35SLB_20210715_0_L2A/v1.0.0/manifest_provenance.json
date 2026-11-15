@@ -1,0 +1,8 @@
+{
+  "acquisition_id": "acq_s2_milas_bodrum_20210715",
+  "external_product_id": "S2A_MSIL2A_20210715T090551_N0500_R050_T35SLB_20230110T101500.SAFE",
+  "checksum_sha256": "07514144dbec030e",
+  "license": "Copernicus Open Access License",
+  "ingested_at": "2026-11-14T15:45:00+03:00",
+  "processing_version": "v1.0.0"
+}

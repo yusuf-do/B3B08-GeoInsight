@@ -1,0 +1,58 @@
+[
+  {
+    "module": "water",
+    "aoi_id": "aoi_dalyan_wetland",
+    "evidence_status": "supported",
+    "evidence_label_tr": "Destekleniyor",
+    "observations_count": 8
+  },
+  {
+    "module": "fire",
+    "aoi_id": "aoi_bordubet_fire",
+    "evidence_status": "verified",
+    "evidence_label_tr": "Doğrulanmış",
+    "observations_count": 6
+  },
+  {
+    "module": "agriculture",
+    "aoi_id": "aoi_milas_agriculture",
+    "evidence_status": "further_investigation_required",
+    "evidence_label_tr": "Ek İnceleme Gerekli",
+    "observations_count": 3
+  },
+  {
+    "module": "flood",
+    "aoi_id": "aoi_dalaman_flood",
+    "evidence_status": "further_investigation_required",
+    "evidence_label_tr": "Ek İnceleme Gerekli",
+    "observations_count": 3
+  },
+  {
+    "module": "coast",
+    "aoi_id": "aoi_iztuzu_coast",
+    "evidence_status": "further_investigation_required",
+    "evidence_label_tr": "Ek İnceleme Gerekli",
+    "observations_count": 5
+  },
+  {
+    "module": "industry",
+    "aoi_id": "aoi_yatagan_mining",
+    "evidence_status": "further_investigation_required",
+    "evidence_label_tr": "Ek İnceleme Gerekli",
+    "observations_count": 2
+  },
+  {
+    "module": "urban",
+    "aoi_id": "aoi_bodrum_urban",
+    "evidence_status": "further_investigation_required",
+    "evidence_label_tr": "Ek İnceleme Gerekli",
+    "observations_count": 2
+  },
+  {
+    "module": "deformation",
+    "aoi_id": "aoi_seydikemer_landslide",
+    "evidence_status": "insufficient_data",
+    "evidence_label_tr": "Yetersiz Veri",
+    "observations_count": 3
+  }
+]

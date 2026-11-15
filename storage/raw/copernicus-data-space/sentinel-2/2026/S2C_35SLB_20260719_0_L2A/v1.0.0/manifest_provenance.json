@@ -1,0 +1,8 @@
+{
+  "acquisition_id": "acq_s2_milas_agri_202607",
+  "external_product_id": "S2C_MSIL2A_20260719T090601_N0512_R050_T35SLB_20260719T125011.SAFE",
+  "checksum_sha256": "9d1e567cd53d47d0",
+  "license": "Copernicus Open Access License",
+  "ingested_at": "2026-11-14T15:45:00+03:00",
+  "processing_version": "v1.0.0"
+}

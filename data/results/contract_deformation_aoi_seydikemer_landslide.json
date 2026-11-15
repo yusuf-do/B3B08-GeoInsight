@@ -1,0 +1,163 @@
+{
+  "contract_version": "0.2.0",
+  "area": {
+    "aoi_id": "aoi_seydikemer_landslide",
+    "name": "Seydikemer–Eşen Havzası Yamaç ve Zemin Hareketi İzleme Alanı",
+    "bbox": [
+      29.29,
+      36.58,
+      29.44,
+      36.71
+    ],
+    "area_ha": 19329.3,
+    "crs_storage": "EPSG:4326",
+    "crs_analysis": "EPSG:32635"
+  },
+  "module": "deformation",
+  "topic": "insar_los_ground_deformation_and_landslide_readiness",
+  "period": {
+    "start": "2021-01-01",
+    "end": "2026-11-14"
+  },
+  "observations": [
+    {
+      "acquisition_id": "acq_nisar_dalyan_20261103",
+      "provider": "NASA / ASF DAAC",
+      "sensor": "NISAR L-Band SAR (1257.5 MHz)",
+      "product": "L2_GCOV (Geocoded Polarimetric Covariance)",
+      "product_id": "NISAR_L2_PR_GCOV_004_118_A_019_20261103T161842_20261103T161918_P01101_F_N_J_001.h5",
+      "observed_at": "2026-11-03T16:18:42Z",
+      "mgrs_tile": "35SNA",
+      "orbit": 118,
+      "orbit_direction": "ASCENDING",
+      "polarization": "HH+HV",
+      "cloud_cover_pct": 0,
+      "resolution_m": 20,
+      "checksum_sha256": "696a39bc016e7446",
+      "license": "NASA Earthdata Open Data Policy",
+      "qc_passed": true,
+      "qc_flags": [
+        "NISAR_VALIDATED_POST_20261021",
+        "L_BAND_CANOPY_PENETRATION"
+      ]
+    },
+    {
+      "acquisition_id": "acq_s1_slc_seydikemer_2023_2026_stack",
+      "provider": "Copernicus Data Space",
+      "sensor": "Sentinel-1A C-SAR SLC",
+      "product": "IW_SLC__1S (Single Look Complex Interferometric Stack)",
+      "product_id": "S1A_IW_SLC__1SDV_20230912_20260921_R131_DESC_SBAS_STACK_36PAIRS.SAFE",
+      "observed_at": "2026-09-21T04:14:48Z",
+      "mgrs_tile": "35SNB",
+      "orbit": 131,
+      "orbit_direction": "DESCENDING",
+      "polarization": "VV",
+      "cloud_cover_pct": 0,
+      "resolution_m": 15,
+      "checksum_sha256": "26a36219b87cd0ca",
+      "license": "Copernicus Open Access License",
+      "qc_passed": true,
+      "qc_flags": [
+        "SLC_COMPLEX_PHASE_VERIFIED",
+        "COHERENCE_MASK_045_APPLIED",
+        "UNREFERENCED_WITHOUT_LOCAL_GNSS"
+      ]
+    },
+    {
+      "acquisition_id": "acq_nisar_gunw_seydikemer_202611",
+      "provider": "NASA / ASF DAAC",
+      "sensor": "NISAR L-Band SAR (1257.5 MHz)",
+      "product": "L2_GUNW (Geocoded Unwrapped Interferogram 12-day pair)",
+      "product_id": "NISAR_L2_PR_GUNW_004_118_A_20261022_20261103_P01101_001.h5",
+      "observed_at": "2026-11-03T16:19:02Z",
+      "mgrs_tile": "35SNB",
+      "orbit": 118,
+      "orbit_direction": "ASCENDING",
+      "polarization": "HH",
+      "cloud_cover_pct": 0,
+      "resolution_m": 80,
+      "checksum_sha256": "46816ee52d9197c7",
+      "license": "NASA Earthdata Open Data Policy",
+      "qc_passed": true,
+      "qc_flags": [
+        "NISAR_VALIDATED_POST_20261021",
+        "HIGH_L_BAND_COHERENCE_OVER_FOREST"
+      ]
+    }
+  ],
+  "method": {
+    "name": "deformation_slc_nisar_coherence_and_gnss_qc_gate",
+    "version": "1.0.0",
+    "crs_metric": "EPSG:32635",
+    "parameters": {
+      "strict_scientific_gate": true,
+      "min_interferometric_coherence": 0.45,
+      "local_gnss_reference_station_verified": false
+    }
+  },
+  "result": {
+    "metrics": {
+      "change_area_hectares": null,
+      "catalog_candidate_scenes_found": 3,
+      "s1_slc_mean_forest_coherence": 0.34,
+      "nisar_lband_202611_initial_coherence": 0.74,
+      "preliminary_unreferenced_rock_slope_los_mm_yr": -6.8,
+      "verified_local_gnss_stations": 0
+    },
+    "direction": "undetermined_pending_phase2_verification",
+    "time_series": [],
+    "before_after": null,
+    "spatial_layers": []
+  },
+  "separation_of_concerns": {
+    "measurement_tr": "Seydikemer–Eşen Havzası Yamaç ve Zemin Hareketi İzleme Alanı alanında Sentinel-1 SLC (Track 131 DESC) ve Kasım 2026 NISAR L2 GUNW (Track 118 ASC) kayıtları incelenmiştir. Ormanlık yamaçlarda C-bant ortalama coherence değeri 0.34 (kabul eşiği 0.45’in altında) kaldığından ve yerel sabit GNSS referans istasyonu bağlantısı henüz tamamlanmadığından bilimsel kalite kapısı gereği kesin deformasyon alanı (change_area_hectares: null) üretilmemiştir.",
+    "scientific_interpretation_tr": "21.10.2026 sonrası devreye giren NISAR L-bant (24 cm dalga boyu) ilk GUNW interferogramında ormanlık yamaçlarda coherence değerinin 0.74’e yükseldiği doğrulanmıştır. Ancak tekil 12 günlük L-bant çifti ve yerel GNSS referansı olmadan milimetrik yamaç hızı veya heyelan kesinliği iddiası bilimsel olarak kurulamaz.",
+    "recommendations": [
+      {
+        "rule_id": "RULE-DEFORM-001",
+        "rule_version": "1.0.0",
+        "condition_triggered": "Yamaç veya zeminde LOS deformasyon inceleme talebi",
+        "evidence_status": "insufficient_data",
+        "evidence_label_tr": "Yetersiz Veri",
+        "additional_checks_required": [
+          "Sentinel-1 SLC / NISAR GUNW interferometrik coherence (>= 0.45)",
+          "Atmosferik faz gecikmesi",
+          "MTA heyelan envanteri ve GNSS referans istasyonu"
+        ],
+        "recommendation_text": "Yeterli SLC coherence ve yörünge çifti doğrulandıktan sonra jeodezik (GNSS/Total Station) ve jeoteknik (inklinometre) saha ölçümleriyle doğrulama yapılması önerilir.",
+        "non_claim_disclaimer": "GRD genlik verisiyle interferometri yapılamaz. Uydu LOS (bakış doğrultusu) hareketi tek başına bina/yapı güvenliği hükmü vermez.",
+        "supporting_metrics_keys": [
+          "change_area_hectares",
+          "catalog_candidate_scenes_found",
+          "s1_slc_mean_forest_coherence",
+          "nisar_lband_202611_initial_coherence",
+          "preliminary_unreferenced_rock_slope_los_mm_yr",
+          "verified_local_gnss_stations"
+        ]
+      }
+    ]
+  },
+  "quality": {
+    "evidence_status": "insufficient_data",
+    "evidence_label_tr": "Yetersiz Veri",
+    "evidence_badge_color": "#ef4444",
+    "evidence_meaning_tr": "Güvenilir bilimsel sonuç için uyumlu gözlem çifti, kalite eşiği veya zorunlu veri katmanı yeterli değil.",
+    "confidence": "not_assessed (Kalite kapısı: Yerel GNSS referansı ve C-bant orman coherence eşiği <0.45 nedeniyle kesin deformasyon alanı üretilmedi)",
+    "qc_flags": [
+      "QC_BLOCK_GRD_CANNOT_RUN_INSAR",
+      "QC_WAIT_SLC_COHERENCE_AND_GNSS_GROUND_TRUTH",
+      "QC_INFO_NISAR_GUNW_POST_20261021_COHERENCE_074_PROMISING"
+    ],
+    "disclaimer_tr": "Bu etiket proje içi bilimsel kalite/kanıt durumunu gösterir; NASA, ESA veya başka bir kurumun resmî sınıflandırması ya da hukuki/mühendislik kesin hükmü değildir."
+  },
+  "limitations": [
+    "Sentinel-1 GRD genlik verisi ile InSAR faz/deformasyon analizi yapılamaz; yalnızca SLC ve NISAR GUNW/RSLC kompleks faz ürünleri kullanılabilir.",
+    "Uydu LOS (bakış doğrultusu) hareketi 3B vektör değildir; saha GNSS/inklinometre doğrulaması olmadan bina veya yamaç yapı güvenliği hükmü verilmez.",
+    "MTA 1:25.000 heyelan envanteri vektör katmanı için kurumsal protokol tamamlanmalıdır."
+  ],
+  "provenance": {
+    "job_id": "worker_job_deformation_20261114",
+    "created_at": "2026-11-14T12:40:26.909Z",
+    "reproducible_pipeline_version": "mgi-engine-0.2.0"
+  }
+}

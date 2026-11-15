@@ -1,0 +1,8 @@
+{
+  "acquisition_id": "acq_era5_gpm_mugla_2021_2026",
+  "external_product_id": "MUGLA_CLIMATE_CONTEXT_202101_202610_V07.nc",
+  "checksum_sha256": "fb5cb2ba8399c752",
+  "license": "Copernicus C3S & NASA Open Data",
+  "ingested_at": "2026-11-14T15:45:00+03:00",
+  "processing_version": "v1.0.0"
+}

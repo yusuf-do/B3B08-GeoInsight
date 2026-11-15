@@ -1,0 +1,86 @@
+{
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "type": "Feature",
+  "id": "CLIMATE_MUGLA_2021_2026",
+  "collection": "ERA5_LAND_MONTHLY_GPM_IMERG_V07",
+  "bbox": [
+    27.21,
+    36.32,
+    29.78,
+    37.54
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          27.21,
+          36.32
+        ],
+        [
+          29.78,
+          36.32
+        ],
+        [
+          29.78,
+          37.54
+        ],
+        [
+          27.21,
+          37.54
+        ],
+        [
+          27.21,
+          36.32
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "datetime": "2026-10-31T23:59:59Z",
+    "platform": "ERA5-Land Reanalysis (9 km) + GPM IMERG V07 (0.1 deg)",
+    "eo:cloud_cover": 0,
+    "proj:epsg": 4326,
+    "mgi:aoi_ids": [
+      "aoi_dalyan_wetland",
+      "aoi_bordubet_fire",
+      "aoi_milas_agriculture",
+      "aoi_dalaman_flood",
+      "aoi_iztuzu_coast"
+    ],
+    "mgi:qc_passed": true,
+    "mgi:qc_flags": [
+      "REGIONAL_9KM_10KM_GRID_ONLY",
+      "NOT_FIELD_GAUGE_MEASUREMENT"
+    ],
+    "mgi:checksum_sha256": "fb5cb2ba8399c752",
+    "license": "Copernicus C3S & NASA Open Data"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "raw_manifest": {
+      "href": "../../raw/copernicus-cds-nasa-ges-disc/era5-land-monthly-gpm-imerg-v07/2026/CLIMATE_MUGLA_2021_2026/v1.0.0/manifest_provenance.json",
+      "type": "application/json",
+      "title": "Raw Product Provenance & Checksum Manifest",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

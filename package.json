@@ -1,0 +1,18 @@
+{
+  "name": "mugla-geoinsight",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Muğla GeoInsight - Çok kullanıcılı coğrafi istihbarat, çevresel izleme ve karar destek platformu",
+  "scripts": {
+    "start": "node apps/api/src/server.mjs",
+    "worker": "node apps/worker/worker.mjs",
+    "generate:aois": "node packages/geospatial-common/generate_aois.mjs",
+    "verify:stac": "node packages/data-connectors/stac_verifier.mjs",
+    "build:stac-tree": "node packages/data-connectors/generate_stac_tree.mjs",
+    "test": "node apps/api/src/smoke_test.mjs && node packages/data-connectors/adapter_contract_test.mjs && node packages/geoai/geoai_eval_test.mjs"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "3.8.1"
+  }
+}

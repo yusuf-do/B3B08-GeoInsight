@@ -1,0 +1,1652 @@
+{
+  "generated_at": "2026-11-14T14:19:41.730Z",
+  "challenge": "NASA Space Apps 2026 — Dancing with the SARs",
+  "province": "Muğla (Tüm İl Sınırları ve 13 İlçe Tam Kapsam)",
+  "bbox": [
+    27.1,
+    36.3,
+    29.65,
+    37.6
+  ],
+  "temporal_range": "2018-01-01 to 2026-11-14",
+  "nasa_and_partner_missions": {
+    "nasa_asf_vertex": "Sentinel-1A/1B/1C C-Band SAR (GRD + SLC) & OPERA L2 RTC-S1 / L3 DSWx-S1",
+    "nasa_nisar_uavsar": "NASA-ISRO NISAR L+S Band SAR & JPL UAVSAR Polarimetric L-Band SAR",
+    "csa_radarsat": "CSA RADARSAT-1 Open Archive & RADARSAT Constellation Mission (RCM C-Band Compact Pol)",
+    "conae_saocom": "CONAE SAOCOM 1A/1B L-Band Full Polarimetric SAR (23.5 cm wavelength)",
+    "copernicus_usgs_optical": "Sentinel-2A/2B/2C MSI L2A (10m) & USGS Landsat 8/9 C2 L2 (30m)",
+    "nasa_hydro_climate": "NASA GPM IMERG V07, NASA SMAP L-Band Soil Moisture, Open-Meteo ERA5-Land (2018-2026)"
+  },
+  "wayback_releases_by_year_month": {
+    "2020-10": {
+      "release_id": "119",
+      "date": "2020-10-14",
+      "title": "World Imagery (Wayback 2020-10-14)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/119/{z}/{y}/{x}"
+    },
+    "2018-11": {
+      "release_id": "3201",
+      "date": "2018-11-07",
+      "title": "World Imagery (Wayback 2018-11-07)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/3201/{z}/{y}/{x}"
+    },
+    "2019-06": {
+      "release_id": "12576",
+      "date": "2019-06-05",
+      "title": "World Imagery (Wayback 2019-06-05)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/12576/{z}/{y}/{x}"
+    },
+    "2023-10": {
+      "release_id": "1034",
+      "date": "2023-10-11",
+      "title": "World Imagery (Wayback 2023-10-11)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/1034/{z}/{y}/{x}"
+    },
+    "2021-01": {
+      "release_id": "1049",
+      "date": "2021-01-13",
+      "title": "World Imagery (Wayback 2021-01-13)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/1049/{z}/{y}/{x}"
+    },
+    "2018-04": {
+      "release_id": "20399",
+      "date": "2018-04-11",
+      "title": "World Imagery (Wayback 2018-04-11)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/20399/{z}/{y}/{x}"
+    },
+    "2018-08": {
+      "release_id": "1858",
+      "date": "2018-08-15",
+      "title": "World Imagery (Wayback 2018-08-15)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/1858/{z}/{y}/{x}"
+    },
+    "2018-09": {
+      "release_id": "14426",
+      "date": "2018-09-26",
+      "title": "World Imagery (Wayback 2018-09-26)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/14426/{z}/{y}/{x}"
+    },
+    "2019-03": {
+      "release_id": "4383",
+      "date": "2019-03-13",
+      "title": "World Imagery (Wayback 2019-03-13)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/4383/{z}/{y}/{x}"
+    },
+    "2019-12": {
+      "release_id": "4756",
+      "date": "2019-12-12",
+      "title": "World Imagery (Wayback 2019-12-12)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/4756/{z}/{y}/{x}"
+    },
+    "2022-06": {
+      "release_id": "44710",
+      "date": "2022-06-08",
+      "title": "World Imagery (Wayback 2022-06-08)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/44710/{z}/{y}/{x}"
+    },
+    "2022-05": {
+      "release_id": "5314",
+      "date": "2022-05-18",
+      "title": "World Imagery (Wayback 2022-05-18)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/5314/{z}/{y}/{x}"
+    },
+    "2021-03": {
+      "release_id": "5359",
+      "date": "2021-03-17",
+      "title": "World Imagery (Wayback 2021-03-17)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/5359/{z}/{y}/{x}"
+    },
+    "2019-01": {
+      "release_id": "25944",
+      "date": "2019-01-31",
+      "title": "World Imagery (Wayback 2019-01-31)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/25944/{z}/{y}/{x}"
+    },
+    "2020-08": {
+      "release_id": "6049",
+      "date": "2020-08-12",
+      "title": "World Imagery (Wayback 2020-08-12)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/6049/{z}/{y}/{x}"
+    },
+    "2025-03": {
+      "release_id": "6543",
+      "date": "2025-03-27",
+      "title": "World Imagery (Wayback 2025-03-27)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/6543/{z}/{y}/{x}"
+    },
+    "2021-04": {
+      "release_id": "27659",
+      "date": "2021-04-28",
+      "title": "World Imagery (Wayback 2021-04-28)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/27659/{z}/{y}/{x}"
+    },
+    "2018-03": {
+      "release_id": "8255",
+      "date": "2018-03-14",
+      "title": "World Imagery (Wayback 2018-03-14)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/8255/{z}/{y}/{x}"
+    },
+    "2022-11": {
+      "release_id": "7110",
+      "date": "2022-11-02",
+      "title": "World Imagery (Wayback 2022-11-02)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/7110/{z}/{y}/{x}"
+    },
+    "2018-06": {
+      "release_id": "11334",
+      "date": "2018-06-27",
+      "title": "World Imagery (Wayback 2018-06-27)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/11334/{z}/{y}/{x}"
+    },
+    "2021-07": {
+      "release_id": "8432",
+      "date": "2021-07-21",
+      "title": "World Imagery (Wayback 2021-07-21)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/8432/{z}/{y}/{x}"
+    },
+    "2020-02": {
+      "release_id": "8495",
+      "date": "2020-02-20",
+      "title": "World Imagery (Wayback 2020-02-20)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/8495/{z}/{y}/{x}"
+    },
+    "2020-09": {
+      "release_id": "19187",
+      "date": "2020-09-23",
+      "title": "World Imagery (Wayback 2020-09-23)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/19187/{z}/{y}/{x}"
+    },
+    "2020-07": {
+      "release_id": "18289",
+      "date": "2020-07-01",
+      "title": "World Imagery (Wayback 2020-07-01)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/18289/{z}/{y}/{x}"
+    },
+    "2019-05": {
+      "release_id": "9598",
+      "date": "2019-05-15",
+      "title": "World Imagery (Wayback 2019-05-15)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/9598/{z}/{y}/{x}"
+    },
+    "2021-02": {
+      "release_id": "9812",
+      "date": "2021-02-24",
+      "title": "World Imagery (Wayback 2021-02-24)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/9812/{z}/{y}/{x}"
+    },
+    "2019-09": {
+      "release_id": "9892",
+      "date": "2019-09-18",
+      "title": "World Imagery (Wayback 2019-09-18)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/9892/{z}/{y}/{x}"
+    },
+    "2022-02": {
+      "release_id": "26083",
+      "date": "2022-02-02",
+      "title": "World Imagery (Wayback 2022-02-02)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/26083/{z}/{y}/{x}"
+    },
+    "2022-03": {
+      "release_id": "10321",
+      "date": "2022-03-16",
+      "title": "World Imagery (Wayback 2022-03-16)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/10321/{z}/{y}/{x}"
+    },
+    "2018-01": {
+      "release_id": "13161",
+      "date": "2018-01-08",
+      "title": "World Imagery (Wayback 2018-01-08)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/13161/{z}/{y}/{x}"
+    },
+    "2026-05": {
+      "release_id": "10842",
+      "date": "2026-05-28",
+      "title": "World Imagery (Wayback 2026-05-28)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/10842/{z}/{y}/{x}"
+    },
+    "2019-10": {
+      "release_id": "11351",
+      "date": "2019-10-09",
+      "title": "World Imagery (Wayback 2019-10-09)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/11351/{z}/{y}/{x}"
+    },
+    "2020-06": {
+      "release_id": "11135",
+      "date": "2020-06-10",
+      "title": "World Imagery (Wayback 2020-06-10)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/11135/{z}/{y}/{x}"
+    },
+    "2023-01": {
+      "release_id": "11475",
+      "date": "2023-01-11",
+      "title": "World Imagery (Wayback 2023-01-11)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/11475/{z}/{y}/{x}"
+    },
+    "2024-06": {
+      "release_id": "39767",
+      "date": "2024-06-27",
+      "title": "World Imagery (Wayback 2024-06-27)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/39767/{z}/{y}/{x}"
+    },
+    "2023-11": {
+      "release_id": "12457",
+      "date": "2023-11-01",
+      "title": "World Imagery (Wayback 2023-11-01)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/12457/{z}/{y}/{x}"
+    },
+    "2018-02": {
+      "release_id": "13067",
+      "date": "2018-02-23",
+      "title": "World Imagery (Wayback 2018-02-23)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/13067/{z}/{y}/{x}"
+    },
+    "2025-12": {
+      "release_id": "13192",
+      "date": "2025-12-18",
+      "title": "World Imagery (Wayback 2025-12-18)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/13192/{z}/{y}/{x}"
+    },
+    "2021-06": {
+      "release_id": "48376",
+      "date": "2021-06-09",
+      "title": "World Imagery (Wayback 2021-06-09)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/48376/{z}/{y}/{x}"
+    },
+    "2022-07": {
+      "release_id": "13851",
+      "date": "2022-07-21",
+      "title": "World Imagery (Wayback 2022-07-21)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/13851/{z}/{y}/{x}"
+    },
+    "2024-03": {
+      "release_id": "60013",
+      "date": "2024-03-07",
+      "title": "World Imagery (Wayback 2024-03-07)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/60013/{z}/{y}/{x}"
+    },
+    "2018-07": {
+      "release_id": "14829",
+      "date": "2018-07-25",
+      "title": "World Imagery (Wayback 2018-07-25)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/14829/{z}/{y}/{x}"
+    },
+    "2020-04": {
+      "release_id": "26751",
+      "date": "2020-04-08",
+      "title": "World Imagery (Wayback 2020-04-08)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/26751/{z}/{y}/{x}"
+    },
+    "2021-05": {
+      "release_id": "15423",
+      "date": "2021-05-19",
+      "title": "World Imagery (Wayback 2021-05-19)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/15423/{z}/{y}/{x}"
+    },
+    "2020-03": {
+      "release_id": "16062",
+      "date": "2020-03-23",
+      "title": "World Imagery (Wayback 2020-03-23)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/16062/{z}/{y}/{x}"
+    },
+    "2022-04": {
+      "release_id": "48232",
+      "date": "2022-04-06",
+      "title": "World Imagery (Wayback 2022-04-06)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/48232/{z}/{y}/{x}"
+    },
+    "2024-12": {
+      "release_id": "16453",
+      "date": "2024-12-12",
+      "title": "World Imagery (Wayback 2024-12-12)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/16453/{z}/{y}/{x}"
+    },
+    "2019-07": {
+      "release_id": "16681",
+      "date": "2019-07-17",
+      "title": "World Imagery (Wayback 2019-07-17)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/16681/{z}/{y}/{x}"
+    },
+    "2021-10": {
+      "release_id": "16749",
+      "date": "2021-10-13",
+      "title": "World Imagery (Wayback 2021-10-13)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/16749/{z}/{y}/{x}"
+    },
+    "2019-08": {
+      "release_id": "30442",
+      "date": "2019-08-28",
+      "title": "World Imagery (Wayback 2019-08-28)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/30442/{z}/{y}/{x}"
+    },
+    "2023-08": {
+      "release_id": "64776",
+      "date": "2023-08-31",
+      "title": "World Imagery (Wayback 2023-08-31)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/64776/{z}/{y}/{x}"
+    },
+    "2019-02": {
+      "release_id": "17677",
+      "date": "2019-02-21",
+      "title": "World Imagery (Wayback 2019-02-21)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/17677/{z}/{y}/{x}"
+    },
+    "2022-08": {
+      "release_id": "45441",
+      "date": "2022-08-31",
+      "title": "World Imagery (Wayback 2022-08-31)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/45441/{z}/{y}/{x}"
+    },
+    "2019-04": {
+      "release_id": "18691",
+      "date": "2019-04-03",
+      "title": "World Imagery (Wayback 2019-04-03)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/18691/{z}/{y}/{x}"
+    },
+    "2018-10": {
+      "release_id": "18820",
+      "date": "2018-10-17",
+      "title": "World Imagery (Wayback 2018-10-17)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/18820/{z}/{y}/{x}"
+    },
+    "2024-09": {
+      "release_id": "20337",
+      "date": "2024-09-19",
+      "title": "World Imagery (Wayback 2024-09-19)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/20337/{z}/{y}/{x}"
+    },
+    "2025-10": {
+      "release_id": "20512",
+      "date": "2025-10-23",
+      "title": "World Imagery (Wayback 2025-10-23)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/20512/{z}/{y}/{x}"
+    },
+    "2020-11": {
+      "release_id": "20753",
+      "date": "2020-11-18",
+      "title": "World Imagery (Wayback 2020-11-18)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/20753/{z}/{y}/{x}"
+    },
+    "2020-01": {
+      "release_id": "23001",
+      "date": "2020-01-08",
+      "title": "World Imagery (Wayback 2020-01-08)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/23001/{z}/{y}/{x}"
+    },
+    "2026-01": {
+      "release_id": "22252",
+      "date": "2026-01-29",
+      "title": "World Imagery (Wayback 2026-01-29)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/22252/{z}/{y}/{x}"
+    },
+    "2026-03": {
+      "release_id": "22869",
+      "date": "2026-03-26",
+      "title": "World Imagery (Wayback 2026-03-26)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/22869/{z}/{y}/{x}"
+    },
+    "2018-12": {
+      "release_id": "23448",
+      "date": "2018-12-14",
+      "title": "World Imagery (Wayback 2018-12-14)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/23448/{z}/{y}/{x}"
+    },
+    "2025-05": {
+      "release_id": "25285",
+      "date": "2025-05-29",
+      "title": "World Imagery (Wayback 2025-05-29)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/25285/{z}/{y}/{x}"
+    },
+    "2023-06": {
+      "release_id": "47963",
+      "date": "2023-06-29",
+      "title": "World Imagery (Wayback 2023-06-29)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/47963/{z}/{y}/{x}"
+    },
+    "2021-12": {
+      "release_id": "26120",
+      "date": "2021-12-21",
+      "title": "World Imagery (Wayback 2021-12-21)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/26120/{z}/{y}/{x}"
+    },
+    "2026-08": {
+      "release_id": "26334",
+      "date": "2026-08-05",
+      "title": "World Imagery (Wayback 2026-08-05)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/26334/{z}/{y}/{x}"
+    },
+    "2025-04": {
+      "release_id": "27982",
+      "date": "2025-04-24",
+      "title": "World Imagery (Wayback 2025-04-24)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/27982/{z}/{y}/{x}"
+    },
+    "2020-12": {
+      "release_id": "29260",
+      "date": "2020-12-16",
+      "title": "World Imagery (Wayback 2020-12-16)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/29260/{z}/{y}/{x}"
+    },
+    "2026-06": {
+      "release_id": "32246",
+      "date": "2026-06-30",
+      "title": "World Imagery (Wayback 2026-06-30)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/32246/{z}/{y}/{x}"
+    },
+    "2018-05": {
+      "release_id": "32337",
+      "date": "2018-05-16",
+      "title": "World Imagery (Wayback 2018-05-16)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/32337/{z}/{y}/{x}"
+    },
+    "2024-08": {
+      "release_id": "32553",
+      "date": "2024-08-15",
+      "title": "World Imagery (Wayback 2024-08-15)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/32553/{z}/{y}/{x}"
+    },
+    "2020-05": {
+      "release_id": "32645",
+      "date": "2020-05-20",
+      "title": "World Imagery (Wayback 2020-05-20)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/32645/{z}/{y}/{x}"
+    },
+    "2025-02": {
+      "release_id": "34007",
+      "date": "2025-02-27",
+      "title": "World Imagery (Wayback 2025-02-27)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/34007/{z}/{y}/{x}"
+    },
+    "2025-01": {
+      "release_id": "36557",
+      "date": "2025-01-30",
+      "title": "World Imagery (Wayback 2025-01-30)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/36557/{z}/{y}/{x}"
+    },
+    "2023-04": {
+      "release_id": "37890",
+      "date": "2023-04-05",
+      "title": "World Imagery (Wayback 2023-04-05)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/37890/{z}/{y}/{x}"
+    },
+    "2024-02": {
+      "release_id": "37965",
+      "date": "2024-02-08",
+      "title": "World Imagery (Wayback 2024-02-08)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/37965/{z}/{y}/{x}"
+    },
+    "2024-01": {
+      "release_id": "41468",
+      "date": "2024-01-18",
+      "title": "World Imagery (Wayback 2024-01-18)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/41468/{z}/{y}/{x}"
+    },
+    "2021-11": {
+      "release_id": "48624",
+      "date": "2021-11-30",
+      "title": "World Imagery (Wayback 2021-11-30)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/48624/{z}/{y}/{x}"
+    },
+    "2022-01": {
+      "release_id": "42663",
+      "date": "2022-01-12",
+      "title": "World Imagery (Wayback 2022-01-12)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/42663/{z}/{y}/{x}"
+    },
+    "2026-10": {
+      "release_id": "43291",
+      "date": "2026-10-29",
+      "title": "World Imagery (Wayback 2026-10-29)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/43291/{z}/{y}/{x}"
+    },
+    "2023-03": {
+      "release_id": "44873",
+      "date": "2023-03-15",
+      "title": "World Imagery (Wayback 2023-03-15)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/44873/{z}/{y}/{x}"
+    },
+    "2022-10": {
+      "release_id": "44988",
+      "date": "2022-10-12",
+      "title": "World Imagery (Wayback 2022-10-12)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/44988/{z}/{y}/{x}"
+    },
+    "2022-12": {
+      "release_id": "45134",
+      "date": "2022-12-14",
+      "title": "World Imagery (Wayback 2022-12-14)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/45134/{z}/{y}/{x}"
+    },
+    "2023-05": {
+      "release_id": "46399",
+      "date": "2023-05-03",
+      "title": "World Imagery (Wayback 2023-05-03)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/46399/{z}/{y}/{x}"
+    },
+    "2022-09": {
+      "release_id": "47471",
+      "date": "2022-09-21",
+      "title": "World Imagery (Wayback 2022-09-21)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/47471/{z}/{y}/{x}"
+    },
+    "2021-09": {
+      "release_id": "51313",
+      "date": "2021-09-28",
+      "title": "World Imagery (Wayback 2021-09-28)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/51313/{z}/{y}/{x}"
+    },
+    "2025-06": {
+      "release_id": "48925",
+      "date": "2025-06-26",
+      "title": "World Imagery (Wayback 2025-06-26)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/48925/{z}/{y}/{x}"
+    },
+    "2026-04": {
+      "release_id": "49059",
+      "date": "2026-04-30",
+      "title": "World Imagery (Wayback 2026-04-30)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/49059/{z}/{y}/{x}"
+    },
+    "2024-11": {
+      "release_id": "49849",
+      "date": "2024-11-18",
+      "title": "World Imagery (Wayback 2024-11-18)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/49849/{z}/{y}/{x}"
+    },
+    "2025-07": {
+      "release_id": "49999",
+      "date": "2025-07-31",
+      "title": "World Imagery (Wayback 2025-07-31)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/49999/{z}/{y}/{x}"
+    },
+    "2025-11": {
+      "release_id": "51127",
+      "date": "2025-11-20",
+      "title": "World Imagery (Wayback 2025-11-20)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/51127/{z}/{y}/{x}"
+    },
+    "2021-08": {
+      "release_id": "51423",
+      "date": "2021-08-11",
+      "title": "World Imagery (Wayback 2021-08-11)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/51423/{z}/{y}/{x}"
+    },
+    "2025-09": {
+      "release_id": "58924",
+      "date": "2025-09-25",
+      "title": "World Imagery (Wayback 2025-09-25)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/58924/{z}/{y}/{x}"
+    },
+    "2024-05": {
+      "release_id": "52930",
+      "date": "2024-05-09",
+      "title": "World Imagery (Wayback 2024-05-09)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/52930/{z}/{y}/{x}"
+    },
+    "2023-12": {
+      "release_id": "56102",
+      "date": "2023-12-07",
+      "title": "World Imagery (Wayback 2023-12-07)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/56102/{z}/{y}/{x}"
+    },
+    "2024-10": {
+      "release_id": "56450",
+      "date": "2024-10-10",
+      "title": "World Imagery (Wayback 2024-10-10)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/56450/{z}/{y}/{x}"
+    },
+    "2023-02": {
+      "release_id": "57965",
+      "date": "2023-02-23",
+      "title": "World Imagery (Wayback 2023-02-23)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/57965/{z}/{y}/{x}"
+    },
+    "2026-09": {
+      "release_id": "63116",
+      "date": "2026-09-24",
+      "title": "World Imagery (Wayback 2026-09-24)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/63116/{z}/{y}/{x}"
+    },
+    "2026-02": {
+      "release_id": "64001",
+      "date": "2026-02-26",
+      "title": "World Imagery (Wayback 2026-02-26)",
+      "tile_url_template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/64001/{z}/{y}/{x}"
+    }
+  },
+  "yearly_satellite_inventory_2018_2026": {
+    "2018": {
+      "year": 2018,
+      "sentinel2_l2a_count": 824,
+      "sentinel2_sample_scenes": [
+        {
+          "id": "S2A_35SQA_20181231_0_L2A",
+          "datetime": "2018-12-31T09:00:02.452000Z",
+          "cloud_cover": 13.876141,
+          "grid_code": "MGRS-35SQA",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/QA/2018/12/S2A_35SQA_20181231_0_L2A/thumbnail.jpg"
+        },
+        {
+          "id": "S2A_36STF_20181231_0_L2A",
+          "datetime": "2018-12-31T09:00:00.879000Z",
+          "cloud_cover": 12.333867,
+          "grid_code": "MGRS-36STF",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/TF/2018/12/S2A_36STF_20181231_0_L2A/thumbnail.jpg"
+        },
+        {
+          "id": "S2A_35SPB_20181231_0_L2A",
+          "datetime": "2018-12-31T08:59:51.550000Z",
+          "cloud_cover": 10.495933,
+          "grid_code": "MGRS-35SPB",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/PB/2018/12/S2A_35SPB_20181231_0_L2A/thumbnail.jpg"
+        }
+      ],
+      "landsat_c2_count": 321,
+      "nasa_asf_sentinel1_grd_count": 358,
+      "nasa_asf_sentinel1_samples": [
+        {
+          "id": "S1A_IW_GRDH_1SDV_20180102T160623_20180102T160648_019978_022077_B3A4-GRD_HD",
+          "time_start": "2018-01-02T16:06:23.000Z"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20180102T160648_20180102T160713_019978_022077_F3F1-GRD_HD",
+          "time_start": "2018-01-02T16:06:48.000Z"
+        }
+      ],
+      "nasa_opera_rtc_s1_count": 6801,
+      "nasa_viirs_fire_granules": 0,
+      "eox_s2_cloudless_wmts": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2018_3857/default/g/{z}/{y}/{x}.jpg"
+    },
+    "2019": {
+      "year": 2019,
+      "sentinel2_l2a_count": 1157,
+      "sentinel2_sample_scenes": [
+        {
+          "id": "S2B_35SPA_20191231_1_L2A",
+          "datetime": "2019-12-31T09:00:07.209000Z",
+          "cloud_cover": 9.712499,
+          "grid_code": "MGRS-35SPA",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/PA/2019/12/S2B_35SPA_20191231_1_L2A/thumbnail.jp2"
+        },
+        {
+          "id": "S2B_35SPA_20191231_0_L2A",
+          "datetime": "2019-12-31T09:00:07.209000Z",
+          "cloud_cover": 8.203042,
+          "grid_code": "MGRS-35SPA",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/PA/2019/12/S2B_35SPA_20191231_0_L2A/thumbnail.jpg"
+        },
+        {
+          "id": "S2B_35SNB_20191231_1_L2A",
+          "datetime": "2019-12-31T08:59:55.812000Z",
+          "cloud_cover": 3.483074,
+          "grid_code": "MGRS-35SNB",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/NB/2019/12/S2B_35SNB_20191231_1_L2A/thumbnail.jp2"
+        }
+      ],
+      "landsat_c2_count": 319,
+      "nasa_asf_sentinel1_grd_count": 360,
+      "nasa_asf_sentinel1_samples": [
+        {
+          "id": "S1A_IW_GRDH_1SDV_20190102T161439_20190102T161504_025301_02CC93_4EDB-GRD_HD",
+          "time_start": "2019-01-02T16:14:39.000Z"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20190102T161504_20190102T161529_025301_02CC93_E720-GRD_HD",
+          "time_start": "2019-01-02T16:15:04.000Z"
+        }
+      ],
+      "nasa_opera_rtc_s1_count": 6795,
+      "nasa_viirs_fire_granules": 0,
+      "eox_s2_cloudless_wmts": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2019_3857/default/g/{z}/{y}/{x}.jpg"
+    },
+    "2020": {
+      "year": 2020,
+      "sentinel2_l2a_count": 1223,
+      "sentinel2_sample_scenes": [
+        {
+          "id": "S2A_35SNB_20201230_0_L2A",
+          "datetime": "2020-12-30T09:00:00.772000Z",
+          "cloud_cover": 7.994409,
+          "grid_code": "MGRS-35SNB",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/NB/2020/12/S2A_35SNB_20201230_0_L2A/thumbnail.jpg"
+        },
+        {
+          "id": "S2A_35SNB_20201230_1_L2A",
+          "datetime": "2020-12-30T09:00:00.771000Z",
+          "cloud_cover": 6.988332,
+          "grid_code": "MGRS-35SNB",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/NB/2020/12/S2A_35SNB_20201230_1_L2A/thumbnail.jpg"
+        },
+        {
+          "id": "S2B_35SQB_20201225_1_L2A",
+          "datetime": "2020-12-25T08:59:51.561000Z",
+          "cloud_cover": 5.707197,
+          "grid_code": "MGRS-35SQB",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/QB/2020/12/S2B_35SQB_20201225_1_L2A/thumbnail.jpg"
+        }
+      ],
+      "landsat_c2_count": 313,
+      "nasa_asf_sentinel1_grd_count": 364,
+      "nasa_asf_sentinel1_samples": [
+        {
+          "id": "S1A_IW_GRDH_1SDV_20200104T160636_20200104T160701_030653_038356_9E3B-GRD_HD",
+          "time_start": "2020-01-04T16:06:36.000Z"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20200104T160701_20200104T160726_030653_038356_2C21-GRD_HD",
+          "time_start": "2020-01-04T16:07:01.000Z"
+        }
+      ],
+      "nasa_opera_rtc_s1_count": 6866,
+      "nasa_viirs_fire_granules": 0,
+      "eox_s2_cloudless_wmts": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2020_3857/default/g/{z}/{y}/{x}.jpg"
+    },
+    "2021": {
+      "year": 2021,
+      "sentinel2_l2a_count": 1239,
+      "sentinel2_sample_scenes": [
+        {
+          "id": "S2B_35SNA_20211223_0_L2A",
+          "datetime": "2021-12-23T09:10:06.237000Z",
+          "cloud_cover": 0.197508,
+          "grid_code": "MGRS-35SNA",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/NA/2021/12/S2B_35SNA_20211223_0_L2A/thumbnail.jpg"
+        },
+        {
+          "id": "S2B_35SNA_20211223_2_L2A",
+          "datetime": "2021-12-23T09:10:06.235000Z",
+          "cloud_cover": 0.083782,
+          "grid_code": "MGRS-35SNA",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/NA/2021/12/S2B_35SNA_20211223_2_L2A/preview.jpg"
+        },
+        {
+          "id": "S2B_35SNA_20211223_1_L2A",
+          "datetime": "2021-12-23T09:10:06.235000Z",
+          "cloud_cover": 0.083782,
+          "grid_code": "MGRS-35SNA",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/NA/2021/12/S2B_35SNA_20211223_1_L2A/preview.jpg"
+        }
+      ],
+      "landsat_c2_count": 337,
+      "nasa_asf_sentinel1_grd_count": 364,
+      "nasa_asf_sentinel1_samples": [
+        {
+          "id": "S1A_IW_GRDH_1SDV_20210103T161452_20210103T161517_035976_0436F7_A75F-GRD_HD",
+          "time_start": "2021-01-03T16:14:52.000Z"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20210103T161517_20210103T161542_035976_0436F7_2725-GRD_HD",
+          "time_start": "2021-01-03T16:15:17.000Z"
+        }
+      ],
+      "nasa_opera_rtc_s1_count": 6654,
+      "nasa_viirs_fire_granules": 0,
+      "eox_s2_cloudless_wmts": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2021_3857/default/g/{z}/{y}/{x}.jpg"
+    },
+    "2022": {
+      "year": 2022,
+      "sentinel2_l2a_count": 622,
+      "sentinel2_sample_scenes": [
+        {
+          "id": "S2A_35SPA_20221230_0_L2A",
+          "datetime": "2022-12-30T09:00:11.021000Z",
+          "cloud_cover": 10.118941,
+          "grid_code": "MGRS-35SPA",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/PA/2022/12/S2A_35SPA_20221230_0_L2A/thumbnail.jpg"
+        },
+        {
+          "id": "S2A_35SQA_20221230_0_L2A",
+          "datetime": "2022-12-30T09:00:07.509000Z",
+          "cloud_cover": 2.743204,
+          "grid_code": "MGRS-35SQA",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/QA/2022/12/S2A_35SQA_20221230_0_L2A/thumbnail.jpg"
+        },
+        {
+          "id": "S2A_36STF_20221230_0_L2A",
+          "datetime": "2022-12-30T09:00:05.949000Z",
+          "cloud_cover": 3.111341,
+          "grid_code": "MGRS-36STF",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/TF/2022/12/S2A_36STF_20221230_0_L2A/thumbnail.jpg"
+        }
+      ],
+      "landsat_c2_count": 447,
+      "nasa_asf_sentinel1_grd_count": 354,
+      "nasa_asf_sentinel1_samples": [
+        {
+          "id": "S1A_IW_GRDH_1SDV_20220101T035921_20220101T035946_041262_04E76D_DD4D-GRD_HD",
+          "time_start": "2022-01-01T03:59:21.000Z"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20220101T035946_20220101T040011_041262_04E76D_315C-GRD_HD",
+          "time_start": "2022-01-01T03:59:46.000Z"
+        }
+      ],
+      "nasa_opera_rtc_s1_count": 3349,
+      "nasa_viirs_fire_granules": 0,
+      "eox_s2_cloudless_wmts": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2022_3857/default/g/{z}/{y}/{x}.jpg"
+    },
+    "2023": {
+      "year": 2023,
+      "sentinel2_l2a_count": 605,
+      "sentinel2_sample_scenes": [
+        {
+          "id": "S2A_35SMA_20231228_0_L2A",
+          "datetime": "2023-12-28T09:10:12.485000Z",
+          "cloud_cover": 2.373443,
+          "grid_code": "MGRS-35SMA",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/MA/2023/12/S2A_35SMA_20231228_0_L2A/thumbnail.jpg"
+        },
+        {
+          "id": "S2A_35SNA_20231228_0_L2A",
+          "datetime": "2023-12-28T09:10:08.308000Z",
+          "cloud_cover": 0.009962,
+          "grid_code": "MGRS-35SNA",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/NA/2023/12/S2A_35SNA_20231228_0_L2A/thumbnail.jpg"
+        },
+        {
+          "id": "S2A_35SPA_20231228_0_L2A",
+          "datetime": "2023-12-28T09:09:58.673000Z",
+          "cloud_cover": 0.01323,
+          "grid_code": "MGRS-35SPA",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/PA/2023/12/S2A_35SPA_20231228_0_L2A/thumbnail.jpg"
+        }
+      ],
+      "landsat_c2_count": 434,
+      "nasa_asf_sentinel1_grd_count": 363,
+      "nasa_asf_sentinel1_samples": [
+        {
+          "id": "S1A_IW_GRDH_1SDV_20230101T040736_20230101T040801_046585_059533_8160-GRD_HD",
+          "time_start": "2023-01-01T04:07:36.000Z"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20230101T040801_20230101T040826_046585_059533_2C43-GRD_HD",
+          "time_start": "2023-01-01T04:08:01.000Z"
+        }
+      ],
+      "nasa_opera_rtc_s1_count": 3643,
+      "nasa_viirs_fire_granules": 0,
+      "eox_s2_cloudless_wmts": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2023_3857/default/g/{z}/{y}/{x}.jpg"
+    },
+    "2024": {
+      "year": 2024,
+      "sentinel2_l2a_count": 703,
+      "sentinel2_sample_scenes": [
+        {
+          "id": "S2B_35SQA_20241231_0_L2A",
+          "datetime": "2024-12-31T08:50:13.446000Z",
+          "cloud_cover": 0.144961,
+          "grid_code": "MGRS-35SQA",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/QA/2024/12/S2B_35SQA_20241231_0_L2A/thumbnail.jpg"
+        },
+        {
+          "id": "S2B_35SMB_20241227_0_L2A",
+          "datetime": "2024-12-27T09:10:02.537000Z",
+          "cloud_cover": 10.668667,
+          "grid_code": "MGRS-35SMB",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/MB/2024/12/S2B_35SMB_20241227_0_L2A/thumbnail.jpg"
+        },
+        {
+          "id": "S2C_35SNB_20241219_1_L2A",
+          "datetime": "2024-12-19T09:00:27.419000Z",
+          "cloud_cover": 0.051136,
+          "grid_code": "MGRS-35SNB",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/NB/2024/12/S2C_35SNB_20241219_1_L2A/preview.jpg"
+        }
+      ],
+      "landsat_c2_count": 322,
+      "nasa_asf_sentinel1_grd_count": 364,
+      "nasa_asf_sentinel1_samples": [
+        {
+          "id": "S1A_IW_GRDH_1SDV_20240101T041548_20240101T041613_051908_06457F_96A9-GRD_HD",
+          "time_start": "2024-01-01T04:15:48.681Z"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20240101T041613_20240101T041638_051908_06457F_D98A-GRD_HD",
+          "time_start": "2024-01-01T04:16:13.681Z"
+        }
+      ],
+      "nasa_opera_rtc_s1_count": 4117,
+      "nasa_viirs_fire_granules": 0,
+      "eox_s2_cloudless_wmts": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpg"
+    },
+    "2025": {
+      "year": 2025,
+      "sentinel2_l2a_count": 904,
+      "sentinel2_sample_scenes": [
+        {
+          "id": "S2A_35SNA_20251229_0_L2A",
+          "datetime": "2025-12-29T09:10:32.091000Z",
+          "cloud_cover": 3.260947,
+          "grid_code": "MGRS-35SNA",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/NA/2025/12/S2A_35SNA_20251229_0_L2A/preview.jpg"
+        },
+        {
+          "id": "S2A_35SPA_20251229_0_L2A",
+          "datetime": "2025-12-29T09:10:22.440000Z",
+          "cloud_cover": 0.013778,
+          "grid_code": "MGRS-35SPA",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/PA/2025/12/S2A_35SPA_20251229_0_L2A/preview.jpg"
+        },
+        {
+          "id": "S2A_35SNB_20251229_0_L2A",
+          "datetime": "2025-12-29T09:10:17.826000Z",
+          "cloud_cover": 5.337685,
+          "grid_code": "MGRS-35SNB",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/NB/2025/12/S2A_35SNB_20251229_0_L2A/preview.jpg"
+        }
+      ],
+      "landsat_c2_count": 317,
+      "nasa_asf_sentinel1_grd_count": 353,
+      "nasa_asf_sentinel1_samples": [
+        {
+          "id": "S1A_IW_GRDH_1SDV_20250101T160653_20250101T160718_057253_070AFC_061E-GRD_HD",
+          "time_start": "2025-01-01T16:06:53.225Z"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20250101T160718_20250101T160743_057253_070AFC_793B-GRD_HD",
+          "time_start": "2025-01-01T16:07:18.225Z"
+        }
+      ],
+      "nasa_opera_rtc_s1_count": 5952,
+      "nasa_viirs_fire_granules": 0,
+      "eox_s2_cloudless_wmts": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpg"
+    },
+    "2026": {
+      "year": 2026,
+      "sentinel2_l2a_count": 696,
+      "sentinel2_sample_scenes": [
+        {
+          "id": "S2C_36STF_20261109_0_L2A",
+          "datetime": "2026-11-09T09:00:03.456000Z",
+          "cloud_cover": 10.084872,
+          "grid_code": "MGRS-36STF",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/TF/2026/11/S2C_36STF_20261109_0_L2A/preview.jpg"
+        },
+        {
+          "id": "S2C_35SQB_20261109_0_L2A",
+          "datetime": "2026-11-09T08:59:50.799000Z",
+          "cloud_cover": 11.643515,
+          "grid_code": "MGRS-35SQB",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/35/S/QB/2026/11/S2C_35SQB_20261109_0_L2A/preview.jpg"
+        },
+        {
+          "id": "S2C_36STG_20261109_0_L2A",
+          "datetime": "2026-11-09T08:59:49.226000Z",
+          "cloud_cover": 3.390488,
+          "grid_code": "MGRS-36STG",
+          "thumbnail": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/TG/2026/11/S2C_36STG_20261109_0_L2A/preview.jpg"
+        }
+      ],
+      "landsat_c2_count": 271,
+      "nasa_asf_sentinel1_grd_count": 177,
+      "nasa_asf_sentinel1_samples": [
+        {
+          "id": "S1A_IW_GRDH_1SDV_20260101T161452_20260101T161517_062576_07D7CD_B1B3-GRD_HD",
+          "time_start": "2026-01-01T16:14:52.401Z"
+        },
+        {
+          "id": "S1A_IW_GRDH_1SDV_20260101T161517_20260101T161542_062576_07D7CD_9BE2-GRD_HD",
+          "time_start": "2026-01-01T16:15:17.402Z"
+        }
+      ],
+      "nasa_opera_rtc_s1_count": 6238,
+      "nasa_viirs_fire_granules": 0,
+      "eox_s2_cloudless_wmts": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpg"
+    }
+  },
+  "districts_13_cube": {
+    "mentese": {
+      "id": "mentese",
+      "name": "Menteşe (Merkez)",
+      "lat": 37.215,
+      "lon": 28.363,
+      "area_ha": 4391,
+      "climate_2018_2026": {}
+    },
+    "ula": {
+      "id": "ula",
+      "name": "Ula & Gökova Körfezi",
+      "lat": 37.075,
+      "lon": 28.385,
+      "area_ha": 4820,
+      "climate_2018_2026": {
+        "2018": {
+          "precip_mm": 1000,
+          "et0_mm": 1425,
+          "mean_tmax_c": 25.1,
+          "soil_moisture_m3m3": 0.245
+        },
+        "2019": {
+          "precip_mm": 1274,
+          "et0_mm": 1416,
+          "mean_tmax_c": 24.7,
+          "soil_moisture_m3m3": 0.26
+        },
+        "2020": {
+          "precip_mm": 846,
+          "et0_mm": 1453,
+          "mean_tmax_c": 25.1,
+          "soil_moisture_m3m3": 0.245
+        },
+        "2021": {
+          "precip_mm": 1052,
+          "et0_mm": 1549,
+          "mean_tmax_c": 25.3,
+          "soil_moisture_m3m3": 0.231
+        },
+        "2022": {
+          "precip_mm": 803,
+          "et0_mm": 1512,
+          "mean_tmax_c": 25,
+          "soil_moisture_m3m3": 0.217
+        },
+        "2023": {
+          "precip_mm": 919,
+          "et0_mm": 1445,
+          "mean_tmax_c": 25.3,
+          "soil_moisture_m3m3": 0.247
+        },
+        "2024": {
+          "precip_mm": 921,
+          "et0_mm": 1558,
+          "mean_tmax_c": 26.3,
+          "soil_moisture_m3m3": 0.216
+        },
+        "2025": {
+          "precip_mm": 896,
+          "et0_mm": 1442,
+          "mean_tmax_c": 25.1,
+          "soil_moisture_m3m3": 0.259
+        },
+        "2026": {
+          "precip_mm": 860,
+          "et0_mm": 1471,
+          "mean_tmax_c": 25.3,
+          "soil_moisture_m3m3": 0.251
+        }
+      }
+    },
+    "koycegiz": {
+      "id": "koycegiz",
+      "name": "Köyceğiz Gölü ve Havzası",
+      "lat": 36.955,
+      "lon": 28.685,
+      "area_ha": 14500,
+      "climate_2018_2026": {
+        "2018": {
+          "precip_mm": 1072,
+          "et0_mm": 1337,
+          "mean_tmax_c": 25.8,
+          "soil_moisture_m3m3": 0.163
+        },
+        "2019": {
+          "precip_mm": 1075,
+          "et0_mm": 1347,
+          "mean_tmax_c": 25.5,
+          "soil_moisture_m3m3": 0.169
+        },
+        "2020": {
+          "precip_mm": 805,
+          "et0_mm": 1377,
+          "mean_tmax_c": 25.8,
+          "soil_moisture_m3m3": 0.162
+        },
+        "2021": {
+          "precip_mm": 1148,
+          "et0_mm": 1447,
+          "mean_tmax_c": 26.2,
+          "soil_moisture_m3m3": 0.145
+        },
+        "2022": {
+          "precip_mm": 990,
+          "et0_mm": 1414,
+          "mean_tmax_c": 25.8,
+          "soil_moisture_m3m3": 0.134
+        },
+        "2023": {
+          "precip_mm": 1287,
+          "et0_mm": 1345,
+          "mean_tmax_c": 25.8,
+          "soil_moisture_m3m3": 0.182
+        },
+        "2024": {
+          "precip_mm": 1028,
+          "et0_mm": 1430,
+          "mean_tmax_c": 27,
+          "soil_moisture_m3m3": 0.143
+        },
+        "2025": {
+          "precip_mm": 1235,
+          "et0_mm": 1362,
+          "mean_tmax_c": 26.2,
+          "soil_moisture_m3m3": 0.144
+        },
+        "2026": {
+          "precip_mm": 1186,
+          "et0_mm": 1389,
+          "mean_tmax_c": 26.4,
+          "soil_moisture_m3m3": 0.14
+        }
+      }
+    },
+    "ortaca": {
+      "id": "ortaca",
+      "name": "Ortaca & Dalyan Lagünü",
+      "lat": 36.824,
+      "lon": 28.645,
+      "area_ha": 25951,
+      "climate_2018_2026": {
+        "2018": {
+          "precip_mm": 1072,
+          "et0_mm": 1337,
+          "mean_tmax_c": 25.8,
+          "soil_moisture_m3m3": 0.163
+        },
+        "2019": {
+          "precip_mm": 1075,
+          "et0_mm": 1347,
+          "mean_tmax_c": 25.5,
+          "soil_moisture_m3m3": 0.169
+        },
+        "2020": {
+          "precip_mm": 805,
+          "et0_mm": 1377,
+          "mean_tmax_c": 25.8,
+          "soil_moisture_m3m3": 0.162
+        },
+        "2021": {
+          "precip_mm": 1148,
+          "et0_mm": 1447,
+          "mean_tmax_c": 26.2,
+          "soil_moisture_m3m3": 0.145
+        },
+        "2022": {
+          "precip_mm": 990,
+          "et0_mm": 1414,
+          "mean_tmax_c": 25.8,
+          "soil_moisture_m3m3": 0.134
+        },
+        "2023": {
+          "precip_mm": 1287,
+          "et0_mm": 1345,
+          "mean_tmax_c": 25.8,
+          "soil_moisture_m3m3": 0.182
+        },
+        "2024": {
+          "precip_mm": 1028,
+          "et0_mm": 1430,
+          "mean_tmax_c": 27,
+          "soil_moisture_m3m3": 0.143
+        },
+        "2025": {
+          "precip_mm": 1235,
+          "et0_mm": 1362,
+          "mean_tmax_c": 26.2,
+          "soil_moisture_m3m3": 0.144
+        },
+        "2026": {
+          "precip_mm": 1186,
+          "et0_mm": 1389,
+          "mean_tmax_c": 26.4,
+          "soil_moisture_m3m3": 0.14
+        }
+      }
+    },
+    "dalaman": {
+      "id": "dalaman",
+      "name": "Dalaman Çayı ve Taşkın Ovası",
+      "lat": 36.765,
+      "lon": 28.803,
+      "area_ha": 14650,
+      "climate_2018_2026": {
+        "2018": {
+          "precip_mm": 1072,
+          "et0_mm": 1337,
+          "mean_tmax_c": 25.8,
+          "soil_moisture_m3m3": 0.163
+        },
+        "2019": {
+          "precip_mm": 1075,
+          "et0_mm": 1347,
+          "mean_tmax_c": 25.5,
+          "soil_moisture_m3m3": 0.169
+        },
+        "2020": {
+          "precip_mm": 805,
+          "et0_mm": 1377,
+          "mean_tmax_c": 25.8,
+          "soil_moisture_m3m3": 0.162
+        },
+        "2021": {
+          "precip_mm": 1148,
+          "et0_mm": 1447,
+          "mean_tmax_c": 26.2,
+          "soil_moisture_m3m3": 0.145
+        },
+        "2022": {
+          "precip_mm": 990,
+          "et0_mm": 1414,
+          "mean_tmax_c": 25.8,
+          "soil_moisture_m3m3": 0.134
+        },
+        "2023": {
+          "precip_mm": 1287,
+          "et0_mm": 1345,
+          "mean_tmax_c": 25.8,
+          "soil_moisture_m3m3": 0.182
+        },
+        "2024": {
+          "precip_mm": 1028,
+          "et0_mm": 1430,
+          "mean_tmax_c": 27,
+          "soil_moisture_m3m3": 0.143
+        },
+        "2025": {
+          "precip_mm": 1235,
+          "et0_mm": 1362,
+          "mean_tmax_c": 26.2,
+          "soil_moisture_m3m3": 0.144
+        },
+        "2026": {
+          "precip_mm": 1186,
+          "et0_mm": 1389,
+          "mean_tmax_c": 26.4,
+          "soil_moisture_m3m3": 0.14
+        }
+      }
+    },
+    "fethiye": {
+      "id": "fethiye",
+      "name": "Fethiye Körfezi & Ölüdeniz",
+      "lat": 36.622,
+      "lon": 29.116,
+      "area_ha": 9840,
+      "climate_2018_2026": {
+        "2018": {
+          "precip_mm": 845,
+          "et0_mm": 1335,
+          "mean_tmax_c": 25.5,
+          "soil_moisture_m3m3": 0.271
+        },
+        "2019": {
+          "precip_mm": 786,
+          "et0_mm": 1336,
+          "mean_tmax_c": 25,
+          "soil_moisture_m3m3": 0.265
+        },
+        "2020": {
+          "precip_mm": 649,
+          "et0_mm": 1363,
+          "mean_tmax_c": 25.4,
+          "soil_moisture_m3m3": 0.27
+        },
+        "2021": {
+          "precip_mm": 905,
+          "et0_mm": 1411,
+          "mean_tmax_c": 25.7,
+          "soil_moisture_m3m3": 0.255
+        },
+        "2022": {
+          "precip_mm": 789,
+          "et0_mm": 1391,
+          "mean_tmax_c": 25.3,
+          "soil_moisture_m3m3": 0.241
+        },
+        "2023": {
+          "precip_mm": 1078,
+          "et0_mm": 1351,
+          "mean_tmax_c": 25.5,
+          "soil_moisture_m3m3": 0.282
+        },
+        "2024": {
+          "precip_mm": 989,
+          "et0_mm": 1439,
+          "mean_tmax_c": 26.7,
+          "soil_moisture_m3m3": 0.237
+        },
+        "2025": {
+          "precip_mm": 702,
+          "et0_mm": 1380,
+          "mean_tmax_c": 25.8,
+          "soil_moisture_m3m3": 0.232
+        },
+        "2026": {
+          "precip_mm": 674,
+          "et0_mm": 1408,
+          "mean_tmax_c": 26,
+          "soil_moisture_m3m3": 0.224
+        }
+      }
+    },
+    "seydikemer": {
+      "id": "seydikemer",
+      "name": "Seydikemer & Eşen Havzası",
+      "lat": 36.645,
+      "lon": 29.365,
+      "area_ha": 22190,
+      "climate_2018_2026": {
+        "2018": {
+          "precip_mm": 845,
+          "et0_mm": 1335,
+          "mean_tmax_c": 25.5,
+          "soil_moisture_m3m3": 0.271
+        },
+        "2019": {
+          "precip_mm": 786,
+          "et0_mm": 1336,
+          "mean_tmax_c": 25,
+          "soil_moisture_m3m3": 0.265
+        },
+        "2020": {
+          "precip_mm": 649,
+          "et0_mm": 1363,
+          "mean_tmax_c": 25.4,
+          "soil_moisture_m3m3": 0.27
+        },
+        "2021": {
+          "precip_mm": 905,
+          "et0_mm": 1411,
+          "mean_tmax_c": 25.7,
+          "soil_moisture_m3m3": 0.255
+        },
+        "2022": {
+          "precip_mm": 789,
+          "et0_mm": 1391,
+          "mean_tmax_c": 25.3,
+          "soil_moisture_m3m3": 0.241
+        },
+        "2023": {
+          "precip_mm": 1078,
+          "et0_mm": 1351,
+          "mean_tmax_c": 25.5,
+          "soil_moisture_m3m3": 0.282
+        },
+        "2024": {
+          "precip_mm": 989,
+          "et0_mm": 1439,
+          "mean_tmax_c": 26.7,
+          "soil_moisture_m3m3": 0.237
+        },
+        "2025": {
+          "precip_mm": 702,
+          "et0_mm": 1380,
+          "mean_tmax_c": 25.8,
+          "soil_moisture_m3m3": 0.232
+        },
+        "2026": {
+          "precip_mm": 674,
+          "et0_mm": 1408,
+          "mean_tmax_c": 26,
+          "soil_moisture_m3m3": 0.224
+        }
+      }
+    },
+    "marmaris": {
+      "id": "marmaris",
+      "name": "Marmaris & Bördübet Orman Kuşağı",
+      "lat": 36.815,
+      "lon": 28.151,
+      "area_ha": 21406,
+      "climate_2018_2026": {
+        "2018": {
+          "precip_mm": 1000,
+          "et0_mm": 1425,
+          "mean_tmax_c": 25.1,
+          "soil_moisture_m3m3": 0.245
+        },
+        "2019": {
+          "precip_mm": 1274,
+          "et0_mm": 1416,
+          "mean_tmax_c": 24.7,
+          "soil_moisture_m3m3": 0.26
+        },
+        "2020": {
+          "precip_mm": 846,
+          "et0_mm": 1453,
+          "mean_tmax_c": 25.1,
+          "soil_moisture_m3m3": 0.245
+        },
+        "2021": {
+          "precip_mm": 1052,
+          "et0_mm": 1549,
+          "mean_tmax_c": 25.3,
+          "soil_moisture_m3m3": 0.231
+        },
+        "2022": {
+          "precip_mm": 803,
+          "et0_mm": 1512,
+          "mean_tmax_c": 25,
+          "soil_moisture_m3m3": 0.217
+        },
+        "2023": {
+          "precip_mm": 919,
+          "et0_mm": 1445,
+          "mean_tmax_c": 25.3,
+          "soil_moisture_m3m3": 0.247
+        },
+        "2024": {
+          "precip_mm": 921,
+          "et0_mm": 1558,
+          "mean_tmax_c": 26.3,
+          "soil_moisture_m3m3": 0.216
+        },
+        "2025": {
+          "precip_mm": 896,
+          "et0_mm": 1442,
+          "mean_tmax_c": 25.1,
+          "soil_moisture_m3m3": 0.259
+        },
+        "2026": {
+          "precip_mm": 860,
+          "et0_mm": 1471,
+          "mean_tmax_c": 25.3,
+          "soil_moisture_m3m3": 0.251
+        }
+      }
+    },
+    "datca": {
+      "id": "datca",
+      "name": "Datça Yarımadası Kıyı Ekosistemi",
+      "lat": 36.73,
+      "lon": 27.685,
+      "area_ha": 8420,
+      "climate_2018_2026": {
+        "2018": {
+          "precip_mm": 1000,
+          "et0_mm": 1425,
+          "mean_tmax_c": 25.1,
+          "soil_moisture_m3m3": 0.245
+        },
+        "2019": {
+          "precip_mm": 1274,
+          "et0_mm": 1416,
+          "mean_tmax_c": 24.7,
+          "soil_moisture_m3m3": 0.26
+        },
+        "2020": {
+          "precip_mm": 846,
+          "et0_mm": 1453,
+          "mean_tmax_c": 25.1,
+          "soil_moisture_m3m3": 0.245
+        },
+        "2021": {
+          "precip_mm": 1052,
+          "et0_mm": 1549,
+          "mean_tmax_c": 25.3,
+          "soil_moisture_m3m3": 0.231
+        },
+        "2022": {
+          "precip_mm": 803,
+          "et0_mm": 1512,
+          "mean_tmax_c": 25,
+          "soil_moisture_m3m3": 0.217
+        },
+        "2023": {
+          "precip_mm": 919,
+          "et0_mm": 1445,
+          "mean_tmax_c": 25.3,
+          "soil_moisture_m3m3": 0.247
+        },
+        "2024": {
+          "precip_mm": 921,
+          "et0_mm": 1558,
+          "mean_tmax_c": 26.3,
+          "soil_moisture_m3m3": 0.216
+        },
+        "2025": {
+          "precip_mm": 896,
+          "et0_mm": 1442,
+          "mean_tmax_c": 25.1,
+          "soil_moisture_m3m3": 0.259
+        },
+        "2026": {
+          "precip_mm": 860,
+          "et0_mm": 1471,
+          "mean_tmax_c": 25.3,
+          "soil_moisture_m3m3": 0.251
+        }
+      }
+    },
+    "bodrum": {
+      "id": "bodrum",
+      "name": "Bodrum Yarımadası",
+      "lat": 37.055,
+      "lon": 27.365,
+      "area_ha": 9120,
+      "climate_2018_2026": {
+        "2018": {
+          "precip_mm": 1000,
+          "et0_mm": 1425,
+          "mean_tmax_c": 25.1,
+          "soil_moisture_m3m3": 0.245
+        },
+        "2019": {
+          "precip_mm": 1274,
+          "et0_mm": 1416,
+          "mean_tmax_c": 24.7,
+          "soil_moisture_m3m3": 0.26
+        },
+        "2020": {
+          "precip_mm": 846,
+          "et0_mm": 1453,
+          "mean_tmax_c": 25.1,
+          "soil_moisture_m3m3": 0.245
+        },
+        "2021": {
+          "precip_mm": 1052,
+          "et0_mm": 1549,
+          "mean_tmax_c": 25.3,
+          "soil_moisture_m3m3": 0.231
+        },
+        "2022": {
+          "precip_mm": 803,
+          "et0_mm": 1512,
+          "mean_tmax_c": 25,
+          "soil_moisture_m3m3": 0.217
+        },
+        "2023": {
+          "precip_mm": 919,
+          "et0_mm": 1445,
+          "mean_tmax_c": 25.3,
+          "soil_moisture_m3m3": 0.247
+        },
+        "2024": {
+          "precip_mm": 921,
+          "et0_mm": 1558,
+          "mean_tmax_c": 26.3,
+          "soil_moisture_m3m3": 0.216
+        },
+        "2025": {
+          "precip_mm": 896,
+          "et0_mm": 1442,
+          "mean_tmax_c": 25.1,
+          "soil_moisture_m3m3": 0.259
+        },
+        "2026": {
+          "precip_mm": 860,
+          "et0_mm": 1471,
+          "mean_tmax_c": 25.3,
+          "soil_moisture_m3m3": 0.251
+        }
+      }
+    },
+    "milas": {
+      "id": "milas",
+      "name": "Milas–Selimiye/Beçin Tarım & Zeytin Ovası",
+      "lat": 37.285,
+      "lon": 27.765,
+      "area_ha": 18420,
+      "climate_2018_2026": {
+        "2018": {
+          "precip_mm": 1000,
+          "et0_mm": 1425,
+          "mean_tmax_c": 25.1,
+          "soil_moisture_m3m3": 0.245
+        },
+        "2019": {
+          "precip_mm": 1274,
+          "et0_mm": 1416,
+          "mean_tmax_c": 24.7,
+          "soil_moisture_m3m3": 0.26
+        },
+        "2020": {
+          "precip_mm": 846,
+          "et0_mm": 1453,
+          "mean_tmax_c": 25.1,
+          "soil_moisture_m3m3": 0.245
+        },
+        "2021": {
+          "precip_mm": 1052,
+          "et0_mm": 1549,
+          "mean_tmax_c": 25.3,
+          "soil_moisture_m3m3": 0.231
+        },
+        "2022": {
+          "precip_mm": 803,
+          "et0_mm": 1512,
+          "mean_tmax_c": 25,
+          "soil_moisture_m3m3": 0.217
+        },
+        "2023": {
+          "precip_mm": 919,
+          "et0_mm": 1445,
+          "mean_tmax_c": 25.3,
+          "soil_moisture_m3m3": 0.247
+        },
+        "2024": {
+          "precip_mm": 921,
+          "et0_mm": 1558,
+          "mean_tmax_c": 26.3,
+          "soil_moisture_m3m3": 0.216
+        },
+        "2025": {
+          "precip_mm": 896,
+          "et0_mm": 1442,
+          "mean_tmax_c": 25.1,
+          "soil_moisture_m3m3": 0.259
+        },
+        "2026": {
+          "precip_mm": 860,
+          "et0_mm": 1471,
+          "mean_tmax_c": 25.3,
+          "soil_moisture_m3m3": 0.251
+        }
+      }
+    },
+    "yatagan": {
+      "id": "yatagan",
+      "name": "Yatağan–Milas Maden ve Enerji Havzası",
+      "lat": 37.335,
+      "lon": 28.115,
+      "area_ha": 19380,
+      "climate_2018_2026": {}
+    },
+    "kavaklidere": {
+      "id": "kavaklidere",
+      "name": "Kavaklıdere Orman ve Dağlık Havzası",
+      "lat": 37.445,
+      "lon": 28.365,
+      "area_ha": 7650,
+      "climate_2018_2026": {}
+    }
+  }
+}

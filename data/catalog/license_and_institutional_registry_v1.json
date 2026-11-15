@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-14T15:44:00+03:00",
+  "work_package_10_license_registry": [
+    {
+      "dataset_id": "ds_copernicus_s2_l2a",
+      "provider": "ESA / European Union Copernicus Programme (CDSE)",
+      "product": "Sentinel-2 MSI Level-2A Surface Reflectance",
+      "license_name": "Copernicus Open Access License",
+      "commercial_use_allowed": true,
+      "derived_product_sharing_allowed": true,
+      "raw_redistribution_policy": "Açık ve ücretsiz; kaynak atfı zorunlu.",
+      "mandatory_attribution_text": "Contains modified Copernicus Sentinel data [2021–2026], processed by Muğla GeoInsight."
+    },
+    {
+      "dataset_id": "ds_copernicus_s1_grd_slc",
+      "provider": "ESA / European Union Copernicus Programme (CDSE)",
+      "product": "Sentinel-1 C-SAR GRD & SLC",
+      "license_name": "Copernicus Open Access License",
+      "commercial_use_allowed": true,
+      "derived_product_sharing_allowed": true,
+      "raw_redistribution_policy": "Açık ve ücretsiz; kaynak atfı zorunlu.",
+      "mandatory_attribution_text": "Contains modified Copernicus Sentinel-1 SAR data [2021–2026], processed by Muğla GeoInsight."
+    },
+    {
+      "dataset_id": "ds_usgs_landsat_c2_l2",
+      "provider": "USGS / NASA",
+      "product": "Landsat Collection 2 Level-2 Surface Reflectance & Surface Temperature",
+      "license_name": "U.S. Public Domain (No restrictions)",
+      "commercial_use_allowed": true,
+      "derived_product_sharing_allowed": true,
+      "raw_redistribution_policy": "Kısıtsız kamu malı; bilimsel kaynak atfı önerilir.",
+      "mandatory_attribution_text": "Landsat Collection 2 Level-2 data courtesy of the U.S. Geological Survey."
+    },
+    {
+      "dataset_id": "ds_nasa_isro_nisar",
+      "provider": "NASA / ISRO / ASF DAAC",
+      "product": "NISAR VALIDATED L0–L2 (GCOV, GUNW, RSLC — Post 21.10.2026)",
+      "license_name": "NASA Earth Science Data & Information Policy (Open Data)",
+      "commercial_use_allowed": true,
+      "derived_product_sharing_allowed": true,
+      "raw_redistribution_policy": "Earthdata Login ile açık erişim; ürün olgunluk seviyesi (VALIDATED) belirtilmeli.",
+      "mandatory_attribution_text": "NASA-ISRO SAR (NISAR) L2 data accessed via Alaska Satellite Facility (ASF DAAC)."
+    },
+    {
+      "dataset_id": "ds_nasa_firms_modis_viirs",
+      "provider": "NASA LANCE / FIRMS",
+      "product": "MODIS C6.1 & VIIRS 375m Active Fire / Thermal Anomalies",
+      "license_name": "NASA Open Data Policy",
+      "commercial_use_allowed": true,
+      "derived_product_sharing_allowed": true,
+      "raw_redistribution_policy": "Açık erişim; aktif yangın noktalarının yanmış alan poligonu olmadığı belirtilmeli.",
+      "mandatory_attribution_text": "Active fire data from NASA FIRMS (MODIS/VIIRS)."
+    },
+    {
+      "dataset_id": "ds_climate_era5_gpm_smap",
+      "provider": "ECMWF Copernicus C3S & NASA GES DISC / NSIDC",
+      "product": "ERA5-Land (~9km), GPM IMERG V07 (~10km), SMAP Enhanced L3 (9km)",
+      "license_name": "Copernicus C3S License & NASA Open Data",
+      "commercial_use_allowed": true,
+      "derived_product_sharing_allowed": true,
+      "raw_redistribution_policy": "Açık erişim; model yeniden analizi (reanalysis) ile yer istasyonu ölçümü farkı belirtilmeli.",
+      "mandatory_attribution_text": "Generated using Copernicus Climate Change Service information [ERA5-Land] and NASA GPM/SMAP."
+    }
+  ],
+  "work_package_09_institutional_sharing_table": [
+    {
+      "institution_id": "INST-MUGLA-BB-CBS",
+      "institution_name": "Muğla Büyükşehir Belediyesi CBS Şube Müdürlüğü",
+      "layers_covered": ["İdari sınırlar", "Nazım imar planı", "Yangın koordinasyon", "3B İHA ortofoto"],
+      "expected_format": "WMS / WFS / GeoJSON / GeoTIFF",
+      "access_level": "Kurumsal Protokol / İzin (Portal görünürlüğü açık indirme hakkı değildir)",
+      "redistribution_allowed": false,
+      "tenant_scope": "municipality_internal",
+      "protocol_status": "Açık veri katmanı ile kurumsal kısıtlı katmanlar RBAC ile ayrıştırıldı"
+    },
+    {
+      "institution_id": "INST-MUSKI-DSI",
+      "institution_name": "MUSKİ Genel Müdürlüğü & DSİ / Ulusal Su Bilgi Sistemi (USBS)",
+      "layers_covered": ["Taşkın tehlike haritaları", "Yağmur suyu/drenaj hatları", "Limnigraf ve akım istasyonları"],
+      "expected_format": "Shapefile / GeoPackage / TimeSeries CSV",
+      "access_level": "Kurumsal Protokol / USBS İzinli Servis",
+      "redistribution_allowed": false,
+      "tenant_scope": "public_water_authority",
+      "protocol_status": "Uydu SAR su maskesini doğrulama katmanı olarak tanımlandı"
+    },
+    {
+      "institution_id": "INST-OGM",
+      "institution_name": "Orman Genel Müdürlüğü (OGM) / Muğla Orman Bölge Müdürlüğü",
+      "layers_covered": ["Resmî yangın saha hasar sınırları", "Ağaçlandırma ve gençleştirme çalışma parselleri"],
+      "expected_format": "GeoJSON / Shapefile / Yıllık İstatistik Bülteni",
+      "access_level": "İl istatistikleri açık; parsel geometrileri kurumsal izne tabi",
+      "redistribution_allowed": false,
+      "tenant_scope": "forestry_research",
+      "protocol_status": "dNBR ve NDVI toparlanma serisinin saha doğrulama referansı olarak bağlandı"
+    },
+    {
+      "institution_id": "INST-MTA-MAPEG",
+      "institution_name": "MTA Genel Müdürlüğü & MAPEG",
+      "layers_covered": ["1:25.000 Türkiye Heyelan Envanteri", "Jeoloji formasyonları", "Maden ruhsat ve rehabilitasyon sınırları"],
+      "expected_format": "WMS / Kısıtlı Vektör Paket",
+      "access_level": "Harita görüntüleyici açık; vektör veri ücrete/kurumsal izne tabi",
+      "redistribution_allowed": false,
+      "tenant_scope": "geology_and_mining_audit",
+      "protocol_status": "Hukuki ruhsat/ihlal hükmü üretmeme kuralı (RULE-INDUSTRY-001) ile korundu"
+    },
+    {
+      "institution_id": "INST-TUCBS",
+      "institution_name": "TUCBS / Ulusal Coğrafi Bilgi Platformu",
+      "layers_covered": ["Ulusal veri temaları", "MAKS yapı ve adres referansları", "Ortofoto metaverisi"],
+      "expected_format": "OGC WMS/WFS / Ulusal Veri Paylaşım Matrisi",
+      "access_level": "Kamu kurumları ve yetkili araştırmacılar için izinli talep",
+      "redistribution_allowed": false,
+      "tenant_scope": "national_sdi",
+      "protocol_status": "İmar/parsel hukuki yorum yasağı (RULE-URBAN-001) ile entegre edildi"
+    }
+  ]
+}

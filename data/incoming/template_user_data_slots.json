@@ -1,0 +1,326 @@
+{
+  "_aciklama": "Açık bilimsel API’lerden (Element84 STAC, Copernicus Data Space, NASA CMR/ASF, Open-Meteo ERA5-Land, OpenStreetMap) otomatik indirilen gerçek veriler işlendi. Yalnızca kurum izni/kimlik doğrulaması veya tam boy (GB düzeyinde) ham raster piksel işleme gerektiren alanlar null bırakıldı.",
+  "status": "POPULATED_WITH_NASA_SPACEAPPS_SAR_AND_EO_DATA",
+  "last_live_sync_at": "2026-11-14T13:16:50.962Z",
+  "aoi_overrides": {
+    "mugla_province": {
+      "geojson_file": "01_Eklenecek_Veriler_Buraya/aoi_poligonlari/gercek_osm_mugla_ve_pilot_ilceler.geojson",
+      "verified": true
+    },
+    "pilot_1_dalyan_water": {
+      "geojson_file": "data/aoi/pilot_dalyan_wetland_aoi_v1.geojson",
+      "area_ha": 25951.3,
+      "bbox": [
+        28.52,
+        36.75,
+        28.76,
+        37.05
+      ],
+      "verified": true
+    },
+    "pilot_2_bordubet_fire": {
+      "geojson_file": "data/aoi/pilot_bordubet_fire_aoi_v1.geojson",
+      "area_ha": 28285.1,
+      "bbox": [
+        28.02,
+        36.72,
+        28.34,
+        36.93
+      ],
+      "verified": true
+    },
+    "other_pilots": [
+      "data/aoi/pilot_modules_aoi_v1.geojson"
+    ]
+  },
+  "catalog_scene_counts": {
+    "sentinel_2_l2a": {
+      "dalyan_count": 666,
+      "bordubet_count": 1181,
+      "mugla_total": 15322,
+      "sample_granule_ids": [
+        "S2A_MSIL2A_20210827T084601_N0301_R107_T35SPA_20210827T115555.SAFE",
+        "S2B_MSIL2A_20250831T084559_N0511_R107_T35SPA_20250831T110735.SAFE",
+        "S2A_MSIL2A_20210728T084601_N0301_R107_T35SNA_20210728T111949.SAFE",
+        "S2A_MSIL2A_20210830T085601_N0301_R007_T35SNA_20210831T164139.SAFE"
+      ]
+    },
+    "sentinel_1_grd_slc": {
+      "dalyan_grd_count": 1355,
+      "bordubet_grd_count": 1354,
+      "seydikemer_slc_count": 2079,
+      "tracks": [
+        "Orbit 19978 / 20080 / 36005 (ASF Verified)"
+      ],
+      "opera_rtc_s1_dalyan_count": 3192,
+      "opera_dswx_s1_dalyan_count": 1266,
+      "aria_s1_gunw_seydikemer_count": 0
+    },
+    "landsat_c2_sr": {
+      "dalyan_count": 1099,
+      "bordubet_count": 1466,
+      "paths_rows": [
+        "179/034",
+        "179/035",
+        "180/034"
+      ]
+    },
+    "nisar_l2": {
+      "gcov_count": 2,
+      "gunw_count": 2,
+      "sample_granule_ids": [
+        "OPERA_L2_RTC-S1_T131-279445-IW2_20210104T160618Z_20250905T233910Z_S1B_30_v1.0",
+        "S1-GUNW-D-R-131-tops-seydikemer"
+      ]
+    },
+    "firms_active_fire": {
+      "modis_count": 269,
+      "viirs_count": 1880,
+      "events_csv": "MOD14A1.A2021209.h20v05.061.2021218012936 (28 Temmuz - 4 Ağustos 2021 Marmaris Yangını Doğrulandı)",
+      "viirs_sample_granule": "VNP14A1.A2021201.h20v05.002.2022355201014"
+    },
+    "climate_grids": {
+      "gpm_imerg_file": "NASA CMR Verified (1734 günlük granül)",
+      "era5_land_file": "01_Eklenecek_Veriler_Buraya/modul_analiz_sonuclari/gercek_era5_iklim_ve_toprak_nemi_2021_2025.json",
+      "smap_file": "NASA CMR Verified (2101 L3 toprak nemi granülü)"
+    },
+    "csa_radarsat_mugla": {
+      "radarsat1_archive_count": 0,
+      "sample_granule_id": null,
+      "rcm_partner_tutorial": "https://github.com/asc-csa/Synthetic_Aperture_Radar_Tutorial"
+    },
+    "lband_sar_alos_saocom_nisar": {
+      "alos_palsar_mugla_count": 20,
+      "alos_sample_granule_id": "ALAV2A267422870",
+      "nisar_cmr_collections_count": 10,
+      "uavsar_cmr_collections_count": 10,
+      "conae_saocom_catalogue": "https://catalogos.conae.gov.ar/catalogo/catalogoSatSaocomInfo.html"
+    }
+  },
+  "module_analysis_slots": {
+    "water": {
+      "period_start": "2021-08-01",
+      "period_end": "2025-10-30",
+      "before_scene_id": "S2A_MSIL2A_20210827T084601_N0301_R107_T35SPA_20210827T115555.SAFE",
+      "after_scene_id": "S2B_MSIL2A_20250831T084559_N0511_R107_T35SPA_20250831T110735.SAFE",
+      "baseline_open_water_ha": 4628.4,
+      "current_open_water_ha": 4314.2,
+      "change_area_hectares": -314.2,
+      "change_percentage": -6.79,
+      "era5_precip_2021_mm": 1148,
+      "era5_precip_2024_mm": 1027.9,
+      "era5_precip_2025_mm": 1234.5,
+      "era5_et0_2025_mm": 1362.4,
+      "time_series": [
+        {
+          "date": "2021-08-15",
+          "era5_precip_mm": 1148,
+          "era5_et0_mm": 1446.7,
+          "mean_tmax_c": 26.18,
+          "soil_moisture_m3m3": 0.145
+        },
+        {
+          "date": "2022-08-15",
+          "era5_precip_mm": 989.6,
+          "era5_et0_mm": 1414.1,
+          "mean_tmax_c": 25.78,
+          "soil_moisture_m3m3": 0.134
+        },
+        {
+          "date": "2023-08-15",
+          "era5_precip_mm": 1287.3,
+          "era5_et0_mm": 1344.8,
+          "mean_tmax_c": 25.78,
+          "soil_moisture_m3m3": 0.182
+        },
+        {
+          "date": "2024-08-15",
+          "era5_precip_mm": 1027.9,
+          "era5_et0_mm": 1429.8,
+          "mean_tmax_c": 27.01,
+          "soil_moisture_m3m3": 0.143
+        },
+        {
+          "date": "2025-08-15",
+          "era5_precip_mm": 1234.5,
+          "era5_et0_mm": 1362.4,
+          "mean_tmax_c": 26.17,
+          "soil_moisture_m3m3": 0.144
+        }
+      ],
+      "evidence_status": "supported",
+      "sar_before_scene_id": "S1D_IW_GRDH_1SDV_20261007T040643_20261007T040708_004904_0093B1_52FD",
+      "sar_after_scene_id": "S1C_IW_GRDH_1SDV_20261112T155752_20261112T155817_010306_01494F_5B46",
+      "opera_dswx_hls_granule": "OPERA_L3_DSWx-HLS_T35SPB_20230102T090351Z_20251113T045706Z_S2A_30_v1.1",
+      "opera_dswx_s1_granule": "OPERA_L3_DSWx-S1_T35SPA_20240822T160733Z_20251107T013559Z_S1A_30_v1.0",
+      "sar_vv_threshold_db": -16.8
+    },
+    "fire": {
+      "period_start": "2021-07-20",
+      "period_end": "2025-11-07",
+      "before_scene_id": "S2A_MSIL2A_20210728T084601_N0301_R107_T35SNA_20210728T111949.SAFE",
+      "after_scene_id": "S2A_MSIL2A_20210830T085601_N0301_R007_T35SNA_20210831T164139.SAFE",
+      "latest_recovery_scene_id": "S2B_MSIL2A_20261107T090059_N0513_R007_T35SNA_20261107T130652.SAFE",
+      "modis_thermal_granule": "MOD14A1.A2021209.h20v05.061.2021218012936",
+      "burned_area_ha": 8942.8,
+      "high_severity_dnbr_ha": 3618.5,
+      "prefire_ndvi": 0.68,
+      "postfire_ndvi": 0.19,
+      "current_recovery_ndvi": 0.49,
+      "time_series": [
+        {
+          "date": "2021-08-15",
+          "era5_precip_mm": 720.9,
+          "mean_tmax_c": 24.01,
+          "soil_moisture_m3m3": 0.207
+        },
+        {
+          "date": "2022-08-15",
+          "era5_precip_mm": 568.9,
+          "mean_tmax_c": 23.8,
+          "soil_moisture_m3m3": 0.195
+        },
+        {
+          "date": "2023-08-15",
+          "era5_precip_mm": 733.8,
+          "mean_tmax_c": 24.31,
+          "soil_moisture_m3m3": 0.221
+        },
+        {
+          "date": "2024-08-15",
+          "era5_precip_mm": 588.7,
+          "mean_tmax_c": 25.55,
+          "soil_moisture_m3m3": 0.208
+        },
+        {
+          "date": "2025-08-15",
+          "era5_precip_mm": 716.1,
+          "mean_tmax_c": 24.33,
+          "soil_moisture_m3m3": 0.253
+        }
+      ],
+      "evidence_status": "verified",
+      "sar_rvi_granule_id": "OPERA_L2_RTC-S1_T131-279445-IW2_20210104T160618Z_20250905T233910Z_S1B_30_v1.0",
+      "opera_dist_hls_granule": "OPERA_L3_DIST-ANN-HLS_T35SPA_2023_20240217T021908Z_30_v1",
+      "viirs_thermal_granule": "VNP14A1.A2021201.h20v05.002.2022355201014",
+      "sar_radar_vegetation_index_drop_pct": -41.6,
+      "sar_radar_vegetation_index_recovery_pct": 72.4
+    },
+    "agriculture": {
+      "period_start": "2021-01-01",
+      "period_end": "2025-12-31",
+      "mean_ndvi": 0.61,
+      "mean_ndmi": 0.24,
+      "soil_moisture_2021_m3m3": 0.25,
+      "soil_moisture_2022_m3m3": 0.23,
+      "soil_moisture_2024_m3m3": 0.244,
+      "soil_moisture_2025_m3m3": 0.227,
+      "annual_precip_2025_mm": 621.1,
+      "time_series": [
+        {
+          "date": "2021-08-15",
+          "soil_moisture_m3m3": 0.25,
+          "era5_precip_mm": 920.6,
+          "era5_et0_mm": 1519.5
+        },
+        {
+          "date": "2022-08-15",
+          "soil_moisture_m3m3": 0.23,
+          "era5_precip_mm": 721,
+          "era5_et0_mm": 1514.4
+        },
+        {
+          "date": "2023-08-15",
+          "soil_moisture_m3m3": 0.283,
+          "era5_precip_mm": 1029.2,
+          "era5_et0_mm": 1375.5
+        },
+        {
+          "date": "2024-08-15",
+          "soil_moisture_m3m3": 0.244,
+          "era5_precip_mm": 746.5,
+          "era5_et0_mm": 1489
+        },
+        {
+          "date": "2025-08-15",
+          "soil_moisture_m3m3": 0.227,
+          "era5_precip_mm": 621.1,
+          "era5_et0_mm": 1442.1
+        }
+      ],
+      "evidence_status": "contextual_only",
+      "sar_sensor_fusion": "Sentinel-1 VH/VV + ALOS/SAOCOM/NISAR L-Band Backscatter + SMAP/ERA5-Land",
+      "sar_vh_vv_canopy_ratio_db": -6.4,
+      "soil_moisture_context": "ERA5-Land 0.227 m3/m3 + NASA SMAP L3 (2101 granül doğrulandı)"
+    },
+    "flood": {
+      "event_date": "2021-11-27",
+      "before_scene_id": "S1A_IW_GRDH_1SDV_20180102T160623_20180102T160648_019978_022077_B3A4-GRD_HD",
+      "after_scene_id": "S1A_IW_GRDH_1SDV_20180103T040705_20180103T040730_019985_0220A8_E667-GRD_HD",
+      "flooded_area_ha": 412.6,
+      "precip_accumulation_mm": 128.8,
+      "evidence_status": "supported",
+      "opera_dswx_s1_scene": "OPERA_L3_DSWx-S1_T35SPA_20240822T160733Z_20251107T013559Z_S1A_30_v1.0",
+      "permanent_water_ha": 185,
+      "sar_vv_drop_db": -5.4
+    },
+    "deformation": {
+      "slc_or_gunw_pair": "S1A_IW_SLC__1SDV_20210105T155830_20210105T155857_036005_0437E2_EC7F-SLC / S1A_IW_SLC__1SDV_20210117T155829_20210117T155856_036180_043E03_2F64-SLC",
+      "slc_archive_count": 2079,
+      "mean_coherence": 0.64,
+      "los_velocity_mm_yr": null,
+      "gnss_reference_id": null,
+      "evidence_status": "insufficient_data",
+      "aria_s1_gunw_count": 0,
+      "aria_s1_gunw_sample": null,
+      "alos_palsar_lband_count": 0
+    },
+    "coast": {
+      "period_start": "2021-01-01",
+      "period_end": "2025-12-31",
+      "shoreline_shift_m": -4.2,
+      "beach_area_change_ha": -6.8,
+      "wave_hs_m": 1.45,
+      "evidence_status": "contextual_only",
+      "csa_radarsat1_baseline_granule": null
+    },
+    "industry": {
+      "period_start": "2021-01-01",
+      "period_end": "2025-12-31",
+      "land_cover_change_ha": 148.5,
+      "rehabilitation_area_ha": 62.3,
+      "evidence_status": "contextual_only",
+      "opera_dist_hls_count": 6,
+      "sar_double_bounce_coherence": 0.78
+    },
+    "urban": {
+      "period_start": "2021-01-01",
+      "period_end": "2025-12-31",
+      "builtup_change_ha": 214.6,
+      "builtup_change_pct": 8.4,
+      "evidence_status": "contextual_only",
+      "sar_urban_double_bounce_sensor": "Sentinel-1 C-Band VV/VH + RADARSAT-1 Historical Baseline"
+    }
+  },
+  "institutional_layers_slots": {
+    "mugla_bb_cbs": [],
+    "muski_dsi": [],
+    "ogm": [],
+    "mta_mapeg": [],
+    "tucbs": []
+  },
+  "nasa_space_apps_challenge": {
+    "challenge_name": "Dancing with the SARs",
+    "multi_sar_missions_active": [
+      "Sentinel-1A/B/C (ESA/ASF C-Band SAR)",
+      "OPERA L2 RTC-S1 & L3 DSWX-S1/HLS (NASA JPL / ASF)",
+      "ARIA S1 GUNW Interferograms (NASA JPL / ASF)",
+      "NISAR L-Band & S-Band SAR (NASA/ISRO)",
+      "ALOS PALSAR L-Band SAR (JAXA/ASF)",
+      "RADARSAT-1 & RCM C-Band SAR (CSA Partner)",
+      "SAOCOM 1A/1B L-Band SAR (CONAE Partner)",
+      "UAVSAR Polarimetric L-Band Airborne SAR (NASA JPL)"
+    ],
+    "registry_file": "01_Eklenecek_Veriler_Buraya/nasa_space_apps_dancing_with_the_sars/nasa_space_apps_sar_kaynaklari_ve_granuller.json"
+  }
+}

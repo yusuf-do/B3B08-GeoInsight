@@ -1,0 +1,8 @@
+{
+  "acquisition_id": "acq_firms_bordubet_2021_2022",
+  "external_product_id": "FIRMS_MUGLA_BORDUBET_20210729_20220625_ARCHIVE.csv",
+  "checksum_sha256": "5a1c83e243f89fab",
+  "license": "NASA Earthdata Open Data",
+  "ingested_at": "2026-11-14T15:45:00+03:00",
+  "processing_version": "v1.0.0"
+}

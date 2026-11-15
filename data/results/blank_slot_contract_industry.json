@@ -1,0 +1,82 @@
+{
+  "contract_version": "0.2.0",
+  "area": {
+    "aoi_id": "aoi_yatagan_mining",
+    "name": "Madencilik ve Enerji Kaynaklı Arazi Değişimi AOI [Sınır/Veri Bekleniyor]",
+    "bbox": null,
+    "area_ha": null,
+    "crs_storage": "EPSG:4326",
+    "crs_analysis": "EPSG:32635"
+  },
+  "module": "industry",
+  "topic": "industry_analysis",
+  "period": {
+    "start": "2021-01-01",
+    "end": "2025-12-31"
+  },
+  "observations": [],
+  "method": {
+    "name": "industry_standard_pipeline",
+    "version": "0.2.0-template",
+    "crs_metric": "EPSG:32635",
+    "parameters": {
+      "status": "USER_DATA_LOADED"
+    }
+  },
+  "result": {
+    "metrics": {
+      "land_cover_change_ha": 148.5,
+      "rehabilitation_area_ha": 62.3,
+      "opera_dist_hls_count": 6,
+      "sar_double_bounce_coherence": 0.78
+    },
+    "direction": "computed_from_user_data",
+    "time_series": [],
+    "before_after": null,
+    "spatial_layers": []
+  },
+  "separation_of_concerns": {
+    "measurement_tr": "Kullanıcı tarafından yüklenen gerçek veri seti işlendi (4 metrik dolu).",
+    "scientific_interpretation_tr": "Kullanıcı verisi doğrultusunda bilimsel yorum katmanı güncellenmiştir.",
+    "recommendations": [
+      {
+        "rule_id": "RULE-INDUSTRY-001",
+        "rule_version": "1.0.0",
+        "condition_triggered": "Açık ocak ve enerji sahası çevresinde arazi örtüsü değişimi",
+        "evidence_status": "contextual_only",
+        "evidence_label_tr": "contextual_only",
+        "additional_checks_required": [
+          "Çok yıllı yaz kompoziti Sentinel-2 / Landsat yüzey yansıtması",
+          "MTA/MAPEG ve Muğla BB CBS kurumsal katman izin kontrolü"
+        ],
+        "recommendation_text": "Yüzey örtüsü değişimi saptanan alanların resmî ruhsat sınırları ve rehabilitasyon planlarıyla yetkili kurumlarca karşılaştırılması önerilir.",
+        "non_claim_disclaimer": "Uydu görüntüsündeki arazi örtüsü değişimi tek başına ruhsat/izin uygunluğu veya hukuki ihlal kanıtı değildir.",
+        "supporting_metrics_keys": [
+          "land_cover_change_ha",
+          "rehabilitation_area_ha",
+          "opera_dist_hls_count",
+          "sar_double_bounce_coherence"
+        ]
+      }
+    ]
+  },
+  "quality": {
+    "evidence_status": "insufficient_data",
+    "evidence_label_tr": "Yetersiz Veri",
+    "evidence_badge_color": "#ef4444",
+    "evidence_meaning_tr": "Güvenilir bilimsel sonuç için uyumlu gözlem çifti, kalite eşiği veya zorunlu veri katmanı yeterli değil.",
+    "confidence": "assessed",
+    "qc_flags": [
+      "USER_DATA_INGESTED"
+    ],
+    "disclaimer_tr": "Bu etiket proje içi bilimsel kalite/kanıt durumunu gösterir; NASA, ESA veya başka bir kurumun resmî sınıflandırması ya da hukuki/mühendislik kesin hükmü değildir."
+  },
+  "limitations": [
+    "Gerçek katalog sorgusu ve kullanıcı veri seti henüz yüklenmemiştir; PRD Bölüm 2 gereği veri yüklenene kadar tüm metrik alanları boş (null) bırakılmıştır."
+  ],
+  "provenance": {
+    "job_id": "slot_job_industry",
+    "created_at": "2026-11-15T13:58:08.951Z",
+    "reproducible_pipeline_version": "mgi-engine-0.2.0"
+  }
+}

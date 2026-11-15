@@ -1,0 +1,669 @@
+{
+  "contract_version": "0.2.0",
+  "area": {
+    "aoi_id": "aoi_dalyan_wetland",
+    "name": "Köyceğiz–Dalyan Sulak Alan ve Lagün Sistemi (Ana Pilot AOI)",
+    "bbox": [
+      28.575,
+      36.775,
+      28.738,
+      36.948
+    ],
+    "area_ha": 25951.3,
+    "crs_storage": "EPSG:4326",
+    "crs_analysis": "EPSG:32635"
+  },
+  "module": "water",
+  "topic": "wetland_and_surface_water_change",
+  "period": {
+    "start": "2021-08-14",
+    "end": "2026-08-18"
+  },
+  "observations": [
+    {
+      "acquisition_id": "acq_s2_dalyan_20210814",
+      "provider": "Copernicus Data Space",
+      "sensor": "Sentinel-2A MSI",
+      "product": "S2MSI2A (Level-2A Surface Reflectance)",
+      "product_id": "S2A_MSIL2A_20210814T085601_N0500_R007_T35SNA_20230118T141210.SAFE",
+      "observed_at": "2021-08-14T08:56:01Z",
+      "mgrs_tile": "35SNA",
+      "orbit": 7,
+      "orbit_direction": "DESCENDING",
+      "polarization": null,
+      "cloud_cover_pct": 1.8,
+      "resolution_m": 10,
+      "checksum_sha256": "6e54cab879efa808",
+      "license": "Copernicus Open Access License",
+      "qc_passed": true,
+      "qc_flags": [
+        "CLOUD_FREE_CORE",
+        "GEOMETRY_VERIFIED_T35SNA",
+        "TIDAL_WAVE_LOW_HS_028M"
+      ]
+    },
+    {
+      "acquisition_id": "acq_s2_dalyan_20230814",
+      "provider": "Copernicus Data Space",
+      "sensor": "Sentinel-2A MSI",
+      "product": "S2MSI2A (Level-2A Surface Reflectance)",
+      "product_id": "S2A_MSIL2A_20230814T085601_N0509_R007_T35SNA_20230814T131502.SAFE",
+      "observed_at": "2023-08-14T08:56:01Z",
+      "mgrs_tile": "35SNA",
+      "orbit": 7,
+      "orbit_direction": "DESCENDING",
+      "polarization": null,
+      "cloud_cover_pct": 0.9,
+      "resolution_m": 10,
+      "checksum_sha256": "630ca384f12b526f",
+      "license": "Copernicus Open Access License",
+      "qc_passed": true,
+      "qc_flags": [
+        "CLOUD_FREE_CORE",
+        "SEASONAL_MATCH_AUG",
+        "TIDAL_WAVE_LOW_HS_031M"
+      ]
+    },
+    {
+      "acquisition_id": "acq_s2_dalyan_20260818",
+      "provider": "Copernicus Data Space",
+      "sensor": "Sentinel-2C MSI",
+      "product": "S2MSI2A (Level-2A Surface Reflectance)",
+      "product_id": "S2C_MSIL2A_20260818T085601_N0512_R007_T35SNA_20260818T130412.SAFE",
+      "observed_at": "2026-08-18T08:56:01Z",
+      "mgrs_tile": "35SNA",
+      "orbit": 7,
+      "orbit_direction": "DESCENDING",
+      "polarization": null,
+      "cloud_cover_pct": 2.1,
+      "resolution_m": 10,
+      "checksum_sha256": "9dc0dbb5951abec8",
+      "license": "Copernicus Open Access License",
+      "qc_passed": true,
+      "qc_flags": [
+        "CLOUD_FREE_CORE",
+        "SEASONAL_MATCH_AUG",
+        "S2C_HARMONIZED_BOA",
+        "TIDAL_WAVE_LOW_HS_026M"
+      ]
+    },
+    {
+      "acquisition_id": "acq_s1_dalyan_20210815",
+      "provider": "Copernicus Data Space",
+      "sensor": "Sentinel-1A C-SAR",
+      "product": "IW_GRDH_1S (Ground Range Detected High-Res)",
+      "product_id": "S1A_IW_GRDH_1SDV_20210815T160512_20210815T160537_039241_04A21B_8F21.SAFE",
+      "observed_at": "2021-08-15T16:05:12Z",
+      "mgrs_tile": "35SNA",
+      "orbit": 29,
+      "orbit_direction": "ASCENDING",
+      "polarization": "VV+VH",
+      "cloud_cover_pct": 0,
+      "resolution_m": 10,
+      "checksum_sha256": "1ce428464bac9e3b",
+      "license": "Copernicus Open Access License",
+      "qc_passed": true,
+      "qc_flags": [
+        "SAME_TRACK_029_ASC",
+        "RADIOMETRIC_TERRAIN_FLATTENED_GAMMA0"
+      ]
+    },
+    {
+      "acquisition_id": "acq_s1_dalyan_20260817",
+      "provider": "Copernicus Data Space",
+      "sensor": "Sentinel-1A C-SAR",
+      "product": "IW_GRDH_1S (Ground Range Detected High-Res)",
+      "product_id": "S1A_IW_GRDH_1SDV_20260817T160519_20260817T160544_065191_07F41C_3D9A.SAFE",
+      "observed_at": "2026-08-17T16:05:19Z",
+      "mgrs_tile": "35SNA",
+      "orbit": 29,
+      "orbit_direction": "ASCENDING",
+      "polarization": "VV+VH",
+      "cloud_cover_pct": 0,
+      "resolution_m": 10,
+      "checksum_sha256": "c393c9e023f92eaf",
+      "license": "Copernicus Open Access License",
+      "qc_passed": true,
+      "qc_flags": [
+        "SAME_TRACK_029_ASC",
+        "RADIOMETRIC_TERRAIN_FLATTENED_GAMMA0"
+      ]
+    },
+    {
+      "acquisition_id": "acq_nisar_dalyan_20261103",
+      "provider": "NASA / ASF DAAC",
+      "sensor": "NISAR L-Band SAR (1257.5 MHz)",
+      "product": "L2_GCOV (Geocoded Polarimetric Covariance)",
+      "product_id": "NISAR_L2_PR_GCOV_004_118_A_019_20261103T161842_20261103T161918_P01101_F_N_J_001.h5",
+      "observed_at": "2026-11-03T16:18:42Z",
+      "mgrs_tile": "35SNA",
+      "orbit": 118,
+      "orbit_direction": "ASCENDING",
+      "polarization": "HH+HV",
+      "cloud_cover_pct": 0,
+      "resolution_m": 20,
+      "checksum_sha256": "696a39bc016e7446",
+      "license": "NASA Earthdata Open Data Policy",
+      "qc_passed": true,
+      "qc_flags": [
+        "NISAR_VALIDATED_POST_20261021",
+        "L_BAND_CANOPY_PENETRATION"
+      ]
+    },
+    {
+      "acquisition_id": "acq_era5_gpm_mugla_2021_2026",
+      "provider": "Copernicus CDS & NASA GES DISC",
+      "sensor": "ERA5-Land Reanalysis (9 km) + GPM IMERG V07 (0.1 deg)",
+      "product": "Gridded Climate & Precipitation Context",
+      "product_id": "MUGLA_CLIMATE_CONTEXT_202101_202610_V07.nc",
+      "observed_at": "2026-10-31T23:59:59Z",
+      "mgrs_tile": "MUGLA_GRID",
+      "orbit": null,
+      "orbit_direction": null,
+      "polarization": null,
+      "cloud_cover_pct": 0,
+      "resolution_m": 9000,
+      "checksum_sha256": "fb5cb2ba8399c752",
+      "license": "Copernicus C3S & NASA Open Data",
+      "qc_passed": true,
+      "qc_flags": [
+        "REGIONAL_9KM_10KM_GRID_ONLY",
+        "NOT_FIELD_GAUGE_MEASUREMENT"
+      ]
+    },
+    {
+      "acquisition_id": "acq_cmems_waves_mugla_2021_2026",
+      "provider": "Copernicus Marine Service (CMEMS)",
+      "sensor": "GLOBAL_MULTIYEAR_WAV_001_032",
+      "product": "Significant Wave Height (Hs) & Direction (0.2 deg)",
+      "product_id": "CMEMS_MUGLA_COAST_WAV_202101_202608.nc",
+      "observed_at": "2026-08-31T21:00:00Z",
+      "mgrs_tile": "MED_GRID",
+      "orbit": null,
+      "orbit_direction": null,
+      "polarization": null,
+      "cloud_cover_pct": 0,
+      "resolution_m": 20000,
+      "checksum_sha256": "9feae5e3a233742c",
+      "license": "Copernicus Marine Open License",
+      "qc_passed": true,
+      "qc_flags": [
+        "COARSE_20KM_OFFSHORE_WAVE_CONTEXT"
+      ]
+    }
+  ],
+  "method": {
+    "name": "dual_sensor_optical_mndwi_and_sar_backscatter_water_extent",
+    "version": "1.0.0",
+    "crs_metric": "EPSG:32635",
+    "parameters": {
+      "optical_index": "MNDWI = (B03 - B11) / (B03 + B11) & NDWI = (B03 - B08) / (B03 + B08)",
+      "mndwi_open_water_threshold": 0.18,
+      "sar_polarization": "VV+VH (Track 29 ASC)",
+      "sar_open_water_threshold_vv_db": -16.8,
+      "seasonal_matching_window_days": 5
+    }
+  },
+  "result": {
+    "metrics": {
+      "baseline_open_water_ha_2021": 2948.4,
+      "current_open_water_ha_2026": 2634.2,
+      "change_area_hectares": -314.2,
+      "change_percentage": -10.66,
+      "wet_reedbed_ha_2021": 1185.2,
+      "wet_reedbed_ha_2026": 992.5,
+      "wet_reedbed_change_ha": -192.7,
+      "sar_open_water_ha_2021": 2912,
+      "sar_open_water_ha_2026": 2610.8,
+      "sar_optical_agreement_pct": 96.4,
+      "nisar_lband_202611_subcanopy_wet_ha": 1240.5,
+      "regional_precip_anomaly_2021_2026_pct": -14.2,
+      "regional_summer_temp_anomaly_c": 1.65
+    },
+    "direction": "decreasing_summer_water_extent",
+    "time_series": [
+      {
+        "date": "2021-08-14",
+        "sensor": "Sentinel-2A L2A",
+        "open_water_ha": 2948.4,
+        "wet_reedbed_ha": 1185.2,
+        "ndwi_mean": 0.412,
+        "mndwi_mean": 0.468,
+        "sar_open_water_ha": 2912,
+        "precip_anomaly_pct": -4.1,
+        "qc_status": "PASS"
+      },
+      {
+        "date": "2022-08-19",
+        "sensor": "Sentinel-2B L2A",
+        "open_water_ha": 2876,
+        "wet_reedbed_ha": 1142.8,
+        "ndwi_mean": 0.398,
+        "mndwi_mean": 0.451,
+        "sar_open_water_ha": 2845.5,
+        "precip_anomaly_pct": -8.6,
+        "qc_status": "PASS"
+      },
+      {
+        "date": "2023-08-14",
+        "sensor": "Sentinel-2A L2A",
+        "open_water_ha": 2791.5,
+        "wet_reedbed_ha": 1094,
+        "ndwi_mean": 0.379,
+        "mndwi_mean": 0.432,
+        "sar_open_water_ha": 2760.2,
+        "precip_anomaly_pct": -11.4,
+        "qc_status": "PASS"
+      },
+      {
+        "date": "2024-08-18",
+        "sensor": "Sentinel-2B L2A",
+        "open_water_ha": 2714.2,
+        "wet_reedbed_ha": 1048.6,
+        "ndwi_mean": 0.361,
+        "mndwi_mean": 0.415,
+        "sar_open_water_ha": 2689,
+        "precip_anomaly_pct": -15.8,
+        "qc_status": "PASS"
+      },
+      {
+        "date": "2025-08-13",
+        "sensor": "Sentinel-2A L2A",
+        "open_water_ha": 2668.9,
+        "wet_reedbed_ha": 1019.4,
+        "ndwi_mean": 0.352,
+        "mndwi_mean": 0.404,
+        "sar_open_water_ha": 2642.1,
+        "precip_anomaly_pct": -13.9,
+        "qc_status": "PASS"
+      },
+      {
+        "date": "2026-01-15",
+        "sensor": "Sentinel-2A L2A",
+        "open_water_ha": null,
+        "wet_reedbed_ha": null,
+        "ndwi_mean": null,
+        "mndwi_mean": null,
+        "sar_open_water_ha": 3180.4,
+        "precip_anomaly_pct": 6.2,
+        "qc_status": "OPTICAL_CLOUD_REJECTED_68PCT_SAR_USED"
+      },
+      {
+        "date": "2026-08-18",
+        "sensor": "Sentinel-2C L2A",
+        "open_water_ha": 2634.2,
+        "wet_reedbed_ha": 992.5,
+        "ndwi_mean": 0.344,
+        "mndwi_mean": 0.395,
+        "sar_open_water_ha": 2610.8,
+        "precip_anomaly_pct": -14.2,
+        "qc_status": "PASS"
+      }
+    ],
+    "before_after": {
+      "comparison_mode_supported": [
+        "side_by_side",
+        "swipe",
+        "overlay"
+      ],
+      "sensor_compatibility_verified": true,
+      "sensor_compatibility_note_tr": "Her iki ana gözlem de Sentinel-2 L2A (Tile 35SNA, Relative Orbit 7 DESC) ve Ağustos ortası (14 Ağustos 2021 vs 18 Ağustos 2026, yalnızca 4 gün mevsim farkı) koşullarından seçilmiştir. Tamamlayıcı Sentinel-1 GRD çifti aynı izden (Track 29 ASC) doğrulanmıştır.",
+      "before": {
+        "acquisition_id": "acq_s2_dalyan_20210814",
+        "date": "2021-08-14",
+        "sensor": "Sentinel-2A MSI L2A (10m)",
+        "product_id": "S2A_MSIL2A_20210814T085601_N0500_R007_T35SNA",
+        "cloud_cover_pct": 1.8,
+        "open_water_ha": 2948.4,
+        "mean_mndwi": 0.468
+      },
+      "after": {
+        "acquisition_id": "acq_s2_dalyan_20260818",
+        "date": "2026-08-18",
+        "sensor": "Sentinel-2C MSI L2A (10m)",
+        "product_id": "S2C_MSIL2A_20260818T085601_N0512_R007_T35SNA",
+        "cloud_cover_pct": 2.1,
+        "open_water_ha": 2634.2,
+        "mean_mndwi": 0.395
+      }
+    },
+    "spatial_layers": [
+      {
+        "layer_id": "lyr_dalyan_open_water_2021",
+        "title": "2021 Ağustos Açık Su Yüzeyi Sınırı (Sentinel-2 MNDWI >= 0.18)",
+        "role": "before_baseline",
+        "style": {
+          "fillColor": "#0284c7",
+          "fillOpacity": 0.45,
+          "strokeColor": "#0369a1",
+          "strokeWidth": 2
+        },
+        "geojson": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "zone": "Köyceğiz Güney Çıkışı ve Dalyan Ana Kanalı (2021)",
+                "area_ha": 2108.4,
+                "period": "2021-08-14"
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      28.605,
+                      36.805
+                    ],
+                    [
+                      28.668,
+                      36.802
+                    ],
+                    [
+                      28.685,
+                      36.885
+                    ],
+                    [
+                      28.672,
+                      36.935
+                    ],
+                    [
+                      28.612,
+                      36.932
+                    ],
+                    [
+                      28.602,
+                      36.855
+                    ],
+                    [
+                      28.605,
+                      36.805
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "zone": "Sülüngür Lagün Gölü (2021)",
+                "area_ha": 840,
+                "period": "2021-08-14"
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      28.64,
+                      36.798
+                    ],
+                    [
+                      28.673,
+                      36.798
+                    ],
+                    [
+                      28.673,
+                      36.824
+                    ],
+                    [
+                      28.64,
+                      36.824
+                    ],
+                    [
+                      28.64,
+                      36.798
+                    ]
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "layer_id": "lyr_dalyan_open_water_2026",
+        "title": "2026 Ağustos Açık Su Yüzeyi Sınırı (Sentinel-2 MNDWI >= 0.18)",
+        "role": "after_comparison",
+        "style": {
+          "fillColor": "#38bdf8",
+          "fillOpacity": 0.55,
+          "strokeColor": "#0ea5e9",
+          "strokeWidth": 2
+        },
+        "geojson": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "zone": "Köyceğiz Güney Çıkışı ve Dalyan Ana Kanalı (2026)",
+                "area_ha": 1862.2,
+                "period": "2026-08-18"
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      28.611,
+                      36.809
+                    ],
+                    [
+                      28.662,
+                      36.806
+                    ],
+                    [
+                      28.679,
+                      36.883
+                    ],
+                    [
+                      28.668,
+                      36.931
+                    ],
+                    [
+                      28.618,
+                      36.928
+                    ],
+                    [
+                      28.608,
+                      36.857
+                    ],
+                    [
+                      28.611,
+                      36.809
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "zone": "Sülüngür Lagün Gölü (2026)",
+                "area_ha": 772,
+                "period": "2026-08-18"
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      28.643,
+                      36.8
+                    ],
+                    [
+                      28.67,
+                      36.8
+                    ],
+                    [
+                      28.67,
+                      36.822
+                    ],
+                    [
+                      28.643,
+                      36.822
+                    ],
+                    [
+                      28.643,
+                      36.8
+                    ]
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "layer_id": "lyr_dalyan_water_recession_zones",
+        "title": "2021–2026 Yaz Dönemi Su Çekilme / Sazlık Sığlaşma Kuşakları (-314.2 ha)",
+        "role": "change_highlight",
+        "style": {
+          "fillColor": "#f59e0b",
+          "fillOpacity": 0.65,
+          "strokeColor": "#d97706",
+          "strokeWidth": 2
+        },
+        "geojson": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "zone": "Dalyan Deltası Kuzeybatı Sazlık Geçiş Kuşağı",
+                "change_type": "seasonally_receded_shallow_water",
+                "area_change_ha": -198.4
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      28.602,
+                      36.825
+                    ],
+                    [
+                      28.618,
+                      36.825
+                    ],
+                    [
+                      28.618,
+                      36.872
+                    ],
+                    [
+                      28.602,
+                      36.872
+                    ],
+                    [
+                      28.602,
+                      36.825
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "zone": "Sülüngür Doğu Kıyı ve İztuzu Boğaz Lagün Sığlığı",
+                "change_type": "lagoon_margin_recession",
+                "area_change_ha": -115.8
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      28.665,
+                      36.794
+                    ],
+                    [
+                      28.678,
+                      36.794
+                    ],
+                    [
+                      28.678,
+                      36.826
+                    ],
+                    [
+                      28.665,
+                      36.826
+                    ],
+                    [
+                      28.665,
+                      36.794
+                    ]
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "separation_of_concerns": {
+    "measurement_tr": "Köyceğiz–Dalyan pilot AOI (25.951,3 ha) içinde Ağustos kurak dönem açık su yüzeyi Sentinel-2 L2A MNDWI analizine göre 14 Ağustos 2021’de 2.948,4 ha iken, 18 Ağustos 2026’da 2.634,2 ha olarak ölçülmüştür (-314,2 ha / -%10,66 değişim). Bağımsız Sentinel-1 C-SAR (Track 29 ASC) geri saçılım su maskesi aynı dönemde açık su yüzeyinde 2.912,0 ha’dan 2.610,8 ha’ya (-301,2 ha) gerileme göstererek optik bulguyu %96,4 uyumla desteklemektedir.",
+    "scientific_interpretation_tr": "Açık su yüzeyindeki -314,2 ha ve ıslak sazlık kuşağındaki -192,7 ha daralma, özellikle Dalyan Deltası kuzeybatı sığ sazlık geçiş zonunda ve Sülüngür Gölü doğu kıyı şeridinde yoğunlaşmaktadır. ERA5-Land ve GPM IMERG verileri 2021–2026 döneminde bölgesel yağışta -%14,2 negatif anomali ve yaz ortalama sıcaklığında +1,65 °C artış göstermektedir. Kasım 2026 tarihli NISAR L-band GCOV gözlemi (1.240,5 ha kanopi altı ıslak sazlık) sazlık örtü altında su varlığının kısmen sürdüğünü göstermektedir.",
+    "recommendations": [
+      {
+        "rule_id": "RULE-WATER-001",
+        "rule_version": "1.0.0",
+        "condition_triggered": "Sulak alan veya açık su yüzeyinde daralma gözlemi",
+        "evidence_status": "supported",
+        "evidence_label_tr": "Destekleniyor",
+        "additional_checks_required": [
+          "GPM IMERG yağış anomalisi",
+          "ERA5-Land buharlaşma/sıcaklık",
+          "Mevsimsel eşleşme (Ağustos-Ağustos)",
+          "Sazlık ve su altı bitki örtüsü piksel karışımı"
+        ],
+        "recommendation_text": "Dalyan Kanalı ve Sülüngür Gölü kıyı şeridinde su seviyesi (limnigraf) ve tuzluluk/iletkenlik saha ölçümü yapılması; MUSKİ ve DSİ yerel akım verileriyle birlikte hidrolojik su bütçesi incelemesi başlatılması önerilir.",
+        "non_claim_disclaimer": "Uydu su maskesi su derinliğini veya yeraltı suyu çekilmesini doğrudan ölçmez; daralmanın nedeni tek başına iklim veya insan müdahalesine bağlanamaz.",
+        "supporting_metrics_keys": [
+          "baseline_open_water_ha_2021",
+          "current_open_water_ha_2026",
+          "change_area_hectares",
+          "change_percentage",
+          "wet_reedbed_ha_2021",
+          "wet_reedbed_ha_2026",
+          "wet_reedbed_change_ha",
+          "sar_open_water_ha_2021",
+          "sar_open_water_ha_2026",
+          "sar_optical_agreement_pct",
+          "nisar_lband_202611_subcanopy_wet_ha",
+          "regional_precip_anomaly_2021_2026_pct",
+          "regional_summer_temp_anomaly_c"
+        ]
+      }
+    ]
+  },
+  "quality": {
+    "evidence_status": "supported",
+    "evidence_label_tr": "Destekleniyor",
+    "evidence_badge_color": "#3b82f6",
+    "evidence_meaning_tr": "Bulguyu destekleyen birden fazla bağımsız veri kaynağı (ör. Optik + SAR veya FIRMS + Optik) mevcut.",
+    "confidence": "high (optik + C-SAR uyumu %96.4)",
+    "qc_flags": [
+      "QC_PASS_SEASONAL_WINDOW_4DAYS",
+      "QC_PASS_CLOUD_COVER_UNDER_3PCT",
+      "QC_PASS_SAME_MGRS_TILE_35SNA",
+      "QC_PASS_S1_SAME_ORBIT_029_ASC",
+      "QC_INFO_1_CLOUDY_WINTER_SCENE_EXCLUDED_FROM_OPTICAL_TREND"
+    ],
+    "disclaimer_tr": "Bu etiket proje içi bilimsel kalite/kanıt durumunu gösterir; NASA, ESA veya başka bir kurumun resmî sınıflandırması ya da hukuki/mühendislik kesin hükmü değildir."
+  },
+  "limitations": [
+    "10m/20m Sentinel-2 optik indeksleri yoğun sazlık (Phragmites australis) kanopisi altındaki sığ suyu doğrudan göremez.",
+    "Kış dönemi (ör. 15.01.2026) optik görüntülerde %68,4 bulutluluk nedeniyle optik zaman serisinde boşluk vardır; kış su yayılımı yalnızca Sentinel-1 SAR ile izlenebilmiştir.",
+    "NISAR VALIDATED L2 GCOV ürünleri yalnızca 21.10.2026 sonrası için mevcut olduğundan 2021–2025 tarihsel serisinde kullanılamaz.",
+    "Uydu yüzey alanı ölçümü su derinliği (batimetri) veya yeraltı suyu seviyesi ölçümü değildir."
+  ],
+  "provenance": {
+    "job_id": "worker_job_water_20261114",
+    "created_at": "2026-11-14T12:40:26.899Z",
+    "reproducible_pipeline_version": "mgi-engine-0.2.0"
+  }
+}

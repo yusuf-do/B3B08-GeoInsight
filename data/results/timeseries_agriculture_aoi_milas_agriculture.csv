@@ -1,0 +1,7 @@
+date,sensor,ndvi_mean,ndmi_mean,regional_soil_moisture
+2021-07-15,Sentinel-2A L2A (10m),0.498,0.169,0.171
+2022-07-18,Sentinel-2B L2A (10m),0.495,0.164,0.168
+2023-07-15,Sentinel-2A L2A (10m),0.482,0.151,0.16
+2024-07-19,Sentinel-2B L2A (10m),0.461,0.135,0.149
+2025-07-14,Sentinel-2A L2A (10m),0.454,0.128,0.146
+2026-07-19,Sentinel-2C L2A (10m),0.442,0.118,0.142

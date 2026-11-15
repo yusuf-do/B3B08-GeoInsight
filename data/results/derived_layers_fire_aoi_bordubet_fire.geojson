@@ -1,0 +1,158 @@
+{
+  "type": "FeatureCollection",
+  "name": "derived_fire_aoi_bordubet_fire",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "zone": "Bördübet–Yedi Adalar Haziran 2022 Yüksek Yanma Şiddeti Çekirdeği",
+        "severity_class": "High Severity (dNBR >= 0.44)",
+        "dnbr_mean": 0.562,
+        "area_ha": 3532.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.068,
+              36.785
+            ],
+            [
+              28.182,
+              36.785
+            ],
+            [
+              28.182,
+              36.845
+            ],
+            [
+              28.068,
+              36.845
+            ],
+            [
+              28.068,
+              36.785
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone": "Hisarönü–Değirmenyanı Temmuz 2021 Yanma Alanı",
+        "severity_class": "Moderate-High Severity (dNBR 0.27 - 0.44)",
+        "dnbr_mean": 0.398,
+        "area_ha": 5410.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.145,
+              36.765
+            ],
+            [
+              28.248,
+              36.765
+            ],
+            [
+              28.248,
+              36.868
+            ],
+            [
+              28.145,
+              36.868
+            ],
+            [
+              28.145,
+              36.765
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone": "Kuvvetli Spektral Toparlanma Kuşağı",
+        "recovery_status": "recovering_vegetation_canopy",
+        "ndvi_2022": 0.246,
+        "ndvi_2026": 0.512,
+        "area_ha": 6490.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.085,
+              36.772
+            ],
+            [
+              28.235,
+              36.772
+            ],
+            [
+              28.235,
+              36.855
+            ],
+            [
+              28.085,
+              36.855
+            ],
+            [
+              28.085,
+              36.772
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone": "Yavaş Toparlanan Dik Sırtlar",
+        "recovery_status": "slow_recovery_steep_slope",
+        "ndvi_2022": 0.195,
+        "ndvi_2026": 0.318,
+        "area_ha": 2452.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.072,
+              36.812
+            ],
+            [
+              28.142,
+              36.812
+            ],
+            [
+              28.142,
+              36.844
+            ],
+            [
+              28.072,
+              36.844
+            ],
+            [
+              28.072,
+              36.812
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

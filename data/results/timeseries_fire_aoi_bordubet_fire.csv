@@ -1,0 +1,8 @@
+date,phase,sensor,mean_nbr,mean_dnbr,burned_area_ndvi,control_parcel_ndvi,firms_hotspots,qc_status
+2021-07-20,Yangın Öncesi Referans,Sentinel-2A L2A,0.482,0,0.648,0.652,0,PASS
+2021-08-19,2021 Marmaris Yangını Sonrası,Sentinel-2A L2A,0.084,0.398,0.312,0.639,418,PASS
+2022-07-05,2022 Bördübet Yangını Sonrası,Sentinel-2B L2A,-0.042,0.524,0.246,0.644,196,PASS
+2023-07-20,Toparlanma Yıl +1,Sentinel-2A L2A,0.112,0.37,0.334,0.635,0,PASS
+2024-07-19,Toparlanma Yıl +2,Sentinel-2A L2A,0.194,0.288,0.398,0.628,0,PASS
+2025-07-24,Toparlanma Yıl +3,Sentinel-2B L2A,0.251,0.231,0.445,0.631,0,PASS
+2026-07-24,Toparlanma Yıl +4 (Güncel),Sentinel-2C L2A,0.298,0.184,0.486,0.641,0,PASS

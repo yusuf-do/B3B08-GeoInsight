@@ -1,0 +1,130 @@
+{
+  "downloaded_at": "2026-11-14T13:03:59.259Z",
+  "source": "ECMWF ERA5-Land via Open-Meteo Historical Archive API",
+  "dalyan_wetland_climate_2021_2025": {
+    "2021": {
+      "annual_precip_mm": 1148,
+      "annual_et0_mm": 1446.7,
+      "mean_tmax_c": 26.18,
+      "mean_soil_moisture_m3m3": 0.145,
+      "max_daily_precip_mm": 128.8,
+      "max_daily_precip_date": "2021-11-27"
+    },
+    "2022": {
+      "annual_precip_mm": 989.6,
+      "annual_et0_mm": 1414.1,
+      "mean_tmax_c": 25.78,
+      "mean_soil_moisture_m3m3": 0.134,
+      "max_daily_precip_mm": 72.2,
+      "max_daily_precip_date": "2022-11-18"
+    },
+    "2023": {
+      "annual_precip_mm": 1287.3,
+      "annual_et0_mm": 1344.8,
+      "mean_tmax_c": 25.78,
+      "mean_soil_moisture_m3m3": 0.182,
+      "max_daily_precip_mm": 93,
+      "max_daily_precip_date": "2023-12-16"
+    },
+    "2024": {
+      "annual_precip_mm": 1027.9,
+      "annual_et0_mm": 1429.8,
+      "mean_tmax_c": 27.01,
+      "mean_soil_moisture_m3m3": 0.143,
+      "max_daily_precip_mm": 58.3,
+      "max_daily_precip_date": "2024-01-16"
+    },
+    "2025": {
+      "annual_precip_mm": 1234.5,
+      "annual_et0_mm": 1362.4,
+      "mean_tmax_c": 26.17,
+      "mean_soil_moisture_m3m3": 0.144,
+      "max_daily_precip_mm": 102.6,
+      "max_daily_precip_date": "2025-10-03"
+    }
+  },
+  "bordubet_fire_climate_2021_2025": {
+    "2021": {
+      "annual_precip_mm": 720.9,
+      "annual_et0_mm": 1481.1,
+      "mean_tmax_c": 24.01,
+      "mean_soil_moisture_m3m3": 0.207,
+      "max_daily_precip_mm": 62.5,
+      "max_daily_precip_date": "2021-11-01"
+    },
+    "2022": {
+      "annual_precip_mm": 568.9,
+      "annual_et0_mm": 1446.5,
+      "mean_tmax_c": 23.8,
+      "mean_soil_moisture_m3m3": 0.195,
+      "max_daily_precip_mm": 38.1,
+      "max_daily_precip_date": "2022-03-02"
+    },
+    "2023": {
+      "annual_precip_mm": 733.8,
+      "annual_et0_mm": 1400.3,
+      "mean_tmax_c": 24.31,
+      "mean_soil_moisture_m3m3": 0.221,
+      "max_daily_precip_mm": 53.3,
+      "max_daily_precip_date": "2023-11-13"
+    },
+    "2024": {
+      "annual_precip_mm": 588.7,
+      "annual_et0_mm": 1504.1,
+      "mean_tmax_c": 25.55,
+      "mean_soil_moisture_m3m3": 0.208,
+      "max_daily_precip_mm": 39.1,
+      "max_daily_precip_date": "2024-01-16"
+    },
+    "2025": {
+      "annual_precip_mm": 716.1,
+      "annual_et0_mm": 1395.1,
+      "mean_tmax_c": 24.33,
+      "mean_soil_moisture_m3m3": 0.253,
+      "max_daily_precip_mm": 57.4,
+      "max_daily_precip_date": "2025-11-29"
+    }
+  },
+  "milas_agriculture_climate_2021_2025": {
+    "2021": {
+      "annual_precip_mm": 920.6,
+      "annual_et0_mm": 1519.5,
+      "mean_tmax_c": 25.46,
+      "mean_soil_moisture_m3m3": 0.25,
+      "max_daily_precip_mm": 66.4,
+      "max_daily_precip_date": "2021-12-04"
+    },
+    "2022": {
+      "annual_precip_mm": 721,
+      "annual_et0_mm": 1514.4,
+      "mean_tmax_c": 25.29,
+      "mean_soil_moisture_m3m3": 0.23,
+      "max_daily_precip_mm": 47.8,
+      "max_daily_precip_date": "2022-01-11"
+    },
+    "2023": {
+      "annual_precip_mm": 1029.2,
+      "annual_et0_mm": 1375.5,
+      "mean_tmax_c": 25.29,
+      "mean_soil_moisture_m3m3": 0.283,
+      "max_daily_precip_mm": 51.5,
+      "max_daily_precip_date": "2023-11-13"
+    },
+    "2024": {
+      "annual_precip_mm": 746.5,
+      "annual_et0_mm": 1489,
+      "mean_tmax_c": 26.49,
+      "mean_soil_moisture_m3m3": 0.244,
+      "max_daily_precip_mm": 67.6,
+      "max_daily_precip_date": "2024-12-24"
+    },
+    "2025": {
+      "annual_precip_mm": 621.1,
+      "annual_et0_mm": 1442.1,
+      "mean_tmax_c": 25.73,
+      "mean_soil_moisture_m3m3": 0.227,
+      "max_daily_precip_mm": 49.5,
+      "max_daily_precip_date": "2025-11-29"
+    }
+  }
+}

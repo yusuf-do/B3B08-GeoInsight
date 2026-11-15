@@ -1,0 +1,4 @@
+date,sensor,open_water_ha,sar_open_water_ha,hs_wave_m
+2021-08-14,Sentinel-2A L2A,142.8,142,0.28
+2023-08-14,Sentinel-2A L2A,139.5,138.8,0.31
+2026-08-18,Sentinel-2C L2A,136.4,136,0.26

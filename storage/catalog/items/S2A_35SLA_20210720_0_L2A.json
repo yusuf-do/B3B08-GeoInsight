@@ -1,0 +1,87 @@
+{
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "type": "Feature",
+  "id": "S2A_35SLA_20210720_0_L2A",
+  "collection": "SENTINEL-2",
+  "bbox": [
+    27.21,
+    36.32,
+    29.78,
+    37.54
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          27.21,
+          36.32
+        ],
+        [
+          29.78,
+          36.32
+        ],
+        [
+          29.78,
+          37.54
+        ],
+        [
+          27.21,
+          37.54
+        ],
+        [
+          27.21,
+          36.32
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "datetime": "2021-07-20T09:05:51Z",
+    "platform": "Sentinel-2A MSI",
+    "eo:cloud_cover": 0.4,
+    "proj:epsg": 32635,
+    "sat:relative_orbit": 50,
+    "sat:orbit_state": "descending",
+    "mgi:aoi_ids": [
+      "aoi_bordubet_fire",
+      "aoi_bordubet_2022_core",
+      "aoi_bordubet_unburned_control"
+    ],
+    "mgi:qc_passed": true,
+    "mgi:qc_flags": [
+      "PRE_FIRE_BASELINE",
+      "CLOUD_FREE_CORE",
+      "PHENOLOGY_SUMMER_MATCH"
+    ],
+    "mgi:checksum_sha256": "643653ef5349a3bb",
+    "license": "Copernicus Open Access License"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "raw_manifest": {
+      "href": "../../raw/copernicus-data-space/sentinel-2/2021/S2A_35SLA_20210720_0_L2A/v1.0.0/manifest_provenance.json",
+      "type": "application/json",
+      "title": "Raw Product Provenance & Checksum Manifest",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

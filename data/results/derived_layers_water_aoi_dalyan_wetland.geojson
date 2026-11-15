@@ -1,0 +1,238 @@
+{
+  "type": "FeatureCollection",
+  "name": "derived_water_aoi_dalyan_wetland",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "zone": "Köyceğiz Güney Çıkışı ve Dalyan Ana Kanalı (2021)",
+        "area_ha": 2108.4,
+        "period": "2021-08-14"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.605,
+              36.805
+            ],
+            [
+              28.668,
+              36.802
+            ],
+            [
+              28.685,
+              36.885
+            ],
+            [
+              28.672,
+              36.935
+            ],
+            [
+              28.612,
+              36.932
+            ],
+            [
+              28.602,
+              36.855
+            ],
+            [
+              28.605,
+              36.805
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone": "Sülüngür Lagün Gölü (2021)",
+        "area_ha": 840,
+        "period": "2021-08-14"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.64,
+              36.798
+            ],
+            [
+              28.673,
+              36.798
+            ],
+            [
+              28.673,
+              36.824
+            ],
+            [
+              28.64,
+              36.824
+            ],
+            [
+              28.64,
+              36.798
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone": "Köyceğiz Güney Çıkışı ve Dalyan Ana Kanalı (2026)",
+        "area_ha": 1862.2,
+        "period": "2026-08-18"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.611,
+              36.809
+            ],
+            [
+              28.662,
+              36.806
+            ],
+            [
+              28.679,
+              36.883
+            ],
+            [
+              28.668,
+              36.931
+            ],
+            [
+              28.618,
+              36.928
+            ],
+            [
+              28.608,
+              36.857
+            ],
+            [
+              28.611,
+              36.809
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone": "Sülüngür Lagün Gölü (2026)",
+        "area_ha": 772,
+        "period": "2026-08-18"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.643,
+              36.8
+            ],
+            [
+              28.67,
+              36.8
+            ],
+            [
+              28.67,
+              36.822
+            ],
+            [
+              28.643,
+              36.822
+            ],
+            [
+              28.643,
+              36.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone": "Dalyan Deltası Kuzeybatı Sazlık Geçiş Kuşağı",
+        "change_type": "seasonally_receded_shallow_water",
+        "area_change_ha": -198.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.602,
+              36.825
+            ],
+            [
+              28.618,
+              36.825
+            ],
+            [
+              28.618,
+              36.872
+            ],
+            [
+              28.602,
+              36.872
+            ],
+            [
+              28.602,
+              36.825
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone": "Sülüngür Doğu Kıyı ve İztuzu Boğaz Lagün Sığlığı",
+        "change_type": "lagoon_margin_recession",
+        "area_change_ha": -115.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.665,
+              36.794
+            ],
+            [
+              28.678,
+              36.794
+            ],
+            [
+              28.678,
+              36.826
+            ],
+            [
+              28.665,
+              36.826
+            ],
+            [
+              28.665,
+              36.794
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

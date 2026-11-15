@@ -1,0 +1,84 @@
+{
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "type": "Feature",
+  "id": "S2A_35SNA_20260115_0_L2A",
+  "collection": "SENTINEL-2",
+  "bbox": [
+    27.21,
+    36.32,
+    29.78,
+    37.54
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          27.21,
+          36.32
+        ],
+        [
+          29.78,
+          36.32
+        ],
+        [
+          29.78,
+          37.54
+        ],
+        [
+          27.21,
+          37.54
+        ],
+        [
+          27.21,
+          36.32
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "datetime": "2026-01-15T08:56:21Z",
+    "platform": "Sentinel-2A MSI",
+    "eo:cloud_cover": 68.4,
+    "proj:epsg": 32635,
+    "sat:relative_orbit": 7,
+    "sat:orbit_state": "descending",
+    "mgi:aoi_ids": [
+      "aoi_dalyan_wetland"
+    ],
+    "mgi:qc_passed": false,
+    "mgi:qc_flags": [
+      "REJECTED_HIGH_CLOUD_COVER_68PCT",
+      "REQUIRES_SAR_FALLBACK"
+    ],
+    "mgi:checksum_sha256": "222c894beb0b4226",
+    "license": "Copernicus Open Access License"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "raw_manifest": {
+      "href": "../../raw/copernicus-data-space/sentinel-2/2026/S2A_35SNA_20260115_0_L2A/v1.0.0/manifest_provenance.json",
+      "type": "application/json",
+      "title": "Raw Product Provenance & Checksum Manifest",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

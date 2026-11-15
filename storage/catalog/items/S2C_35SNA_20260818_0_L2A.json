@@ -1,0 +1,89 @@
+{
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "type": "Feature",
+  "id": "S2C_35SNA_20260818_0_L2A",
+  "collection": "SENTINEL-2",
+  "bbox": [
+    27.21,
+    36.32,
+    29.78,
+    37.54
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          27.21,
+          36.32
+        ],
+        [
+          29.78,
+          36.32
+        ],
+        [
+          29.78,
+          37.54
+        ],
+        [
+          27.21,
+          37.54
+        ],
+        [
+          27.21,
+          36.32
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "datetime": "2026-08-18T08:56:01Z",
+    "platform": "Sentinel-2C MSI",
+    "eo:cloud_cover": 2.1,
+    "proj:epsg": 32635,
+    "sat:relative_orbit": 7,
+    "sat:orbit_state": "descending",
+    "mgi:aoi_ids": [
+      "aoi_dalyan_wetland",
+      "aoi_dalyan_reedbed_core",
+      "aoi_sulungur_lake",
+      "aoi_iztuzu_coast"
+    ],
+    "mgi:qc_passed": true,
+    "mgi:qc_flags": [
+      "CLOUD_FREE_CORE",
+      "SEASONAL_MATCH_AUG",
+      "S2C_HARMONIZED_BOA",
+      "TIDAL_WAVE_LOW_HS_026M"
+    ],
+    "mgi:checksum_sha256": "9dc0dbb5951abec8",
+    "license": "Copernicus Open Access License"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "raw_manifest": {
+      "href": "../../raw/copernicus-data-space/sentinel-2/2026/S2C_35SNA_20260818_0_L2A/v1.0.0/manifest_provenance.json",
+      "type": "application/json",
+      "title": "Raw Product Provenance & Checksum Manifest",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}
